@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt – Pascale Kohli, Rathausgasse 48, 3011 Bern. Termine ab April 2026 oder online via Zoom.">
+  <title>Kontakt – Komm sprich mit mir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="legal-page">
+
+<div class="cookie-banner" id="cookieBanner" role="dialog">
+  <p data-i18n="cookie.text">Diese Website verwendet Cookies.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept"        id="cookieAccept"      data-i18n="cookie.accept">Akzeptieren</button>
+    <button class="cookie-btn cookie-decline"       id="cookieDecline"     data-i18n="cookie.decline">Ablehnen</button>
+    <button class="cookie-btn cookie-settings-link" id="cookieSettingsBtn" data-i18n="cookie.settings">Einstellungen</button>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Komm sprich mit mir"></a>
+    <ul class="nav-links">
+      <li><a href="index.html"        class="nav-link"        data-i18n="nav.home">Home</a></li>
+      <li><a href="supervision.html"  class="nav-link"        data-i18n="nav.supervision">Supervision</a></li>
+      <li><a href="beratung.html"     class="nav-link"        data-i18n="nav.beratung">Beratung</a></li>
+      <li><a href="ueber-mich.html"   class="nav-link"        data-i18n="nav.about">Über mich</a></li>
+      <li><a href="preise.html"       class="nav-link"        data-i18n="nav.preise">Preise</a></li>
+      <li><a href="kontakt.html"      class="nav-link active" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+  <button class="mobile-close" id="mobileClose">&#10005;</button>
+  <a href="index.html"        data-i18n="nav.home">Home</a>
+  <a href="supervision.html"  data-i18n="nav.supervision">Supervision</a>
+  <a href="beratung.html"     data-i18n="nav.beratung">Beratung</a>
+  <a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a>
+  <a href="preise.html"       data-i18n="nav.preise">Preise</a>
+  <a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="de">DE</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</div>
+
+<div class="legal-hero">
+  <div class="legal-hero-inner">
+    <p class="legal-breadcrumb">
+      <a href="index.html">Komm sprich mit mir</a> &nbsp;/&nbsp;
+      <span id="pageTitle">Kontakt</span>
+    </p>
+    <h1 id="pageH1">Komm, sprich mit mir…</h1>
+    <p class="legal-subtitle" id="pageSubtitle">Online oder in Bern</p>
+  </div>
+</div>
+
+<section class="kontakt-page">
+
+  <a href="index.html" class="legal-back back-floating" data-i18n="legal.back">← Zurück zur Startseite</a>
+
+  <div class="kontakt-grid">
+
+    <!-- Left: contact details -->
+    <div class="kontakt-info fade-up">
+      <span class="eyebrow" id="k-eb">Adresse &amp; Kontakt</span>
+      <h2>Pascale Kohli</h2>
+      <p class="kontakt-credentials" id="k-cred">
+        Prozessorientierte Psychosoziale Beraterin SGFB<br>
+        Supervisorin &amp; Coach BSO
+      </p>
+
+      <div class="kontakt-block">
+        <div class="kontakt-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <h4 id="k-addr-h">Adresse</h4>
+          <p>Rathausgasse 48<br>3011 Bern</p>
+        </div>
+      </div>
+
+      <div class="kontakt-block">
+        <div class="kontakt-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.21h3.06a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <h4 id="k-tel-h">Telefon</h4>
+          <p><a href="tel:+41798555827">+41 79 855 58 27</a></p>
+        </div>
+      </div>
+
+      <div class="kontakt-block">
+        <div class="kontakt-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <h4 id="k-mail-h">E-Mail</h4>
+          <p><a href="mailto:pascale.kohli@hin.ch">pascale.kohli@hin.ch</a></p>
+        </div>
+      </div>
+
+      <div class="kontakt-note">
+        <strong id="k-note-strong">Anfragen bitte nur per E-Mail.</strong>
+        <span id="k-note-span">Telefonische Erstkontakte kann ich nicht berücksichtigen.</span>
+      </div>
+
+      <div class="hours-card" style="margin-top: 2.5rem;">
+        <span class="eyebrow" id="k-hours-eb">Termine in Bern</span>
+        <h3 id="k-hours-h">Verfügbarkeit ab April 2026</h3>
+        <ul class="hours-list">
+          <li><span class="hours-day" id="k-day1">Montag – Mittwoch</span><span class="hours-time" id="k-time1">vormittags</span></li>
+          <li><span class="hours-day" id="k-day2">Donnerstag – Freitag</span><span class="hours-time" id="k-time2">ganztags</span></li>
+          <li><span class="hours-day" id="k-day3">Samstag</span><span class="hours-time" id="k-time3">vormittags</span></li>
+        </ul>
+        <p class="hours-online" id="k-hours-online">Online-Termine via Zoom sind flexibel möglich.</p>
+      </div>
+    </div>
+
+    <div class="kontakt-side fade-up">
+      <div class="contact-form-wrap">
+        <h3 id="k-form-h">Schreib mir</h3>
+        <form id="contactForm" name="contact" method="POST" data-netlify="true" action="/success.html" novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname" id="k-fname-l">Vorname</label>
+              <input type="text" id="fname" name="fname" placeholder="Dein Vorname" required>
+            </div>
+            <div class="form-group">
+              <label for="lname" id="k-lname-l">Nachname</label>
+              <input type="text" id="lname" name="lname" placeholder="Dein Nachname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" id="k-email-l">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="deine@email.ch" required>
+          </div>
+
+          <div class="form-group format-toggle">
+            <label id="k-format-l">Sitzungsformat</label>
+            <div class="toggle-group">
+              <label class="toggle-btn">
+                <input type="radio" name="format" value="online" checked>
+                <span id="k-format-online">Online (via Zoom)</span>
+              </label>
+              <label class="toggle-btn">
+                <input type="radio" name="format" value="inperson">
+                <span id="k-format-inperson">Vor Ort — Rathausgasse 48, Bern</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date" id="k-date-l">Wunschdatum</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time" id="k-time-l">Wunschzeit</label>
+              <div class="select-wrap" id="timeSelectWrap" style="display: none;">
+                <select id="time" name="time">
+                  <option value="" id="k-time-o0">Bitte wählen…</option>
+                  <option value="morning" id="k-time-o1">Vormittags (8:00 - 12:00)</option>
+                  <option value="allday" id="k-time-o2" style="display: none;">Ganztags (8:00 - 18:00)</option>
+                </select>
+                <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <p class="online-time-note" id="k-time-note">Online-Termine sind flexibel — die genaue Zeit wird per E-Mail vereinbart.</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service" id="k-svc-l">Anliegen</label>
+            <div class="select-wrap">
+              <select id="service" name="service">
+                <option value=""            id="k-svc-o0">Bitte wählen…</option>
+                <option value="beratung"    id="k-svc-o1">Psychosoziale Beratung</option>
+                <option value="supervision" id="k-svc-o2">Supervision</option>
+                <option value="coaching"    id="k-svc-o3">Coaching</option>
+                <option value="erst"        id="k-svc-o4">Unverbindliches Erstgespräch</option>
+                <option value="fragen"      id="k-svc-o5">Allgemeine Fragen</option>
+              </select>
+              <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" id="k-msg-l">Deine Nachricht <span class="label-opt" id="k-msg-opt">(optional)</span></label>
+            <textarea id="message" name="message" placeholder="Beschreibe kurz, was dich hierher führt (optional)"></textarea>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="consent" required>
+              <span class="consent-text" id="k-consent-l">Ich bin damit einverstanden, dass meine Daten gemäss dem Schweizer Datenschutzgesetz (nDSG) ausschliesslich zur Bearbeitung meiner Terminanfrage gespeichert und verwendet werden.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit" id="formBtn">Nachricht senden</button>
+          <p class="form-note" id="k-form-note">Deine Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="kontakt-divider">* &nbsp; * &nbsp; * &nbsp; * &nbsp; *</div>
+
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo">Komm · sprich · mit mir</span>
+      <p data-i18n="footer.brand">Prozessorientierte Psychosoziale Beratung, Supervision und Coaching – online oder in Bern.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.nav.header">Navigation</h4>
+      <ul>
+        <li><a href="index.html"        data-i18n="nav.home">Home</a></li>
+        <li><a href="supervision.html"  data-i18n="nav.supervision">Supervision</a></li>
+        <li><a href="beratung.html"     data-i18n="nav.beratung">Beratung</a></li>
+        <li><a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a></li>
+        <li><a href="preise.html"       data-i18n="nav.preise">Preise</a></li>
+        <li><a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.contact.header">Kontakt</h4>
+      <ul>
+        <li><span>Pascale Kohli</span></li>
+        <li><span>Rathausgasse 48 · 3011 Bern</span></li>
+        <li><a href="tel:+41798555827">+41 79 855 58 27</a></li>
+        <li><a href="mailto:pascale.kohli@hin.ch">pascale.kohli@hin.ch</a></li>
+        <li class="footer-note" data-i18n="footer.note">Anfragen bitte nur per E-Mail.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <a href="agb.html"         data-i18n="footer.link.agb">AGB</a>
+    <a href="nutzung.html"     data-i18n="footer.link.nutzung">Nutzung &amp; Impressum</a>
+    <a href="datenschutz.html" data-i18n="footer.link.datenschutz">Datenschutzrichtlinie</a>
+    <a href="kontakt.html"     data-i18n="nav.contact">Kontakt</a>
+  </div>
+  <div class="footer-bottom">
+    <button class="cookie-open-btn" id="footerCookieBtn" data-i18n="footer.link.cookie">Cookie-Einstellungen</button>
+    <span data-i18n="footer.copyright">© 2026 Komm sprich mit mir · Pascale Kohli</span>
+    <div class="footer-links">
+      <a href="datenschutz.html" data-i18n="footer.link.privacy">Datenschutz</a>
+      <a href="nutzung.html"     data-i18n="footer.link.imprint">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  const kontaktT = {
+    de: {
+      title: 'Kontakt', h1: 'Komm, sprich mit mir…', subtitle: 'Online oder in Bern',
+      eb: 'Adresse & Kontakt',
+      cred: 'Prozessorientierte Psychosoziale Beraterin SGFB<br>Supervisorin & Coach BSO',
+      addr_h: 'Adresse', tel_h: 'Telefon', mail_h: 'E-Mail',
+      note_strong: 'Anfragen bitte nur per E-Mail.',
+      note_span: 'Telefonische Erstkontakte kann ich nicht berücksichtigen.',
+      hours_eb: 'Termine in Bern', hours_h: 'Verfügbarkeit ab April 2026',
+      day1: 'Montag – Mittwoch', time1: 'vormittags',
+      day2: 'Donnerstag – Freitag', time2: 'ganztags',
+      day3: 'Samstag', time3: 'vormittags',
+      hours_online: 'Online-Termine via Zoom sind flexibel möglich.',
+      form_h: 'Schreib mir',
+      fname_l: 'Vorname', fname_p: 'Dein Vorname',
+      lname_l: 'Nachname', lname_p: 'Dein Nachname',
+      email_l: 'E-Mail',  email_p: 'deine@email.ch',
+      svc_l: 'Anliegen',
+      svc_o0: 'Bitte wählen…',
+      svc_o1: 'Psychosoziale Beratung',
+      svc_o2: 'Supervision',
+      svc_o3: 'Coaching',
+      svc_o4: 'Unverbindliches Erstgespräch',
+      svc_o5: 'Allgemeine Fragen',
+      msg_l: 'Deine Nachricht', msg_p: 'Beschreibe kurz, was dich hierher führt (optional)',
+      submit: 'Nachricht senden',
+      form_note: 'Deine Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.',
+      format_l: 'Sitzungsformat',
+      format_online: 'Online (via Zoom)',
+      format_inperson: 'Vor Ort — Rathausgasse 48, Bern',
+      date_l: 'Wunschdatum',
+      time_l: 'Wunschzeit',
+      time_o0: 'Bitte wählen…',
+      time_o1: 'Vormittags (8:00 - 12:00)',
+      time_o2: 'Ganztags (8:00 - 18:00)',
+      time_note: 'Online-Termine sind flexibel — die genaue Zeit wird per E-Mail vereinbart.',
+      consent_l: 'Ich bin damit einverstanden, dass meine Daten gemäss dem Schweizer Datenschutzgesetz (nDSG) ausschliesslich zur Bearbeitung meiner Terminanfrage gespeichert und verwendet werden.',
+      sunday_alert: 'Sonntage sind nicht verfügbar.'
+    },
+    en: {
+      title: 'Contact', h1: 'Come, talk to me…', subtitle: 'Online or in Bern',
+      eb: 'Address & Contact',
+      cred: 'Process-oriented Psychosocial Counsellor SGFB<br>Supervisor & Coach BSO',
+      addr_h: 'Address', tel_h: 'Phone', mail_h: 'Email',
+      note_strong: 'Please send enquiries by email only.',
+      note_span: 'I am unable to take initial contacts by phone.',
+      hours_eb: 'Appointments in Bern', hours_h: 'Availability from April 2026',
+      day1: 'Monday – Wednesday', time1: 'mornings',
+      day2: 'Thursday – Friday',  time2: 'all day',
+      day3: 'Saturday',           time3: 'mornings',
+      hours_online: 'Online appointments via Zoom are flexible.',
+      form_h: 'Write to me',
+      fname_l: 'First name', fname_p: 'Your first name',
+      lname_l: 'Last name',  lname_p: 'Your last name',
+      email_l: 'Email',      email_p: 'your@email.com',
+      svc_l: 'Subject',
+      svc_o0: 'Please select…',
+      svc_o1: 'Psychosocial counselling',
+      svc_o2: 'Supervision',
+      svc_o3: 'Coaching',
+      svc_o4: 'Free first consultation',
+      svc_o5: 'General enquiries',
+      msg_l: 'Your message', msg_p: "Briefly describe what brings you here (optional)",
+      submit: 'Send message',
+      form_note: 'Your data will be treated confidentially and not shared with third parties.',
+      format_l: 'Session format',
+      format_online: 'Online (via Zoom)',
+      format_inperson: 'In Person — Rathausgasse 48, Bern',
+      date_l: 'Preferred date',
+      time_l: 'Preferred time',
+      time_o0: 'Please select…',
+      time_o1: 'Morning (8am - 12pm)',
+      time_o2: 'All Day (8am - 6pm)',
+      time_note: 'Online appointments are flexible — she will confirm a time by email',
+      consent_l: 'I agree that my data will be stored and used solely to process my appointment request, in line with Swiss data protection law (nFADP).',
+      sunday_alert: 'Sundays are not available.'
+    }
+  };
+  function applyKontakt(lang) {
+    const p = kontaktT[lang];
+    document.getElementById('pageTitle').textContent    = p.title;
+    document.getElementById('pageH1').textContent       = p.h1;
+    document.getElementById('pageSubtitle').textContent = p.subtitle;
+    document.getElementById('k-eb').textContent         = p.eb;
+    document.getElementById('k-cred').innerHTML         = p.cred;
+    document.getElementById('k-addr-h').textContent     = p.addr_h;
+    document.getElementById('k-tel-h').textContent      = p.tel_h;
+    document.getElementById('k-mail-h').textContent     = p.mail_h;
+    document.getElementById('k-note-strong').textContent= p.note_strong;
+    document.getElementById('k-note-span').textContent  = p.note_span;
+    document.getElementById('k-hours-eb').textContent   = p.hours_eb;
+    document.getElementById('k-hours-h').textContent    = p.hours_h;
+    document.getElementById('k-day1').textContent       = p.day1;
+    document.getElementById('k-time1').textContent      = p.time1;
+    document.getElementById('k-day2').textContent       = p.day2;
+    document.getElementById('k-time2').textContent      = p.time2;
+    document.getElementById('k-day3').textContent       = p.day3;
+    document.getElementById('k-time3').textContent      = p.time3;
+    document.getElementById('k-hours-online').textContent = p.hours_online;
+    document.getElementById('k-form-h').textContent     = p.form_h;
+    document.getElementById('k-fname-l').textContent    = p.fname_l;
+    document.getElementById('fname').placeholder        = p.fname_p;
+    document.getElementById('k-lname-l').textContent    = p.lname_l;
+    document.getElementById('lname').placeholder        = p.lname_p;
+    document.getElementById('k-email-l').textContent    = p.email_l;
+    document.getElementById('email').placeholder        = p.email_p;
+    document.getElementById('k-svc-l').textContent      = p.svc_l;
+    for (let i = 0; i <= 5; i++) {
+      document.getElementById('k-svc-o'+i).textContent = p['svc_o'+i];
+    }
+    document.getElementById('k-msg-l').innerHTML        = p.msg_l + ' <span class="label-opt" id="k-msg-opt">(optional)</span>';
+    document.getElementById('message').placeholder      = p.msg_p;
+    document.getElementById('k-format-l').textContent   = p.format_l;
+    document.getElementById('k-format-online').textContent = p.format_online;
+    document.getElementById('k-format-inperson').textContent = p.format_inperson;
+    document.getElementById('k-date-l').textContent     = p.date_l;
+    document.getElementById('k-time-l').textContent     = p.time_l;
+    document.getElementById('k-time-o0').textContent    = p.time_o0;
+    document.getElementById('k-time-o1').textContent    = p.time_o1;
+    document.getElementById('k-time-o2').textContent    = p.time_o2;
+    document.getElementById('k-time-note').textContent  = p.time_note;
+    document.getElementById('k-consent-l').textContent  = p.consent_l;
+    window.sundayAlertMsg = p.sunday_alert;
+    const btn = document.getElementById('formBtn');
+    if (btn && !btn.disabled) btn.textContent = p.submit;
+    document.getElementById('k-form-note').textContent  = p.form_note;
+    document.title = p.title + ' – Komm sprich mit mir';
+  }
+  window._langCallbacks.push(applyKontakt);
+  applyKontakt(window.currentLang || 'de');
+
+  // Form logic
+  const dateInput = document.getElementById('date');
+  const formatRadios = document.querySelectorAll('input[name="format"]');
+  const timeSelectWrap = document.getElementById('timeSelectWrap');
+  const timeNote = document.getElementById('k-time-note');
+  const timeSelect = document.getElementById('time');
+  const alldayOption = document.getElementById('k-time-o2');
+
+  if(dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.min = today;
+
+    function updateTimeOptions() {
+      if (!dateInput.value) {
+        alldayOption.style.display = 'none';
+        return;
+      }
+      const d = new Date(dateInput.value);
+      const day = d.getDay(); // 4 = Thu, 5 = Fri
+      if (day === 4 || day === 5) {
+        alldayOption.style.display = 'block';
+      } else {
+        alldayOption.style.display = 'none';
+        if (timeSelect.value === 'allday') {
+          timeSelect.value = '';
+        }
+      }
+    }
+
+    formatRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if(e.target.value === 'online') {
+          timeSelectWrap.style.display = 'none';
+          timeNote.style.display = 'block';
+          timeSelect.required = false;
+        } else {
+          timeSelectWrap.style.display = 'block';
+          timeNote.style.display = 'none';
+          timeSelect.required = true;
+          updateTimeOptions();
+        }
+      });
+    });
+
+    dateInput.addEventListener('change', (e) => {
+      const d = new Date(e.target.value);
+      if(d.getDay() === 0) { // Sunday
+        alert(window.sundayAlertMsg || 'Sundays are not available.');
+        e.target.value = '';
+      }
+      updateTimeOptions();
+    });
+  }
+</script>
+</body>
+</html>

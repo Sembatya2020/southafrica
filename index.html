@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Komm, sprich mit mir – Psychosoziale Beratung, Supervision und Coaching in Bern. Ein prozessorientierter Raum mit Pascale Kohli.">
+  <title>Komm, sprich mit mir – Psychosoziale Beratung, Supervision & Coaching · Bern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kommsprichmitmir.ch/">
+  <meta property="og:title" content="Komm, sprich mit mir – Pascale Kohli">
+  <meta property="og:description" content="Prozessorientierte Psychosoziale Beratung, Supervision und Coaching in Bern & Online.">
+  <meta property="og:image" content="images/Home-hero.jpeg">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Komm, sprich mit mir – Pascale Kohli">
+  <meta property="twitter:description" content="Prozessorientierte Psychosoziale Beratung, Supervision und Coaching in Bern & Online.">
+  <meta property="twitter:image" content="images/Home-hero.jpeg">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ─── COOKIE BANNER ─────────────────────────────────────────── -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Einstellungen">
+  <p data-i18n="cookie.text">Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzungserfahrung zu bieten. Durch die weitere Nutzung stimmen Sie der Verwendung von Cookies zu.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Akzeptieren</button>
+    <button class="cookie-btn cookie-decline" id="cookieDecline" data-i18n="cookie.decline">Ablehnen</button>
+    <button class="cookie-btn cookie-settings-link" id="cookieSettingsBtn" data-i18n="cookie.settings">Einstellungen</button>
+  </div>
+</div>
+
+<!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Komm sprich mit mir"></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html"        class="nav-link active" data-i18n="nav.home">Home</a></li>
+      <li><a href="supervision.html"  class="nav-link"        data-i18n="nav.supervision">Supervision</a></li>
+      <li><a href="beratung.html"     class="nav-link"        data-i18n="nav.beratung">Beratung</a></li>
+      <li><a href="ueber-mich.html"   class="nav-link"        data-i18n="nav.about">Über mich</a></li>
+      <li><a href="preise.html"       class="nav-link"        data-i18n="nav.preise">Preise</a></li>
+      <li><a href="kontakt.html"      class="nav-link"        data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Sprache wählen">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Menü schliessen">&#10005;</button>
+  <a href="index.html"        data-i18n="nav.home">Home</a>
+  <a href="supervision.html"  data-i18n="nav.supervision">Supervision</a>
+  <a href="beratung.html"     data-i18n="nav.beratung">Beratung</a>
+  <a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a>
+  <a href="preise.html"       data-i18n="nav.preise">Preise</a>
+  <a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="de">DE</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- ─── HERO ───────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Psychosoziale Beratung · Supervision · Coaching · Bern</span>
+    <h1 data-i18n-html="hero.h1"><em>Komm, sprich mit mir…</em></h1>
+    <p data-i18n="hero.p">Psychosoziale Beratung, Supervision und Coaching in Bern. Ein prozessorientierter Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.</p>
+    <div class="hero-buttons">
+      <a href="kontakt.html"   class="btn-primary" data-i18n="hero.btn1">Termin anfragen</a>
+      <a href="ueber-mich.html" class="btn-outline" data-i18n="hero.btn2">Mehr über mich</a>
+    </div>
+  </div>
+  <a href="#welcome" class="hero-scroll" aria-label="Nach unten scrollen">
+    <span data-i18n="hero.scroll">Entdecken</span>
+    <span class="hero-scroll-line"></span>
+  </a>
+</section>
+
+</section>
+
+<!-- ─── WELCOME (Home content) ─────────────────────────────────── -->
+<section id="welcome">
+  <div class="welcome-inner fade-up">
+    <span class="eyebrow" data-i18n="welcome.eyebrow">Willkommen</span>
+    <h2 data-i18n="welcome.h2">Ein Raum, in dem das, was dich beschäftigt, sichtbar werden darf.</h2>
+
+    <p data-i18n="welcome.p1">Du befindest dich in einer Phase der Unklarheit, bist vielleicht unsicher, wie es bei dir weitergehen könnte? Belastet dich eine Krise, fühlst du Ängste oder Trauer oder möchtest dich weiterentwickeln und neue Wege entdecken?</p>
+
+    <p data-i18n="welcome.p2">Dann sei willkommen in einem Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.</p>
+
+    <p data-i18n="welcome.p3">Ich begleite dich als aufmerksame Gesprächspartnerin, Mitforschende und Impulsgeberin. Meine Arbeitsweise ist prozessorientiert.</p>
+
+    <p data-i18n="welcome.p4">Körperempfindungen, innere Bilder, Bewegung und Stillstand, Töne und Worte – alles darf da sein.</p>
+
+    <p data-i18n="welcome.p5"><em>Du musst nichts mitbringen. Es reicht, wenn du spürst, dass du hinschauen möchtest.</em></p>
+
+    <p data-i18n="welcome.p6">Wenn du selbst mit Klienten arbeitest, stehe ich dir als BSO anerkannte Supervisorin zur Verfügung, um deine fachliche Arbeit gemeinsam zu reflektieren und weiterzuentwickeln.</p>
+  </div>
+</section>
+
+<!-- ─── SERVICES PREVIEW ───────────────────────────────────────── -->
+<section id="services">
+  <div class="section-header fade-up">
+    <span class="eyebrow" style="color:var(--gold-light)" data-i18n="services.eyebrow">Mein Angebot</span>
+    <h2 data-i18n="services.h2">Drei Wege, miteinander zu arbeiten</h2>
+    <p data-i18n="services.p">Ob für deinen persönlichen Weg, deine fachliche Reflexion oder deine berufliche Entwicklung – ich begleite dich prozessorientiert und auf Augenhöhe.</p>
+  </div>
+  <div class="services-grid">
+
+    <a href="beratung.html" class="service-card fade-up">
+      <div class="service-card-bg" style="background-image:url('images/WhatsApp%20Image%202026-05-07%20at%2023.13.35.jpeg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3 data-i18n="services.card1.h3">Beratung &amp; Coaching</h3>
+        <p data-i18n="services.card1.p">Prozessorientierte psychosoziale Beratung SGFB für Menschen in Phasen der Unklarheit, Krise oder Entwicklung.</p>
+        <span class="service-card-link" data-i18n="services.more">Mehr erfahren →</span>
+      </div>
+    </a>
+
+    <a href="supervision.html" class="service-card fade-up">
+      <div class="service-card-bg" style="background-image:url('images/WhatsApp%20Image%202026-05-07%20at%2023.13.28.jpeg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 data-i18n="services.card2.h3">Supervision</h3>
+        <p data-i18n="services.card2.p">Als BSO anerkannte Supervisorin begleite ich Fachpersonen beim Reflektieren ihrer Arbeit – auf Augenhöhe.</p>
+        <span class="service-card-link" data-i18n="services.more">Mehr erfahren →</span>
+      </div>
+    </a>
+
+    <a href="kontakt.html" class="service-card fade-up">
+      <div class="service-card-bg" style="background-image:url('images/WhatsApp%20Image%202026-05-07%20at%2023.16.35.jpeg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3 data-i18n="services.card3.h3">Erstgespräch</h3>
+        <p data-i18n="services.card3.p">Du bist unsicher, ob mein Angebot zu dir passt? Melde dich gerne unverbindlich – ich freue mich, von dir zu hören.</p>
+        <span class="service-card-link" data-i18n="services.contact">Kontakt aufnehmen →</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ─── PHILOSOPHY BANNER ──────────────────────────────────────── -->
+<section id="philosophy">
+  <div class="philosophy-bg"></div>
+  <div class="philosophy-overlay"></div>
+  <div class="philosophy-content fade-up">
+    <blockquote data-i18n="phil.quote">„Ewig forschend, weit reisend, immer wieder Neues entdeckend…"</blockquote>
+    <div class="divider" style="margin:1.5rem auto"></div>
+    <cite data-i18n="phil.cite">Pascale Kohli</cite>
+  </div>
+</section>
+
+<!-- ─── ABOUT TEASER ───────────────────────────────────────────── -->
+<section id="about-teaser">
+  <div class="about-grid">
+    <div class="about-image-wrap fade-up">
+      <div class="about-image">
+        <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.16.29.jpeg"
+             alt="Pascale Kohli – Prozessorientierte Beratung in Bern" loading="lazy">
+      </div>
+    </div>
+    <div class="about-text fade-up">
+      <span class="eyebrow" data-i18n="aboutT.eyebrow">Über mich</span>
+      <h2 data-i18n="aboutT.h2">Pascale Kohli</h2>
+      <p data-i18n="aboutT.p1">Prozessorientierte Psychosoziale Beraterin SGFB, Supervisorin &amp; Coach BSO. Ich arbeite zwischen der Schweiz und Südafrika und bringe Erfahrung aus mehreren Jahren im psychiatrischen und psychotherapeutischen Umfeld mit.</p>
+      <p data-i18n="aboutT.p2">Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Mit feinem Gespür und Klarheit darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen.</p>
+
+      <div class="about-qualities">
+        <span class="quality-tag" data-i18n="about.tag1">Prozessorientiert</span>
+        <span class="quality-tag" data-i18n="about.tag2">SGFB · BSO</span>
+        <span class="quality-tag" data-i18n="about.tag3">Wertfrei</span>
+        <span class="quality-tag" data-i18n="about.tag4">Mehrjährige Erfahrung</span>
+        <span class="quality-tag" data-i18n="about.tag5">Mehrsprachig</span>
+      </div>
+      <a href="ueber-mich.html" class="btn-primary" data-i18n="aboutT.btn">Mehr über mich</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GALLERY ────────────────────────────────────────────────── -->
+<section id="gallery">
+  <div class="gallery-header fade-up">
+    <span class="eyebrow" data-i18n="gallery.eyebrow">Inspiration</span>
+    <h2 data-i18n="gallery.h2">Jeder Weg hat seinen Rhythmus</h2>
+    <p data-i18n="gallery.p">Natur ist für mich ein täglicher Spiegel des Lebens – voller Weisheit, Schönheit und Wandel.</p>
+  </div>
+  <div class="gallery-track">
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.27%20%281%29.jpeg" alt="Alpine Berglandschaft" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap1">Alpengipfel · Schweiz</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.29.jpeg" alt="Bergstrasse" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap2">Weite Wege · Südafrika</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.30.jpeg" alt="Endlose Strasse" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap3">Offene Weite · Karoo</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.31.jpeg" alt="Felsige Küste" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap4">Wilde Küste · Garden Route</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.32.jpeg" alt="Brandende Wellen" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap5">Kraft des Meeres</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.33.jpeg" alt="Gerade Strasse" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap6">Der Weg ist das Ziel</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.34.jpeg" alt="Bergstrasse mit Vegetation" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap7">Neue Horizonte</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.16.27.jpeg" alt="Fluss im Wald" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap8">Ruhig fliessen</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.16.29.jpeg" alt="Steinpfad auf dem Berg" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap9">Schritt für Schritt</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.16.35.jpeg" alt="Meeresblick" loading="lazy">
+      <div class="gallery-caption" data-i18n="gallery.cap10">Weitsicht</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOME TESTIMONIALS ────────────────────────────────────── -->
+<section class="home-testimonials">
+  <div class="home-testimonials-inner fade-up">
+    <span class="eyebrow" data-i18n="testi.eb">KIND WORDS</span>
+    <h2 data-i18n="testi.h2">What clients say</h2>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" data-i18n="testi.q1">"Working with Pascale gave me the clarity I had been searching for years. She listens deeply and holds space beautifully."</p>
+        <p class="testi-client" data-i18n="testi.c1">S.M., Psychosocial Counselling client</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote" data-i18n="testi.q2">"The supervision sessions helped me grow both professionally and personally. I always left feeling more grounded."</p>
+        <p class="testi-client" data-i18n="testi.c2">T.B., Supervision client, Bern</p>
+      </div>
+      <div class="testi-card testi-placeholder-card">
+        <p data-i18n="testi.placeholder">Your testimonial will appear here once received from a client</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ────────────────────────────────────────────────────── -->
+<section id="cta">
+  <div class="cta-inner fade-up">
+    <h2 data-i18n="cta.h2">Bereit für ein erstes Gespräch?</h2>
+    <p data-i18n="cta.p">Wenn du unsicher bist, ob mein Angebot zu dir passt – melde dich gerne unverbindlich.</p>
+    <div class="cta-buttons">
+      <a href="kontakt.html" class="btn-primary" data-i18n="cta.btn1">Kontakt aufnehmen</a>
+      <a href="preise.html"  class="btn-outline-dark" data-i18n="cta.btn2">Preise ansehen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo">Komm · sprich · mit mir</span>
+      <p data-i18n="footer.brand">Prozessorientierte Psychosoziale Beratung, Supervision und Coaching – online oder in Bern.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.nav.header">Navigation</h4>
+      <ul>
+        <li><a href="index.html"        data-i18n="nav.home">Home</a></li>
+        <li><a href="supervision.html"  data-i18n="nav.supervision">Supervision</a></li>
+        <li><a href="beratung.html"     data-i18n="nav.beratung">Beratung</a></li>
+        <li><a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a></li>
+        <li><a href="preise.html"       data-i18n="nav.preise">Preise</a></li>
+        <li><a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.contact.header">Kontakt</h4>
+      <ul>
+        <li><span>Pascale Kohli</span></li>
+        <li><span>Rathausgasse 48 · 3011 Bern</span></li>
+        <li><a href="tel:+41798555827">+41 79 855 58 27</a></li>
+        <li><a href="mailto:pascale.kohli@hin.ch">pascale.kohli@hin.ch</a></li>
+        <li class="footer-note" data-i18n="footer.note">Anfragen bitte nur per E-Mail.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-legal">
+    <a href="agb.html"         data-i18n="footer.link.agb">AGB</a>
+    <a href="nutzung.html"     data-i18n="footer.link.nutzung">Nutzung &amp; Impressum</a>
+    <a href="datenschutz.html" data-i18n="footer.link.datenschutz">Datenschutzrichtlinie</a>
+    <a href="kontakt.html"     data-i18n="nav.contact">Kontakt</a>
+  </div>
+
+  <div class="footer-bottom">
+    <button class="cookie-open-btn" id="footerCookieBtn" data-i18n="footer.link.cookie">Cookie-Einstellungen</button>
+    <span data-i18n="footer.copyright">© 2026 Komm sprich mit mir · Pascale Kohli</span>
+    <div class="footer-links">
+      <a href="datenschutz.html" data-i18n="footer.link.privacy">Datenschutz</a>
+      <a href="nutzung.html"     data-i18n="footer.link.imprint">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

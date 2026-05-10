@@ -1,0 +1,6 @@
+node_modules/
+.claude/
+.dev.log
+.gemini/
+.DS_Store
+Thumbs.db

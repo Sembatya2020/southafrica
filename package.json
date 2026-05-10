@@ -1,0 +1,11 @@
+{
+  "name": "kommsprichmitmir",
+  "version": "1.0.0",
+  "description": "Therapy Website",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
