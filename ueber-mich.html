@@ -7,8 +7,9 @@
   <title>Über mich – Komm sprich mit mir</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>(function(){try{var t=localStorage.getItem("kspmm.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body class="legal-page">
 
@@ -38,6 +39,10 @@
         <span class="lang-sep">|</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
@@ -57,6 +62,12 @@
     <button class="lang-btn active" data-lang="de">DE</button>
     <span class="lang-sep">|</span>
     <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+  <div class="mobile-theme">
+    <button class="theme-toggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
   </div>
 </div>
 
@@ -127,24 +138,6 @@
       <p id="u-insp-p">Wichtige Impulse für meine Arbeit erhielt ich unter anderem durch das Wirken von Arnold Mindell, Richard Schwartz, Bessel van der Kolk, Daan van Kampenhout, Colin Tipping und Godfrey O'Flaherty. Ausserdem von allen Dozierenden des Instituts für Prozessarbeit, insbesondere Martin Boss.</p>
 
       <p id="u-bg-em"><em>Meine Arbeit entwickelt sich kontinuierlich weiter – durch Erfahrung, Weiterbildung und den lebendigen Austausch mit Menschen.</em></p>
-    </div>
-  </div>
-
-  <!-- Credentials grid -->
-  <div class="credentials-wrap">
-    <div class="credentials-grid fade-up">
-      <div class="credential">
-        <span class="credential-num">SGfB</span>
-        <span class="credential-text" id="u-cr1">Diplomierte psychosoziale Beraterin</span>
-      </div>
-      <div class="credential">
-        <span class="credential-num">BSO</span>
-        <span class="credential-text" id="u-cr2">Anerkannte Supervisorin &amp; Coach</span>
-      </div>
-      <div class="credential">
-        <span class="credential-num">IPA</span>
-        <span class="credential-text" id="u-cr3">Institut für Prozessarbeit, Zürich</span>
-      </div>
     </div>
   </div>
 
@@ -222,9 +215,6 @@
       insp_h: 'Inspirationen',
       insp_p: 'Wichtige Impulse für meine Arbeit erhielt ich unter anderem durch das Wirken von Arnold Mindell, Richard Schwartz, Bessel van der Kolk, Daan van Kampenhout, Colin Tipping und Godfrey O’Flaherty. Ausserdem von allen Dozierenden des Instituts für Prozessarbeit, insbesondere Martin Boss.',
       bg_em: 'Meine Arbeit entwickelt sich kontinuierlich weiter – durch Erfahrung, Weiterbildung und den lebendigen Austausch mit Menschen.',
-      cr1: 'Diplomierte psychosoziale Beraterin',
-      cr2: 'Anerkannte Supervisorin & Coach',
-      cr3: 'Institut für Prozessarbeit, Zürich',
       cta: 'Kontakt aufnehmen'
     },
     en: {
@@ -238,7 +228,7 @@
       p6: 'I am the mother of a soon-to-be-adult daughter and live in a partnership.',
       bg_h2: 'My Professional Background',
       bg_p1: 'My work is shaped by a continuous engagement with process-oriented psychology, trauma, relationship and human development.',
-      bg_p2: 'I studied at the Institute for Process Work in Zurich and am a certified psychosocial counsellor (SGfB) as well as supervisor/coach (BSO), and trained merchant and apprentice trainer. For many years I worked in forensic psychiatry and psychotherapy, writing treatment reports and assessments for various professionals and specialist agencies.',
+      bg_p2: 'Ich habe am Institut für Prozessarbeit in Zürich studiert und bin diplomierte psychosoziale Beraterin (SGfB) sowie Supervisorin/Coach (BSO), sowie Kauffrau und Lehrlingsausbildnerin. Ich habe viele Jahre in der forensischen Psychiatrie und in der Psychotherapie Behandlungsberichte und Gutachten für verschiedene Fachpersonen und Fachstellen geschrieben.',
       wb_h: 'Continuing Education',
       wb_p: 'In addition I have trained in various areas, among others in:',
       b1: 'Work with inner parts',
@@ -249,9 +239,6 @@
       insp_h: 'Inspirations',
       insp_p: 'Important impulses for my work came from the work of Arnold Mindell, Richard Schwartz, Bessel van der Kolk, Daan van Kampenhout, Colin Tipping and Godfrey O’Flaherty, as well as from all the lecturers at the Institute for Process Work, especially Martin Boss.',
       bg_em: 'My work develops continuously – through experience, further training and the living exchange with people.',
-      cr1: 'Certified psychosocial counsellor',
-      cr2: 'Recognised supervisor & coach',
-      cr3: 'Institute for Process Work, Zurich',
       cta: 'Get in touch'
     }
   };
@@ -272,9 +259,6 @@
     document.getElementById('u-insp-h').textContent     = p.insp_h;
     document.getElementById('u-insp-p').textContent     = p.insp_p;
     document.getElementById('u-bg-em').innerHTML        = '<em>' + p.bg_em + '</em>';
-    document.getElementById('u-cr1').textContent        = p.cr1;
-    document.getElementById('u-cr2').textContent        = p.cr2;
-    document.getElementById('u-cr3').textContent        = p.cr3;
     document.getElementById('u-cta').textContent        = p.cta;
     document.title = p.title + ' – Komm sprich mit mir';
   }

@@ -287,13 +287,50 @@
   window._langCallbacks = langCallbacks;
   Object.defineProperty(window, 'currentLang', { get: () => currentLang });
 
+  /* ─── THEME (light / dark) ───────────────────────────────────── */
+  const THEME_KEY = 'kspmm.theme';
+  function getTheme() {
+    return document.documentElement.getAttribute('data-theme') || 'light';
+  }
+  function applyTheme(theme, animate) {
+    if (theme !== 'dark') theme = 'light';
+    const html = document.documentElement;
+    if (!animate) html.classList.add('theme-no-anim');
+    html.setAttribute('data-theme', theme);
+    try { localStorage.setItem(THEME_KEY, theme); } catch (e) { /* noop */ }
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      const isDe = (typeof currentLang !== 'undefined' ? currentLang : 'de') === 'de';
+      btn.setAttribute('aria-label', theme === 'dark'
+        ? (isDe ? 'Auf hellen Modus wechseln' : 'Switch to light mode')
+        : (isDe ? 'Auf dunklen Modus wechseln' : 'Switch to dark mode'));
+    });
+    if (!animate) {
+      requestAnimationFrame(() => requestAnimationFrame(() => html.classList.remove('theme-no-anim')));
+    }
+  }
+  function toggleTheme() {
+    applyTheme(getTheme() === 'dark' ? 'light' : 'dark', true);
+  }
+
   /* ─── INIT ───────────────────────────────────────────────────── */
   function init() {
+    /* Theme: re-apply (in case localStorage has a different value than the
+       inline pre-render script saw) and wire up all toggle buttons. */
+    let savedTheme = 'light';
+    try { savedTheme = localStorage.getItem(THEME_KEY) || 'light'; } catch (e) { /* noop */ }
+    applyTheme(savedTheme, false);
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.addEventListener('click', toggleTheme);
+    });
+
     /* Language buttons */
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => applyLang(btn.dataset.lang));
     });
     applyLang(currentLang);
+    // Refresh theme aria-label whenever language changes
+    langCallbacks.push(() => applyTheme(getTheme(), false));
 
     /* Navbar scroll state */
     const navbar = document.getElementById('navbar');

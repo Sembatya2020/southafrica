@@ -7,7 +7,7 @@
   <title>Komm, sprich mit mir – Psychosoziale Beratung, Supervision & Coaching · Bern</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -20,6 +20,7 @@
   <meta property="twitter:title" content="Komm, sprich mit mir – Pascale Kohli">
   <meta property="twitter:description" content="Prozessorientierte Psychosoziale Beratung, Supervision und Coaching in Bern & Online.">
   <meta property="twitter:image" content="images/Home-hero.jpeg">
+  <script>(function(){try{var t=localStorage.getItem("kspmm.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -54,6 +55,10 @@
         <span class="lang-sep" aria-hidden="true">|</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -74,6 +79,12 @@
     <button class="lang-btn active" data-lang="de">DE</button>
     <span class="lang-sep">|</span>
     <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+  <div class="mobile-theme">
+    <button class="theme-toggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
   </div>
 </div>
 
@@ -128,8 +139,6 @@
   <div class="services-grid">
 
     <a href="beratung.html" class="service-card fade-up">
-      <div class="service-card-bg" style="background-image:url('images/WhatsApp%20Image%202026-05-07%20at%2023.13.35.jpeg')"></div>
-      <div class="service-card-overlay"></div>
       <div class="service-card-content">
         <div class="service-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -141,8 +150,6 @@
     </a>
 
     <a href="supervision.html" class="service-card fade-up">
-      <div class="service-card-bg" style="background-image:url('images/WhatsApp%20Image%202026-05-07%20at%2023.13.28.jpeg')"></div>
-      <div class="service-card-overlay"></div>
       <div class="service-card-content">
         <div class="service-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -154,8 +161,6 @@
     </a>
 
     <a href="kontakt.html" class="service-card fade-up">
-      <div class="service-card-bg" style="background-image:url('images/WhatsApp%20Image%202026-05-07%20at%2023.16.35.jpeg')"></div>
-      <div class="service-card-overlay"></div>
       <div class="service-card-content">
         <div class="service-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -195,13 +200,7 @@
       <p data-i18n="aboutT.p1">Prozessorientierte Psychosoziale Beraterin SGFB, Supervisorin &amp; Coach BSO. Ich arbeite zwischen der Schweiz und Südafrika und bringe Erfahrung aus mehreren Jahren im psychiatrischen und psychotherapeutischen Umfeld mit.</p>
       <p data-i18n="aboutT.p2">Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Mit feinem Gespür und Klarheit darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen.</p>
 
-      <div class="about-qualities">
-        <span class="quality-tag" data-i18n="about.tag1">Prozessorientiert</span>
-        <span class="quality-tag" data-i18n="about.tag2">SGFB · BSO</span>
-        <span class="quality-tag" data-i18n="about.tag3">Wertfrei</span>
-        <span class="quality-tag" data-i18n="about.tag4">Mehrjährige Erfahrung</span>
-        <span class="quality-tag" data-i18n="about.tag5">Mehrsprachig</span>
-      </div>
+
       <a href="ueber-mich.html" class="btn-primary" data-i18n="aboutT.btn">Mehr über mich</a>
     </div>
   </div>

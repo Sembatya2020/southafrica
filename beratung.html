@@ -7,8 +7,9 @@
   <title>Beratung &amp; Coaching – Komm sprich mit mir</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>(function(){try{var t=localStorage.getItem("kspmm.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body class="legal-page">
 
@@ -40,6 +41,10 @@
         <span class="lang-sep">|</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
@@ -60,6 +65,12 @@
     <button class="lang-btn active" data-lang="de">DE</button>
     <span class="lang-sep">|</span>
     <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+  <div class="mobile-theme">
+    <button class="theme-toggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
   </div>
 </div>
 
