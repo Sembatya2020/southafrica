@@ -11,27 +11,26 @@
 
 :root,
 :root[data-theme="light"] {
-  /* Delphinium Dusk – core palette */
+  /* Core palette — shifted to warm professional gold */
   --c-navy:        #1a1a2e;
   --c-purple:      #3d3480;
-  --c-teal:        #2aa89a;
-  --c-mint:        #3ecfb0;
+  --c-gold:        #c5a059;   /* Warm professional gold */
+  --c-gold-light:  #e2c58a;   /* Shimmery light gold */
   --c-sage:        #8fe8c8;
 
-  /* Semantic (LIGHT MODE)
-     Backgrounds: white + light mint/sage. Text/accents: deep purple + teal. */
-  --purple-main:   #3d3480;   /* primary purple accent */
-  --purple-dark:   #2a2466;   /* deeper purple for dark sections / navbar */
-  --gold:          #2aa89a;   /* teal – primary "accent" (semantic role of old gold) */
-  --gold-light:    #3ecfb0;   /* mint – lighter accent */
-  --cream:         #f0fbf5;   /* page background (light mint tint) */
-  --cream-mid:     #d9f2e4;   /* chip / soft section background */
-  --cream-dark:    #b5e0c9;   /* borders, dividers */
-  --surface:       #ffffff;   /* card / form / "white" section bg (flips per theme) */
-  --white:         #ffffff;   /* literal pure white (text on dark, button text) */
-  --text:          #1a1a2e;   /* primary text – deep navy */
-  --text-mid:      #3d3480;   /* secondary text – deep purple */
-  --text-light:    #5d5d75;   /* tertiary muted text */
+  /* Semantic (LIGHT MODE) */
+  --purple-main:   #3d3480;
+  --purple-dark:   #2a2466;
+  --gold:          #e2c58a;   /* Shimmery light gold */
+  --gold-light:    #f5e6c4;   /* Pale shimmery gold */
+  --cream:         #fdfbf7;   /* slightly warmer cream for gold palette */
+  --cream-mid:     #f4eee2;
+  --cream-dark:    #e8dfcc;
+  --surface:       #ffffff;
+  --white:         #ffffff;
+  --text:          #1a1a2e;
+  --text-mid:      #3d3480;
+  --text-light:    #5d5d75;
 
   --nav-h:         95px;
   --pad:           clamp(60px, 8vw, 120px);
@@ -39,20 +38,19 @@
 }
 
 :root[data-theme="dark"] {
-  /* Semantic (DARK MODE)
-     Backgrounds: deep navy + deep purple. Accents: teal + mint. */
-  --purple-main:   #3d3480;   /* deep purple kept as accent section bg */
-  --purple-dark:   #0f0f1c;   /* deepest navy for navbar / footer */
-  --gold:          #3ecfb0;   /* medium mint – primary accent in dark */
-  --gold-light:    #8fe8c8;   /* light sage – highlight */
-  --cream:         #1a1a2e;   /* deep navy – body/section bg */
-  --cream-mid:     #232248;   /* slightly elevated bg */
-  --cream-dark:    #2d2960;   /* borders, dividers */
-  --surface:       #232248;   /* card / form bg in dark */
-  --white:         #ffffff;   /* still pure white for text-on-dark elements */
-  --text:          #f0fbf5;   /* light primary text */
-  --text-mid:      #8fe8c8;   /* light sage – secondary text */
-  --text-light:    #a5b8c8;   /* muted */
+  /* Semantic (DARK MODE) */
+  --purple-main:   #3d3480;
+  --purple-dark:   #0f0f1c;
+  --gold:          #f5e6c4;   /* Pale shimmery gold for dark mode */
+  --gold-light:    #ffffff;
+  --cream:         #1a1a2e;
+  --cream-mid:     #232248;
+  --cream-dark:    #2d2960;
+  --surface:       #232248;
+  --white:         #ffffff;
+  --text:          #fdfbf7;
+  --text-mid:      #e2c58a;
+  --text-light:    #a5b8c8;
 }
 
 /* Smooth theme transition — only applied to elements that don't already
@@ -441,7 +439,11 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 .nav-links a:hover { color: var(--gold-light); }
 .nav-links a:hover::after { width: 100%; }
 
+.nav-links a.active { color: var(--gold-light); }
+.nav-links a.active::after { width: 100%; }
+
 #navbar.scrolled .nav-links a { color: var(--gold); }
+#navbar.scrolled .nav-links a.active { color: var(--gold-light); }
 #navbar.scrolled .nav-links a:hover { color: var(--gold-light); }
 
 .nav-cta {
@@ -601,7 +603,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 }
 
 .hero-content .eyebrow {
-  color: var(--white);
+  color: var(--gold);
   font-weight: 700;
 }
 
@@ -2699,7 +2701,7 @@ body.legal-page { background: var(--surface); }
 /* Floating Contact Button */
 .floating-contact {
   position: fixed;
-  bottom: 2rem;
+  bottom: 5.5rem; /* Lifted to avoid covering footer links */
   right: 2rem;
   z-index: 999;
   background: var(--gold); /* Delphinium teal */
@@ -2750,7 +2752,7 @@ body.legal-page { background: var(--surface); }
 
 @media (max-width: 600px) {
   .floating-contact {
-    bottom: 1.5rem;
+    bottom: 5rem; /* Lifted on mobile too */
     right: 1.5rem;
     padding: 0.8rem;
   }
