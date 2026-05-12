@@ -439,12 +439,20 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 .nav-links a:hover { color: var(--gold-light); }
 .nav-links a:hover::after { width: 100%; }
 
-.nav-links a.active { color: var(--gold-light); }
-.nav-links a.active::after { width: 100%; }
+.nav-links a.active { 
+  color: #c5a059; /* Stronger, more saturated gold */
+  font-weight: 700;
+}
 
-#navbar.scrolled .nav-links a { color: var(--gold); }
-#navbar.scrolled .nav-links a.active { color: var(--gold-light); }
-#navbar.scrolled .nav-links a:hover { color: var(--gold-light); }
+.nav-links a.active::after { 
+  width: 100%; 
+  height: 2px; /* Thicker underline */
+  background: #c5a059;
+}
+
+#navbar.scrolled .nav-links a { color: var(--text-mid); }
+#navbar.scrolled .nav-links a.active { color: #c5a059; }
+#navbar.scrolled .nav-links a:hover { color: var(--gold); }
 
 .nav-cta {
   border: 1px solid rgba(255,255,255,0.45) !important;
@@ -619,19 +627,60 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   text-rendering: optimizeLegibility;
 }
 
+@media (max-width: 600px) {
+  .hero-content h1 {
+    white-space: normal;
+    font-size: clamp(38px, 12vw, 56px);
+    line-height: 1.2;
+    margin-bottom: 1.8rem;
+  }
+}
+
 .hero-content p {
   color: rgba(255,255,255,0.85);
   font-size: clamp(1rem, 2vw, 1.18rem);
   max-width: 680px;
   margin: 0 auto 2.4rem auto;
   line-height: 1.85;
+  text-align: center;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem; /* Explicit fixed padding for mobile */
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px; /* Constrain the flex container itself */
+  }
+  
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-outline {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero-content p {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .hero-scroll {
