@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kontakt – Pascale Kohli, Rathausgasse 48, 3011 Bern. Termine ab April 2026 oder online via Zoom.">
+  <meta name="description" content="Kontakt – Pascale Kohli. Termine online via Zoom oder in Bern.">
   <title>Kontakt – Komm sprich mit mir</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +71,7 @@
   </div>
 </div>
 
-<div class="legal-hero">
+<div class="legal-hero" style="--legal-hero-img:url('images/WhatsApp%20Image%202026-05-07%20at%2023.16.35.jpeg')">
   <div class="legal-hero-inner">
     <p class="legal-breadcrumb">
       <a href="index.html">Komm sprich mit mir</a> &nbsp;/&nbsp;
@@ -90,23 +90,13 @@
 
     <!-- Left: contact details -->
     <div class="kontakt-info fade-up">
-      <span class="eyebrow" id="k-eb">Adresse &amp; Kontakt</span>
+      <span class="eyebrow" id="k-eb">Kontakt</span>
       <h2>Pascale Kohli</h2>
       <p class="kontakt-credentials" id="k-cred">
         Prozessorientierte Psychosoziale Beraterin SGFB<br>
         Supervisorin &amp; Coach BSO
       </p>
       <div class="kontakt-details-grid">
-        <div class="kontakt-block">
-          <div class="kontakt-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <h4 id="k-addr-h">Adresse</h4>
-            <p>Rathausgasse 48<br>3011 Bern</p>
-          </div>
-        </div>
-
         <div class="kontakt-block">
           <div class="kontakt-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.21h3.06a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -182,10 +172,8 @@
       <h4 data-i18n="footer.contact.header">Kontakt</h4>
       <ul>
         <li><span>Pascale Kohli</span></li>
-        <li><span>Rathausgasse 48 · 3011 Bern</span></li>
         <li><a href="tel:+41798555827">+41 79 855 58 27</a></li>
         <li><a href="mailto:pascale.kohli@hin.ch">pascale.kohli@hin.ch</a></li>
-        <li class="footer-note" data-i18n="footer.note">Anfragen bitte nur per E-Mail.</li>
       </ul>
     </div>
   </div>
@@ -206,22 +194,22 @@
 </footer>
 
 <script type="module" src="/main.js"></script>
-<script>
+<script type="module">
   const kontaktT = {
     de: {
       title: 'Kontakt', h1: 'Komm, sprich mit mir…', subtitle: 'Online oder in Bern',
-      eb: 'Adresse & Kontakt',
+      eb: 'Kontakt',
       cred: 'Prozessorientierte Psychosoziale Beraterin SGFB<br>Supervisorin & Coach BSO',
-      addr_h: 'Adresse', tel_h: 'Telefon', mail_h: 'E-Mail',
+      tel_h: 'Telefon', mail_h: 'E-Mail',
       threema_h: 'Threema', whatsapp_h: 'WhatsApp',
       note_h: 'Anfragen bitte nur per E-Mail.',
       note_p: 'Ich kontaktiere dich dann gerne telefonisch.'
     },
     en: {
       title: 'Contact', h1: 'Come, talk to me…', subtitle: 'Online or in Bern',
-      eb: 'Address & Contact',
+      eb: 'Contact',
       cred: 'Process-oriented Psychosocial Counsellor SGFB<br>Supervisor & Coach BSO',
-      addr_h: 'Address', tel_h: 'Phone', mail_h: 'Email',
+      tel_h: 'Phone', mail_h: 'Email',
       threema_h: 'Threema', whatsapp_h: 'WhatsApp',
       note_h: 'Please send inquiries via email only.',
       note_p: 'I will then be happy to contact you by telephone.'
@@ -234,7 +222,6 @@
     document.getElementById('pageSubtitle').textContent = p.subtitle;
     document.getElementById('k-eb').textContent         = p.eb;
     document.getElementById('k-cred').innerHTML         = p.cred;
-    document.getElementById('k-addr-h').textContent     = p.addr_h;
     document.getElementById('k-tel-h').textContent      = p.tel_h;
     document.getElementById('k-mail-h').textContent     = p.mail_h;
     document.getElementById('k-threema-h').textContent  = p.threema_h;

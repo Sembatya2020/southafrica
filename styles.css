@@ -1642,11 +1642,11 @@ body.legal-page { background: var(--surface); }
 
 .legal-hero {
   background: var(--purple-main);
-  padding: calc(var(--nav-h) + 1.5rem) var(--gutter) 1.5rem;
+  padding: calc(var(--nav-h) + 4rem) var(--gutter) 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 420px;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1656,10 +1656,21 @@ body.legal-page { background: var(--surface); }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('images/WhatsApp%20Image%202026-05-07%20at%2023.16.29.jpeg');
+  background-image: var(--legal-hero-img, url('images/WhatsApp%20Image%202026-05-07%20at%2023.16.29.jpeg'));
   background-size: cover;
   background-position: center;
-  opacity: 0.12;
+}
+
+.legal-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 46, 0.55) 0%,
+    rgba(26, 26, 46, 0.40) 55%,
+    rgba(26, 26, 46, 0.50) 100%
+  );
 }
 
 .legal-hero-inner { position: relative; z-index: 1; }
