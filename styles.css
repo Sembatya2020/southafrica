@@ -89,6 +89,7 @@ html.theme-no-anim, html.theme-no-anim * { transition: none !important; }
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -96,6 +97,7 @@ body {
   background: var(--cream);
   color: var(--text);
   overflow-x: hidden;
+  overscroll-behavior-y: none;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2466,6 +2468,62 @@ body.legal-page { background: var(--surface); }
   font-size: 1rem;
   margin: clamp(3rem, 5vw, 4rem) auto 0;
   opacity: 0.6;
+}
+
+.kontakt-booking {
+  max-width: 1040px;
+  margin: clamp(3rem, 6vw, 5rem) auto 0;
+  padding: 0 var(--gutter);
+}
+
+.kontakt-booking-head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.kontakt-booking-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--purple-main);
+  margin: 0.6rem 0 0.9rem;
+  line-height: 1.2;
+}
+
+.kontakt-booking-head p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-muted, rgba(26, 26, 46, 0.7));
+  line-height: 1.6;
+}
+
+.kontakt-booking .calendly-inline-widget {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 28px rgba(15, 15, 28, 0.08);
+  background: var(--surface, #fff);
+}
+
+.kontakt-booking-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: 2.5rem 1.5rem;
+  border: 1px dashed var(--cream-dark, rgba(15, 15, 28, 0.15));
+  border-radius: 8px;
+  background: var(--surface, #fff);
+  text-align: center;
+}
+
+.kontakt-booking-placeholder p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-muted, rgba(26, 26, 46, 0.6));
+  letter-spacing: 0.02em;
+  margin: 0;
 }
 
 @media (max-width: 860px) {

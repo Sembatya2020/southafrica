@@ -149,7 +149,53 @@
 
   <div class="kontakt-divider">* &nbsp; * &nbsp; * &nbsp; * &nbsp; *</div>
 
+  <!-- ─── BOOKING (Calendly) ──────────────────────────────────────
+       SETUP: 1. Pascale signs up at https://calendly.com (free plan).
+              2. Connect her Google Calendar in Calendly settings.
+              3. Create event types (e.g. 90-min Session, 60-min Session,
+                 15-min Free Call) and set availability.
+              4. Copy her Calendly username/link (e.g. "pascale-kohli")
+                 and replace it in the data-url below.
+       ─────────────────────────────────────────────────────────── -->
+  <div class="kontakt-booking fade-up" id="kontaktBooking" data-calendly-handle="pascale-kohli">
+    <div class="kontakt-booking-head">
+      <span class="eyebrow" id="k-book-eb">Online-Buchung</span>
+      <h2 id="k-book-h">Termin direkt buchen</h2>
+      <p id="k-book-p">Wähle eine Sitzungsart und einen passenden Zeitpunkt – die Bestätigung kommt automatisch per E-Mail.</p>
+    </div>
+    <div class="kontakt-booking-placeholder" id="k-book-placeholder">
+      <p id="k-book-soon">Das Buchungssystem wird bald aktiviert.</p>
+    </div>
+    <noscript>
+      <p style="text-align:center;margin-top:1rem">
+        <a id="k-book-fallback" href="#" target="_blank" rel="noopener" class="btn-primary">Zur Buchungsseite</a>
+      </p>
+    </noscript>
+  </div>
+
 </section>
+
+<script type="module">
+  // Activate the Calendly widget only once the real handle is in place.
+  // To go live: set data-calendly-handle="<her-real-handle>" on #kontaktBooking.
+  const booking = document.getElementById('kontaktBooking');
+  const handle  = booking?.dataset.calendlyHandle;
+  if (handle && handle !== 'pascale-kohli') {
+    const url = `https://calendly.com/${handle}?hide_landing_page_details=1&hide_gdpr_banner=1`;
+    const widget = document.createElement('div');
+    widget.className = 'calendly-inline-widget';
+    widget.dataset.url = url;
+    widget.style.minWidth = '320px';
+    widget.style.height = '720px';
+    document.getElementById('k-book-placeholder').replaceWith(widget);
+    const fb = document.getElementById('k-book-fallback');
+    if (fb) fb.href = `https://calendly.com/${handle}`;
+    const s = document.createElement('script');
+    s.src = 'https://assets.calendly.com/assets/external/widget.js';
+    s.async = true;
+    document.body.appendChild(s);
+  }
+</script>
 
 <footer>
   <div class="footer-top">
@@ -203,7 +249,12 @@
       tel_h: 'Telefon', mail_h: 'E-Mail',
       threema_h: 'Threema', whatsapp_h: 'WhatsApp',
       note_h: 'Anfragen bitte nur per E-Mail.',
-      note_p: 'Ich kontaktiere dich dann gerne telefonisch.'
+      note_p: 'Ich kontaktiere dich dann gerne telefonisch.',
+      book_eb: 'Online-Buchung',
+      book_h:  'Termin direkt buchen',
+      book_p:  'Wähle eine Sitzungsart und einen passenden Zeitpunkt – die Bestätigung kommt automatisch per E-Mail.',
+      book_soon: 'Das Buchungssystem wird bald aktiviert.',
+      book_fb: 'Zur Buchungsseite'
     },
     en: {
       title: 'Contact', h1: 'Come, talk to me…', subtitle: 'Online or in Bern',
@@ -212,7 +263,12 @@
       tel_h: 'Phone', mail_h: 'Email',
       threema_h: 'Threema', whatsapp_h: 'WhatsApp',
       note_h: 'Please send inquiries via email only.',
-      note_p: 'I will then be happy to contact you by telephone.'
+      note_p: 'I will then be happy to contact you by telephone.',
+      book_eb: 'Online booking',
+      book_h:  'Book a session directly',
+      book_p:  'Choose a session type and a time that suits you — you\'ll receive a confirmation by email automatically.',
+      book_soon: 'The booking system will be live soon.',
+      book_fb: 'Go to booking page'
     }
   };
   function applyKontakt(lang) {
@@ -228,6 +284,13 @@
     document.getElementById('k-whatsapp-h').textContent = p.whatsapp_h;
     document.getElementById('k-note-h').textContent     = p.note_h;
     document.getElementById('k-note-p').textContent     = p.note_p;
+    document.getElementById('k-book-eb').textContent    = p.book_eb;
+    document.getElementById('k-book-h').textContent     = p.book_h;
+    document.getElementById('k-book-p').textContent     = p.book_p;
+    const soon = document.getElementById('k-book-soon');
+    if (soon) soon.textContent = p.book_soon;
+    const fb = document.getElementById('k-book-fallback');
+    if (fb) fb.textContent = p.book_fb;
     document.title = p.title + ' – Komm sprich mit mir';
   }
   window._langCallbacks.push(applyKontakt);
