@@ -27,9 +27,9 @@
       'nav.approach':    'Mein Ansatz',
 
       /* Hero */
-      'hero.eyebrow': 'Psychosoziale Beratung · Supervision · Coaching · Bern',
+      'hero.eyebrow': 'Psychosoziale Beratung · Coaching',
       'hero.h1':      '<em>Komm, sprich mit mir…</em>',
-      'hero.p':       'Psychosoziale Beratung, Supervision und Coaching in Bern. Ein prozessorientierter Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.',
+      'hero.p':       'Psychosoziale Beratung und Coaching. Ein prozessorientierter Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.',
       'hero.btn1':    'Termin anfragen',
       'hero.btn2':    'Mehr über mich',
       'hero.scroll':  'Entdecken',
@@ -144,9 +144,9 @@
       'nav.approach':    'My Approach',
 
       /* Hero */
-      'hero.eyebrow': 'Psychosocial Counselling · Supervision · Coaching · Bern',
+      'hero.eyebrow': 'Psychosocial Counselling · Coaching',
       'hero.h1':      '<em>Come, talk to me…</em>',
-      'hero.p':       'Psychosocial counselling, supervision and coaching in Bern. A process-oriented space where what occupies you can become visible and understood.',
+      'hero.p':       'Psychosocial counselling and coaching. A process-oriented space where what occupies you can become visible and understood.',
       'hero.btn1':    'Request appointment',
       'hero.btn2':    'More about me',
       'hero.scroll':  'Discover',
