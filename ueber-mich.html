@@ -255,6 +255,7 @@
     document.getElementById('u-cta').textContent        = p.cta;
     document.title = p.title + ' – Komm sprich mit mir';
   }
+  window._langCallbacks = window._langCallbacks || [];
   window._langCallbacks.push(applyUeber);
   applyUeber(window.currentLang || 'de');
 </script>

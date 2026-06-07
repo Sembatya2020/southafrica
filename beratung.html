@@ -225,6 +225,7 @@
     document.getElementById('b-cta').textContent = p.cta;
     document.title = p.title + ' – Komm sprich mit mir';
   }
+  window._langCallbacks = window._langCallbacks || [];
   window._langCallbacks.push(applyBeratung);
   applyBeratung(window.currentLang || 'de');
 </script>

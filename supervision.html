@@ -240,6 +240,7 @@
     document.title = p.title + ' – Komm sprich mit mir';
   }
 
+  window._langCallbacks = window._langCallbacks || [];
   window._langCallbacks.push(applyPageContent);
   applyPageContent(window.currentLang || 'de');
 </script>

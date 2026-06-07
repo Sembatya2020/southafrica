@@ -252,7 +252,7 @@
   /* ─── i18n ───────────────────────────────────────────────────── */
   const STORAGE_LANG = 'kspmm.lang';
   let currentLang = localStorage.getItem(STORAGE_LANG) || 'de';
-  const langCallbacks = [];
+  const langCallbacks = window._langCallbacks || [];
 
   function applyLang(lang) {
     if (!t[lang]) lang = 'de';

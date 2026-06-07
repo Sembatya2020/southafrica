@@ -210,6 +210,7 @@
     list.innerHTML = p.logfilesList.map(item => `<li>${item}</li>`).join('');
   }
 
+  window._langCallbacks = window._langCallbacks || [];
   window._langCallbacks.push(applyPageContent);
   applyPageContent(window.currentLang || 'de');
 </script>

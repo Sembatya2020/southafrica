@@ -171,6 +171,7 @@
   }
 
   /* Register with main.js lang-switch callback system */
+  window._langCallbacks = window._langCallbacks || [];
   window._langCallbacks.push(applyPageContent);
 
   /* Apply current lang (set by main.js before this script runs) */
