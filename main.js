@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════════════════
    KOMM SPRICH MIT MIR — main.js
    - i18n (DE / EN)
    - navbar scroll state
@@ -59,11 +59,11 @@
 
       /* Philosophy */
       'phil.quote': '„Ewig forschend, weit reisend, immer wieder Neues entdeckend…"',
-      'phil.cite':  'Pascale Kohli',
+      'phil.cite':  'Pascale Myriam Kohli',
 
       /* About teaser (home) */
       'aboutT.eyebrow': 'Über mich',
-      'aboutT.h2':      'Pascale Kohli',
+      'aboutT.h2':      'Pascale Myriam Kohli',
       'aboutT.p1':      'Prozessorientierte Psychosoziale Beraterin SGFB, Supervisorin & Coach BSO. Ich arbeite zwischen der Schweiz und Südafrika und bringe Erfahrung aus mehreren Jahren im psychiatrischen und psychotherapeutischen Umfeld mit.',
       'aboutT.p2':      'Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Mit feinem Gespür und Klarheit darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen.',
       'aboutT.btn':     'Mehr über mich',
@@ -110,7 +110,7 @@
       'footer.nav.header':      'Navigation',
       'footer.contact.header':  'Kontakt',
       'footer.note':            'Anfragen bitte nur per E-Mail.',
-      'footer.copyright':       '© 2026 Komm sprich mit mir · Pascale Kohli',
+      'footer.copyright':       '© 2026 Komm sprich mit mir · Pascale Myriam Kohli',
       'footer.link.agb':         'AGB',
       'footer.link.nutzung':     'Nutzung & Impressum',
       'footer.link.datenschutz': 'Datenschutzrichtlinie',
@@ -176,11 +176,11 @@
 
       /* Philosophy */
       'phil.quote': '"Forever curious, widely travelled, always discovering something new…"',
-      'phil.cite':  'Pascale Kohli',
+      'phil.cite':  'Pascale Myriam Kohli',
 
       /* About teaser (home) */
       'aboutT.eyebrow': 'About me',
-      'aboutT.h2':      'Pascale Kohli',
+      'aboutT.h2':      'Pascale Myriam Kohli',
       'aboutT.p1':      'Process-oriented psychosocial counsellor SGFB, supervisor & coach BSO. I work between Switzerland and South Africa and bring several years of experience in psychiatric and psychotherapeutic environments.',
       'aboutT.p2':      'I am interested in the unspoken — what is there but rarely gets a space. With sensitivity and clarity, I support people in understanding inner processes and taking new steps.',
       'aboutT.btn':     'More about me',
@@ -227,7 +227,7 @@
       'footer.nav.header':      'Navigation',
       'footer.contact.header':  'Contact',
       'footer.note':            'Enquiries by email only, please.',
-      'footer.copyright':       '© 2026 Komm sprich mit mir · Pascale Kohli',
+      'footer.copyright':       '© 2026 Komm sprich mit mir · Pascale Myriam Kohli',
       'footer.link.agb':         'T & C',
       'footer.link.nutzung':     'Usage & Imprint',
       'footer.link.datenschutz': 'Privacy Policy',
