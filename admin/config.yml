@@ -66,6 +66,105 @@ collections:
           - { name: footer_copyright,label: "Footer – Copyright",         widget: string }
           - { name: footer_note,     label: "Footer – Hinweis",           widget: string }
 
+          - { name: beratung_page_title, label: "Beratung – Seitentitel",       widget: string }
+          - { name: beratung_h1,         label: "Beratung – Hauptüberschrift",  widget: string }
+          - { name: beratung_subtitle,   label: "Beratung – Untertitel",        widget: string }
+          - { name: beratung_h2_1,       label: "Beratung – Abschnitt 1 Titel", widget: string }
+          - { name: beratung_h2_2,       label: "Beratung – Abschnitt 2 Titel", widget: string }
+          - { name: beratung_p1,         label: "Beratung – Absatz 1",          widget: text }
+          - { name: beratung_p2,         label: "Beratung – Absatz 2",          widget: text }
+          - { name: beratung_p3,         label: "Beratung – Absatz 3",          widget: text }
+          - { name: beratung_p4,         label: "Beratung – Absatz 4",          widget: text }
+          - { name: beratung_p5,         label: "Beratung – Absatz 5",          widget: text }
+          - { name: beratung_p6,         label: "Beratung – Absatz 6",          widget: text }
+          - { name: beratung_p7,         label: "Beratung – Absatz 7",          widget: text }
+          - { name: beratung_p8,         label: "Beratung – Absatz 8",          widget: text }
+          - { name: beratung_p9,         label: "Beratung – Abschlusssatz",     widget: string }
+          - { name: beratung_info2,      label: "Beratung – Mitgliedschaft",    widget: string }
+          - { name: beratung_cta,        label: "Beratung – Button",            widget: string }
+
+          - { name: supervision_page_title, label: "Supervision – Seitentitel",       widget: string }
+          - { name: supervision_h1,         label: "Supervision – Hauptüberschrift",  widget: string }
+          - { name: supervision_subtitle,   label: "Supervision – Untertitel",        widget: string }
+          - { name: supervision_h2_1,       label: "Supervision – Abschnitt 1 Titel", widget: string }
+          - { name: supervision_h2_2,       label: "Supervision – Abschnitt 2 Titel", widget: string }
+          - { name: supervision_h2_3,       label: "Supervision – Abschnitt 3 Titel", widget: string }
+          - { name: supervision_p1,         label: "Supervision – Absatz 1",          widget: text }
+          - { name: supervision_p2,         label: "Supervision – Absatz 2",          widget: text }
+          - { name: supervision_p3,         label: "Supervision – Absatz 3",          widget: text }
+          - { name: supervision_p4,         label: "Supervision – Absatz 4",          widget: text }
+          - { name: supervision_p5,         label: "Supervision – Absatz 5",          widget: text }
+          - { name: supervision_p6,         label: "Supervision – Absatz 6",          widget: text }
+          - { name: supervision_p7,         label: "Supervision – Absatz 7",          widget: text }
+          - { name: supervision_p8,         label: "Supervision – Absatz 8",          widget: text }
+          - { name: supervision_p9,         label: "Supervision – Absatz 9",          widget: text }
+          - { name: supervision_p10,        label: "Supervision – Absatz 10",         widget: text }
+          - { name: supervision_p11,        label: "Supervision – Absatz 11",         widget: text }
+          - { name: supervision_bso2,       label: "Supervision – BSO Beschreibung",  widget: text }
+          - { name: supervision_cta,        label: "Supervision – Button",            widget: string }
+
+          - { name: preise_page_title,  label: "Preise – Seitentitel",         widget: string }
+          - { name: preise_h1,          label: "Preise – Hauptüberschrift",    widget: string }
+          - { name: preise_subtitle,    label: "Preise – Untertitel",          widget: string }
+          - { name: preise_intro,       label: "Preise – Einleitung",          widget: text }
+          - { name: preise_eb1,         label: "Preiskarte 1 – Dauer",         widget: string }
+          - { name: preise_eb2,         label: "Preiskarte 2 – Kategorie",     widget: string }
+          - { name: preise_eb3,         label: "Preiskarte 3 – Dauer",         widget: string }
+          - { name: preise_unit,        label: "Preise – Einheit (/ Stunde)",  widget: string }
+          - { name: preise_d1,          label: "Preiskarte 1 – Beschreibung",  widget: text }
+          - { name: preise_d2,          label: "Preiskarte 2 – Beschreibung",  widget: text }
+          - { name: preise_d3,          label: "Preiskarte 3 – Beschreibung",  widget: text }
+          - { name: preise_l1,          label: "Preiskarte 1 – Link",          widget: string }
+          - { name: preise_l2,          label: "Preiskarte 2 – Link",          widget: string }
+          - { name: preise_l3,          label: "Preiskarte 3 – Link",          widget: string }
+          - { name: preise_disc_h,      label: "Preise – Rabatt Titel",        widget: string }
+          - { name: preise_disc_intro,  label: "Preise – Rabatt Einleitung",   widget: text }
+          - { name: preise_disc_l1,     label: "Preise – Rabatt 1",            widget: string }
+          - { name: preise_disc_l2,     label: "Preise – Rabatt 2",            widget: string }
+          - { name: preise_pay_h,       label: "Preise – Bezahlung Titel",     widget: string }
+          - { name: preise_pay_p,       label: "Preise – Bezahlung Text",      widget: text }
+          - { name: preise_uns_h,       label: "Preise – Unsicher Titel",      widget: string }
+          - { name: preise_uns_p,       label: "Preise – Unsicher Text",       widget: text }
+          - { name: preise_uns_cta,     label: "Preise – Button",              widget: string }
+
+          - { name: about_page_title,   label: "Über mich – Seitentitel",          widget: string }
+          - { name: about_h1,           label: "Über mich – Hauptüberschrift",     widget: string }
+          - { name: about_subtitle,     label: "Über mich – Untertitel",           widget: string }
+          - { name: about_p1,           label: "Über mich – Persönlich 1",         widget: text }
+          - { name: about_p2,           label: "Über mich – Persönlich 2",         widget: text }
+          - { name: about_p3,           label: "Über mich – Persönlich 3",         widget: text }
+          - { name: about_quote,        label: "Über mich – Zitat",               widget: text }
+          - { name: about_p4,           label: "Über mich – Persönlich 4",         widget: text }
+          - { name: about_p5,           label: "Über mich – Persönlich 5",         widget: text }
+          - { name: about_p6,           label: "Über mich – Persönlich 6",         widget: text }
+          - { name: about_bg_h2,        label: "Über mich – Hintergrund Titel",    widget: string }
+          - { name: about_bg_p1,        label: "Über mich – Hintergrund 1",        widget: text }
+          - { name: about_bg_p2,        label: "Über mich – Hintergrund 2",        widget: text }
+          - { name: about_wb_h,         label: "Über mich – Weiterbildung Titel",  widget: string }
+          - { name: about_wb_p,         label: "Über mich – Weiterbildung Intro",  widget: text }
+          - { name: about_b1,           label: "Über mich – Weiterbildung 1",      widget: string }
+          - { name: about_b2,           label: "Über mich – Weiterbildung 2",      widget: string }
+          - { name: about_b3,           label: "Über mich – Weiterbildung 3",      widget: string }
+          - { name: about_b4,           label: "Über mich – Weiterbildung 4",      widget: string }
+          - { name: about_insp_h,       label: "Über mich – Inspirationen Titel",  widget: string }
+          - { name: about_insp_p,       label: "Über mich – Inspirationen Text",   widget: text }
+          - { name: about_cta,          label: "Über mich – Button",               widget: string }
+
+          - { name: kontakt_page_title, label: "Kontakt – Seitentitel",        widget: string }
+          - { name: kontakt_h1,         label: "Kontakt – Hauptüberschrift",   widget: string }
+          - { name: kontakt_subtitle,   label: "Kontakt – Untertitel",         widget: string }
+          - { name: kontakt_eb,         label: "Kontakt – Kleiner Text",       widget: string }
+          - { name: kontakt_tel_h,      label: "Kontakt – Telefon Titel",      widget: string }
+          - { name: kontakt_mail_h,     label: "Kontakt – E-Mail Titel",       widget: string }
+          - { name: kontakt_threema_h,  label: "Kontakt – Threema Titel",      widget: string }
+          - { name: kontakt_whatsapp_h, label: "Kontakt – WhatsApp Titel",     widget: string }
+          - { name: kontakt_note_h,     label: "Kontakt – Hinweis Titel",      widget: string }
+          - { name: kontakt_note_p,     label: "Kontakt – Hinweis Text",       widget: text }
+          - { name: kontakt_book_eb,    label: "Kontakt – Buchung Kleiner Text", widget: string }
+          - { name: kontakt_book_h,     label: "Kontakt – Buchung Titel",      widget: string }
+          - { name: kontakt_book_p,     label: "Kontakt – Buchung Text",       widget: text }
+          - { name: kontakt_book_soon,  label: "Kontakt – Buchung bald Text",  widget: string }
+
       - name: "english"
         label: "🇬🇧 English – Edit texts"
         file: "content-en.json"
@@ -119,3 +218,102 @@ collections:
           - { name: footer_brand,    label: "Footer – Description",       widget: text }
           - { name: footer_copyright,label: "Footer – Copyright",         widget: string }
           - { name: footer_note,     label: "Footer – Note",              widget: string }
+
+          - { name: beratung_page_title, label: "Counselling – Page title",      widget: string }
+          - { name: beratung_h1,         label: "Counselling – Main heading",    widget: string }
+          - { name: beratung_subtitle,   label: "Counselling – Subtitle",        widget: string }
+          - { name: beratung_h2_1,       label: "Counselling – Section 1 title", widget: string }
+          - { name: beratung_h2_2,       label: "Counselling – Section 2 title", widget: string }
+          - { name: beratung_p1,         label: "Counselling – Paragraph 1",     widget: text }
+          - { name: beratung_p2,         label: "Counselling – Paragraph 2",     widget: text }
+          - { name: beratung_p3,         label: "Counselling – Paragraph 3",     widget: text }
+          - { name: beratung_p4,         label: "Counselling – Paragraph 4",     widget: text }
+          - { name: beratung_p5,         label: "Counselling – Paragraph 5",     widget: text }
+          - { name: beratung_p6,         label: "Counselling – Paragraph 6",     widget: text }
+          - { name: beratung_p7,         label: "Counselling – Paragraph 7",     widget: text }
+          - { name: beratung_p8,         label: "Counselling – Paragraph 8",     widget: text }
+          - { name: beratung_p9,         label: "Counselling – Closing sentence", widget: string }
+          - { name: beratung_info2,      label: "Counselling – Membership",      widget: string }
+          - { name: beratung_cta,        label: "Counselling – Button",          widget: string }
+
+          - { name: supervision_page_title, label: "Supervision – Page title",      widget: string }
+          - { name: supervision_h1,         label: "Supervision – Main heading",    widget: string }
+          - { name: supervision_subtitle,   label: "Supervision – Subtitle",        widget: string }
+          - { name: supervision_h2_1,       label: "Supervision – Section 1 title", widget: string }
+          - { name: supervision_h2_2,       label: "Supervision – Section 2 title", widget: string }
+          - { name: supervision_h2_3,       label: "Supervision – Section 3 title", widget: string }
+          - { name: supervision_p1,         label: "Supervision – Paragraph 1",     widget: text }
+          - { name: supervision_p2,         label: "Supervision – Paragraph 2",     widget: text }
+          - { name: supervision_p3,         label: "Supervision – Paragraph 3",     widget: text }
+          - { name: supervision_p4,         label: "Supervision – Paragraph 4",     widget: text }
+          - { name: supervision_p5,         label: "Supervision – Paragraph 5",     widget: text }
+          - { name: supervision_p6,         label: "Supervision – Paragraph 6",     widget: text }
+          - { name: supervision_p7,         label: "Supervision – Paragraph 7",     widget: text }
+          - { name: supervision_p8,         label: "Supervision – Paragraph 8",     widget: text }
+          - { name: supervision_p9,         label: "Supervision – Paragraph 9",     widget: text }
+          - { name: supervision_p10,        label: "Supervision – Paragraph 10",    widget: text }
+          - { name: supervision_p11,        label: "Supervision – Paragraph 11",    widget: text }
+          - { name: supervision_bso2,       label: "Supervision – BSO description", widget: text }
+          - { name: supervision_cta,        label: "Supervision – Button",          widget: string }
+
+          - { name: preise_page_title,  label: "Pricing – Page title",         widget: string }
+          - { name: preise_h1,          label: "Pricing – Main heading",       widget: string }
+          - { name: preise_subtitle,    label: "Pricing – Subtitle",           widget: string }
+          - { name: preise_intro,       label: "Pricing – Intro",              widget: text }
+          - { name: preise_eb1,         label: "Card 1 – Duration label",      widget: string }
+          - { name: preise_eb2,         label: "Card 2 – Category label",      widget: string }
+          - { name: preise_eb3,         label: "Card 3 – Duration label",      widget: string }
+          - { name: preise_unit,        label: "Pricing – Unit (/ hour)",      widget: string }
+          - { name: preise_d1,          label: "Card 1 – Description",         widget: text }
+          - { name: preise_d2,          label: "Card 2 – Description",         widget: text }
+          - { name: preise_d3,          label: "Card 3 – Description",         widget: text }
+          - { name: preise_l1,          label: "Card 1 – Link",                widget: string }
+          - { name: preise_l2,          label: "Card 2 – Link",                widget: string }
+          - { name: preise_l3,          label: "Card 3 – Link",                widget: string }
+          - { name: preise_disc_h,      label: "Pricing – Discount heading",   widget: string }
+          - { name: preise_disc_intro,  label: "Pricing – Discount intro",     widget: text }
+          - { name: preise_disc_l1,     label: "Pricing – Discount 1",         widget: string }
+          - { name: preise_disc_l2,     label: "Pricing – Discount 2",         widget: string }
+          - { name: preise_pay_h,       label: "Pricing – Payment heading",    widget: string }
+          - { name: preise_pay_p,       label: "Pricing – Payment text",       widget: text }
+          - { name: preise_uns_h,       label: "Pricing – Unsure heading",     widget: string }
+          - { name: preise_uns_p,       label: "Pricing – Unsure text",        widget: text }
+          - { name: preise_uns_cta,     label: "Pricing – Button",             widget: string }
+
+          - { name: about_page_title,   label: "About – Page title",           widget: string }
+          - { name: about_h1,           label: "About – Main heading",         widget: string }
+          - { name: about_subtitle,     label: "About – Subtitle",             widget: string }
+          - { name: about_p1,           label: "About – Personal 1",           widget: text }
+          - { name: about_p2,           label: "About – Personal 2",           widget: text }
+          - { name: about_p3,           label: "About – Personal 3",           widget: text }
+          - { name: about_quote,        label: "About – Quote",                widget: text }
+          - { name: about_p4,           label: "About – Personal 4",           widget: text }
+          - { name: about_p5,           label: "About – Personal 5",           widget: text }
+          - { name: about_p6,           label: "About – Personal 6",           widget: text }
+          - { name: about_bg_h2,        label: "About – Background heading",   widget: string }
+          - { name: about_bg_p1,        label: "About – Background 1",         widget: text }
+          - { name: about_bg_p2,        label: "About – Background 2",         widget: text }
+          - { name: about_wb_h,         label: "About – Education heading",    widget: string }
+          - { name: about_wb_p,         label: "About – Education intro",      widget: text }
+          - { name: about_b1,           label: "About – Training 1",           widget: string }
+          - { name: about_b2,           label: "About – Training 2",           widget: string }
+          - { name: about_b3,           label: "About – Training 3",           widget: string }
+          - { name: about_b4,           label: "About – Training 4",           widget: string }
+          - { name: about_insp_h,       label: "About – Inspirations heading", widget: string }
+          - { name: about_insp_p,       label: "About – Inspirations text",    widget: text }
+          - { name: about_cta,          label: "About – Button",               widget: string }
+
+          - { name: kontakt_page_title, label: "Contact – Page title",        widget: string }
+          - { name: kontakt_h1,         label: "Contact – Main heading",      widget: string }
+          - { name: kontakt_subtitle,   label: "Contact – Subtitle",          widget: string }
+          - { name: kontakt_eb,         label: "Contact – Small text",        widget: string }
+          - { name: kontakt_tel_h,      label: "Contact – Phone heading",     widget: string }
+          - { name: kontakt_mail_h,     label: "Contact – Email heading",     widget: string }
+          - { name: kontakt_threema_h,  label: "Contact – Threema heading",   widget: string }
+          - { name: kontakt_whatsapp_h, label: "Contact – WhatsApp heading",  widget: string }
+          - { name: kontakt_note_h,     label: "Contact – Note heading",      widget: string }
+          - { name: kontakt_note_p,     label: "Contact – Note text",         widget: text }
+          - { name: kontakt_book_eb,    label: "Contact – Booking small text", widget: string }
+          - { name: kontakt_book_h,     label: "Contact – Booking heading",   widget: string }
+          - { name: kontakt_book_p,     label: "Contact – Booking text",      widget: text }
+          - { name: kontakt_book_soon,  label: "Contact – Booking soon text", widget: string }
