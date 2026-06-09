@@ -1,0 +1,134 @@
+{
+  "de": {
+    "hero": {
+      "eyebrow": "Psychosoziale Beratung · Coaching",
+      "h1": "<em>Komm, sprich mit mir…</em>",
+      "p": "Psychosoziale Beratung und Coaching. Ein prozessorientierter Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.",
+      "btn1": "Termin anfragen",
+      "btn2": "Mehr über mich"
+    },
+    "welcome": {
+      "eyebrow": "Willkommen",
+      "h2": "Ein Raum, in dem das, was dich beschäftigt, sichtbar werden darf.",
+      "p1": "Du befindest dich in einer Phase der Unklarheit, bist vielleicht unsicher, wie es bei dir weitergehen könnte? Belastet dich eine Krise, fühlst du Ängste oder Trauer oder möchtest dich weiterentwickeln und neue Wege entdecken?",
+      "p2": "Dann sei willkommen in einem Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.",
+      "p3": "Ich begleite dich als aufmerksame Gesprächspartnerin, Mitforschende und Impulsgeberin. Meine Arbeitsweise ist prozessorientiert.",
+      "p4": "Körperempfindungen, innere Bilder, Bewegung und Stillstand, Töne und Worte – alles darf da sein.",
+      "p5": "Du musst nichts mitbringen. Es reicht, wenn du spürst, dass du hinschauen möchtest.",
+      "p6": "Wenn du selbst mit Klienten arbeitest, stehe ich dir als BSO anerkannte Supervisorin zur Verfügung, um deine fachliche Arbeit gemeinsam zu reflektieren und weiterzuentwickeln."
+    },
+    "services": {
+      "eyebrow": "Mein Angebot",
+      "h2": "Drei Wege, miteinander zu arbeiten",
+      "p": "Ob für deinen persönlichen Weg, deine fachliche Reflexion oder deine berufliche Entwicklung – ich begleite dich prozessorientiert und auf Augenhöhe.",
+      "card1": {
+        "h3": "Beratung & Coaching",
+        "p": "Prozessorientierte psychosoziale Beratung SGFB für Menschen in Phasen der Unklarheit, Krise oder Entwicklung."
+      },
+      "card2": {
+        "h3": "Supervision",
+        "p": "Als BSO anerkannte Supervisorin begleite ich Fachpersonen beim Reflektieren ihrer Arbeit – auf Augenhöhe."
+      },
+      "card3": {
+        "h3": "Erstgespräch",
+        "p": "Du bist unsicher, ob mein Angebot zu dir passt? Melde dich gerne unverbindlich – ich freue mich, von dir zu hören."
+      }
+    },
+    "phil": {
+      "quote": "„Ewig forschend, weit reisend, immer wieder Neues entdeckend…"",
+      "cite": "Pascale Myriam Kohli"
+    },
+    "aboutT": {
+      "eyebrow": "Über mich",
+      "h2": "Pascale Myriam Kohli",
+      "p1": "Prozessorientierte Psychosoziale Beraterin SGFB, Supervisorin & Coach BSO. Ich arbeite zwischen der Schweiz und Südafrika und bringe Erfahrung aus mehreren Jahren im psychiatrischen und psychotherapeutischen Umfeld mit.",
+      "p2": "Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Mit feinem Gespür und Klarheit darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen.",
+      "btn": "Mehr über mich"
+    },
+    "testi": {
+      "eb": "KUNDENSTIMMEN",
+      "h2": "Was Klient:innen sagen",
+      "q1": "Die Zusammenarbeit mit Pascale gab mir die Klarheit, nach der ich jahrelang gesucht hatte. Sie hört tief zu und hält den Raum auf wunderbare Weise.",
+      "c1": "S.M., Klientin für Psychosoziale Beratung",
+      "q2": "Die Supervisionssitzungen haben mir geholfen, sowohl beruflich als auch persönlich zu wachsen. Ich ging jedes Mal geerdeter nach Hause.",
+      "c2": "T.B., Supervisions-Klient, Bern"
+    },
+    "cta": {
+      "h2": "Bereit für ein erstes Gespräch?",
+      "p": "Wenn du unsicher bist, ob mein Angebot zu dir passt – melde dich gerne unverbindlich.",
+      "btn1": "Kontakt aufnehmen",
+      "btn2": "Preise ansehen"
+    },
+    "footer": {
+      "brand": "Prozessorientierte Psychosoziale Beratung, Supervision und Coaching.",
+      "copyright": "© 2026 Komm sprich mit mir · Pascale Myriam Kohli",
+      "note": "Anfragen bitte nur per E-Mail."
+    }
+  },
+  "en": {
+    "hero": {
+      "eyebrow": "Psychosocial Counselling · Coaching",
+      "h1": "<em>Come, talk to me…</em>",
+      "p": "Psychosocial counselling and coaching. A process-oriented space where what occupies you can become visible and understood.",
+      "btn1": "Request appointment",
+      "btn2": "More about me"
+    },
+    "welcome": {
+      "eyebrow": "Welcome",
+      "h2": "A space where what occupies you can become visible.",
+      "p1": "Are you in a phase of uncertainty, perhaps unsure how to move forward? Are you burdened by a crisis, feeling fear or grief — or would you like to grow and discover new paths?",
+      "p2": "Then welcome to a space where what occupies you can become visible and understood.",
+      "p3": "I accompany you as an attentive conversation partner, fellow researcher and source of inspiration. My approach is process-oriented.",
+      "p4": "Body sensations, inner images, movement and stillness, sounds and words — everything is welcome.",
+      "p5": "You don't need to bring anything. It is enough to sense that you want to take a closer look.",
+      "p6": "If you work with clients yourself, I am available as a BSO-certified supervisor to reflect on and develop your professional practice together."
+    },
+    "services": {
+      "eyebrow": "What I offer",
+      "h2": "Three ways to work together",
+      "p": "Whether for your personal path, your professional reflection or your career development — I accompany you process-oriented and at eye level.",
+      "card1": {
+        "h3": "Counselling & Coaching",
+        "p": "Process-oriented psychosocial counselling SGFB for people in phases of uncertainty, crisis or development."
+      },
+      "card2": {
+        "h3": "Supervision",
+        "p": "As a BSO-certified supervisor I support professionals in reflecting on their work — at eye level."
+      },
+      "card3": {
+        "h3": "First conversation",
+        "p": "Unsure whether my offering suits you? Get in touch without obligation — I look forward to hearing from you."
+      }
+    },
+    "phil": {
+      "quote": "\"Forever curious, widely travelled, always discovering something new…\"",
+      "cite": "Pascale Myriam Kohli"
+    },
+    "aboutT": {
+      "eyebrow": "About me",
+      "h2": "Pascale Myriam Kohli",
+      "p1": "Process-oriented psychosocial counsellor SGFB, supervisor & coach BSO. I work between Switzerland and South Africa and bring several years of experience in psychiatric and psychotherapeutic environments.",
+      "p2": "I am interested in the unspoken — what is there but rarely gets a space. With sensitivity and clarity, I support people in understanding inner processes and taking new steps.",
+      "btn": "More about me"
+    },
+    "testi": {
+      "eb": "KIND WORDS",
+      "h2": "What clients say",
+      "q1": "Working with Pascale gave me the clarity I had been searching for years. She listens deeply and holds space beautifully.",
+      "c1": "S.M., Psychosocial Counselling client",
+      "q2": "The supervision sessions helped me grow both professionally and personally. I always left feeling more grounded.",
+      "c2": "T.B., Supervision client, Bern"
+    },
+    "cta": {
+      "h2": "Ready for a first conversation?",
+      "p": "If you're unsure whether my offering fits you — get in touch without obligation.",
+      "btn1": "Get in touch",
+      "btn2": "View pricing"
+    },
+    "footer": {
+      "brand": "Process-oriented psychosocial counselling, supervision and coaching.",
+      "copyright": "© 2026 Komm sprich mit mir · Pascale Myriam Kohli",
+      "note": "Enquiries by email only, please."
+    }
+  }
+}

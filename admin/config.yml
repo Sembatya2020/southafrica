@@ -1,0 +1,215 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: de
+
+collections:
+  - name: "content"
+    label: "Website Inhalte"
+    files:
+
+      - name: "deutsch"
+        label: "🇩🇪 Deutsch (DE)"
+        file: "content.json"
+        fields:
+          - name: de
+            label: Deutsch
+            widget: object
+            fields:
+
+              - name: hero
+                label: "Startseite – Hero (Hauptbild)"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Kleiner Text oben", widget: string }
+                  - { name: h1, label: "Hauptüberschrift", widget: string, hint: "HTML erlaubt, z.B. <em>Text</em>" }
+                  - { name: p, label: "Untertitel", widget: text }
+                  - { name: btn1, label: "Button 1 (Termin)", widget: string }
+                  - { name: btn2, label: "Button 2 (Über mich)", widget: string }
+
+              - name: welcome
+                label: "Startseite – Willkommen"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Kleiner Text oben", widget: string }
+                  - { name: h2, label: "Überschrift", widget: string }
+                  - { name: p1, label: "Absatz 1", widget: text }
+                  - { name: p2, label: "Absatz 2", widget: text }
+                  - { name: p3, label: "Absatz 3", widget: text }
+                  - { name: p4, label: "Absatz 4", widget: text }
+                  - { name: p5, label: "Absatz 5 (kursiv)", widget: text }
+                  - { name: p6, label: "Absatz 6 (Supervision)", widget: text }
+
+              - name: services
+                label: "Startseite – Mein Angebot"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Kleiner Text oben", widget: string }
+                  - { name: h2, label: "Überschrift", widget: string }
+                  - { name: p, label: "Einleitung", widget: text }
+                  - name: card1
+                    label: "Karte 1 – Beratung & Coaching"
+                    widget: object
+                    fields:
+                      - { name: h3, label: "Titel", widget: string }
+                      - { name: p, label: "Beschreibung", widget: text }
+                  - name: card2
+                    label: "Karte 2 – Supervision"
+                    widget: object
+                    fields:
+                      - { name: h3, label: "Titel", widget: string }
+                      - { name: p, label: "Beschreibung", widget: text }
+                  - name: card3
+                    label: "Karte 3 – Erstgespräch"
+                    widget: object
+                    fields:
+                      - { name: h3, label: "Titel", widget: string }
+                      - { name: p, label: "Beschreibung", widget: text }
+
+              - name: phil
+                label: "Zitat / Philosophie"
+                widget: object
+                fields:
+                  - { name: quote, label: "Zitat", widget: text }
+                  - { name: cite, label: "Autorin", widget: string }
+
+              - name: aboutT
+                label: "Startseite – Über mich"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Kleiner Text oben", widget: string }
+                  - { name: h2, label: "Name", widget: string }
+                  - { name: p1, label: "Absatz 1", widget: text }
+                  - { name: p2, label: "Absatz 2", widget: text }
+                  - { name: btn, label: "Button Text", widget: string }
+
+              - name: testi
+                label: "Kundenstimmen"
+                widget: object
+                fields:
+                  - { name: eb, label: "Kleiner Text oben", widget: string }
+                  - { name: h2, label: "Überschrift", widget: string }
+                  - { name: q1, label: "Bewertung 1 – Text", widget: text }
+                  - { name: c1, label: "Bewertung 1 – Name/Beschreibung", widget: string }
+                  - { name: q2, label: "Bewertung 2 – Text", widget: text }
+                  - { name: c2, label: "Bewertung 2 – Name/Beschreibung", widget: string }
+
+              - name: cta
+                label: "Startseite – Call to Action"
+                widget: object
+                fields:
+                  - { name: h2, label: "Überschrift", widget: string }
+                  - { name: p, label: "Text", widget: text }
+                  - { name: btn1, label: "Button 1", widget: string }
+                  - { name: btn2, label: "Button 2", widget: string }
+
+              - name: footer
+                label: "Footer"
+                widget: object
+                fields:
+                  - { name: brand, label: "Kurzbeschreibung", widget: text }
+                  - { name: copyright, label: "Copyright", widget: string }
+                  - { name: note, label: "Hinweis (Anfragen)", widget: string }
+
+          - name: en
+            label: Englisch
+            widget: object
+            fields:
+
+              - name: hero
+                label: "Home – Hero"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Small text top", widget: string }
+                  - { name: h1, label: "Main headline", widget: string, hint: "HTML allowed, e.g. <em>Text</em>" }
+                  - { name: p, label: "Subtitle", widget: text }
+                  - { name: btn1, label: "Button 1 (Appointment)", widget: string }
+                  - { name: btn2, label: "Button 2 (About)", widget: string }
+
+              - name: welcome
+                label: "Home – Welcome"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Small text top", widget: string }
+                  - { name: h2, label: "Heading", widget: string }
+                  - { name: p1, label: "Paragraph 1", widget: text }
+                  - { name: p2, label: "Paragraph 2", widget: text }
+                  - { name: p3, label: "Paragraph 3", widget: text }
+                  - { name: p4, label: "Paragraph 4", widget: text }
+                  - { name: p5, label: "Paragraph 5 (italic)", widget: text }
+                  - { name: p6, label: "Paragraph 6 (Supervision)", widget: text }
+
+              - name: services
+                label: "Home – Services"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Small text top", widget: string }
+                  - { name: h2, label: "Heading", widget: string }
+                  - { name: p, label: "Intro", widget: text }
+                  - name: card1
+                    label: "Card 1 – Counselling"
+                    widget: object
+                    fields:
+                      - { name: h3, label: "Title", widget: string }
+                      - { name: p, label: "Description", widget: text }
+                  - name: card2
+                    label: "Card 2 – Supervision"
+                    widget: object
+                    fields:
+                      - { name: h3, label: "Title", widget: string }
+                      - { name: p, label: "Description", widget: text }
+                  - name: card3
+                    label: "Card 3 – First conversation"
+                    widget: object
+                    fields:
+                      - { name: h3, label: "Title", widget: string }
+                      - { name: p, label: "Description", widget: text }
+
+              - name: phil
+                label: "Quote / Philosophy"
+                widget: object
+                fields:
+                  - { name: quote, label: "Quote", widget: text }
+                  - { name: cite, label: "Author", widget: string }
+
+              - name: aboutT
+                label: "Home – About me"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Small text top", widget: string }
+                  - { name: h2, label: "Name", widget: string }
+                  - { name: p1, label: "Paragraph 1", widget: text }
+                  - { name: p2, label: "Paragraph 2", widget: text }
+                  - { name: btn, label: "Button text", widget: string }
+
+              - name: testi
+                label: "Testimonials"
+                widget: object
+                fields:
+                  - { name: eb, label: "Small text top", widget: string }
+                  - { name: h2, label: "Heading", widget: string }
+                  - { name: q1, label: "Review 1 – Text", widget: text }
+                  - { name: c1, label: "Review 1 – Name", widget: string }
+                  - { name: q2, label: "Review 2 – Text", widget: text }
+                  - { name: c2, label: "Review 2 – Name", widget: string }
+
+              - name: cta
+                label: "Home – Call to Action"
+                widget: object
+                fields:
+                  - { name: h2, label: "Heading", widget: string }
+                  - { name: p, label: "Text", widget: text }
+                  - { name: btn1, label: "Button 1", widget: string }
+                  - { name: btn2, label: "Button 2", widget: string }
+
+              - name: footer
+                label: "Footer"
+                widget: object
+                fields:
+                  - { name: brand, label: "Short description", widget: text }
+                  - { name: copyright, label: "Copyright", widget: string }
+                  - { name: note, label: "Note (enquiries)", widget: string }

@@ -254,6 +254,32 @@
   let currentLang = localStorage.getItem(STORAGE_LANG) || 'de';
   const langCallbacks = window._langCallbacks || [];
 
+  /* Flatten nested {hero:{h1:"..."}} → {"hero.h1":"..."} */
+  function flattenContent(obj, prefix) {
+    return Object.keys(obj).reduce(function(acc, key) {
+      var full = prefix ? prefix + '.' + key : key;
+      if (obj[key] !== null && typeof obj[key] === 'object') {
+        Object.assign(acc, flattenContent(obj[key], full));
+      } else {
+        acc[full] = obj[key];
+      }
+      return acc;
+    }, {});
+  }
+
+  /* Load content.json from CMS and merge into t, then apply language */
+  function loadCMSContent(callback) {
+    fetch('content.json?v=' + Date.now())
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        ['de', 'en'].forEach(function(lang) {
+          if (data[lang]) Object.assign(t[lang], flattenContent(data[lang], ''));
+        });
+      })
+      .catch(function() { /* silently fall back to hardcoded defaults */ })
+      .finally(callback);
+  }
+
   function applyLang(lang) {
     if (!t[lang]) lang = 'de';
     currentLang = lang;
@@ -533,9 +559,13 @@
     document.body.appendChild(floatingBtn);
   }
 
+  function startWithCMS() {
+    loadCMSContent(init);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', startWithCMS);
   } else {
-    init();
+    startWithCMS();
   }
 })();
