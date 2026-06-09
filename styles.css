@@ -1835,7 +1835,8 @@ body.legal-page { background: var(--surface); }
   }
 
   .about-image-wrap::after { display: none; }
-  .about-image { aspect-ratio: 16 / 10; max-width: 520px; }
+  .about-image { aspect-ratio: 3 / 4; max-width: 420px; }
+  .about-image img { object-position: center top; }
 
   .approach-images {
     height: 300px;
