@@ -571,11 +571,11 @@
   "preise_uns_h": "Unsicher, ob es passt?",
   "preise_cards": [
     {
-      "eyebrow": "90 Minuten",
+      "eyebrow": "Supervision",
       "currency": "CHF",
-      "price": "160",
-      "unit": "/ pro Sitzung",
-      "desc": "Für Fachpersonen, die ihre Arbeit reflektieren und weiterentwickeln möchten.",
+      "price": "180",
+      "unit": "/ 90 Minuten",
+      "desc": "SUPERVISION\nFür Fachpersonen in den Bereichen Beratung und Therapie, die ihre Arbeit reflektieren und weiterentwickeln möchten.",
       "link_text": "Mehr zu Supervision →",
       "link": "supervision.html"
     },
@@ -583,10 +583,16 @@
       "eyebrow": "15 Minuten",
       "currency": "CHF",
       "price": "0",
-      "unit": "",
+      "unit": "/ Sitzung",
       "desc": "Ein kostenloses Kennenlerngespräch. 15 Minuten, damit wir beide die Möglichkeiten einer Zusammenarbeit erforschen können.",
       "link_text": "Termin anfragen →",
       "link": "kontakt.html"
+    },
+    {
+      "currency": "CHF",
+      "eyebrow": "Beratung & Coaching",
+      "price": "160",
+      "unit": "/ Sitzung"
     }
   ],
   "supervision_p1": "Wenn du selbst mit Menschen arbeitest, kennst du die Komplexität, die diese Arbeit mit sich bringt.",
