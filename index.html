@@ -116,17 +116,14 @@
     <span class="eyebrow" data-i18n="welcome.eyebrow">Willkommen</span>
     <h2 data-i18n="welcome.h2">Ein Raum, in dem das, was dich beschäftigt, sichtbar werden darf.</h2>
 
-    <p data-i18n="welcome.p1">Du befindest dich in einer Phase der Unklarheit, bist vielleicht unsicher, wie es bei dir weitergehen könnte? Belastet dich eine Krise, fühlst du Ängste oder Trauer oder möchtest dich weiterentwickeln und neue Wege entdecken?</p>
-
-    <p data-i18n="welcome.p2">Dann sei willkommen in einem Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.</p>
-
-    <p data-i18n="welcome.p3">Ich begleite dich als aufmerksame Gesprächspartnerin, Mitforschende und Impulsgeberin. Meine Arbeitsweise ist prozessorientiert.</p>
-
-    <p data-i18n="welcome.p4">Körperempfindungen, innere Bilder, Bewegung und Stillstand, Töne und Worte – alles darf da sein.</p>
-
-    <p data-i18n="welcome.p5"><em>Du musst nichts mitbringen. Es reicht, wenn du spürst, dass du hinschauen möchtest.</em></p>
-
-    <p data-i18n="welcome.p6">Wenn du selbst mit Klienten arbeitest, stehe ich dir als BSO anerkannte Supervisorin zur Verfügung, um deine fachliche Arbeit gemeinsam zu reflektieren und weiterzuentwickeln.</p>
+    <div data-blocks="welcome_blocks">
+      <p data-default data-i18n="welcome.p1">Du befindest dich in einer Phase der Unklarheit, bist vielleicht unsicher, wie es bei dir weitergehen könnte? Belastet dich eine Krise, fühlst du Ängste oder Trauer oder möchtest dich weiterentwickeln und neue Wege entdecken?</p>
+      <p data-default data-i18n="welcome.p2">Dann sei willkommen in einem Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.</p>
+      <p data-default data-i18n="welcome.p3">Ich begleite dich als aufmerksame Gesprächspartnerin, Mitforschende und Impulsgeberin. Meine Arbeitsweise ist prozessorientiert.</p>
+      <p data-default data-i18n="welcome.p4">Körperempfindungen, innere Bilder, Bewegung und Stillstand, Töne und Worte – alles darf da sein.</p>
+      <p data-default data-i18n-html="welcome.p5"><em>Du musst nichts mitbringen. Es reicht, wenn du spürst, dass du hinschauen möchtest.</em></p>
+      <p data-default data-i18n="welcome.p6">Wenn du selbst mit Klienten arbeitest, stehe ich dir als BSO anerkannte Supervisorin zur Verfügung, um deine fachliche Arbeit gemeinsam zu reflektieren und weiterzuentwickeln.</p>
+    </div>
   </div>
 </section>
 
@@ -137,9 +134,9 @@
     <h2 data-i18n="services.h2">Drei Wege, miteinander zu arbeiten</h2>
     <p data-i18n="services.p">Ob für deinen persönlichen Weg, deine fachliche Reflexion oder deine berufliche Entwicklung – ich begleite dich prozessorientiert und auf Augenhöhe.</p>
   </div>
-  <div class="services-grid">
+  <div class="services-grid" data-list="services_cards">
 
-    <a href="beratung.html" class="service-card fade-up">
+    <a href="beratung.html" data-default class="service-card fade-up">
       <div class="service-card-content">
         <div class="service-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -150,7 +147,7 @@
       </div>
     </a>
 
-    <a href="supervision.html" class="service-card fade-up">
+    <a href="supervision.html" data-default class="service-card fade-up">
       <div class="service-card-content">
         <div class="service-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -161,7 +158,7 @@
       </div>
     </a>
 
-    <a href="kontakt.html" class="service-card fade-up">
+    <a href="kontakt.html" data-default class="service-card fade-up">
       <div class="service-card-content">
         <div class="service-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -171,6 +168,19 @@
         <span class="service-card-link" data-i18n="services.contact">Kontakt aufnehmen →</span>
       </div>
     </a>
+
+    <template>
+      <a class="service-card" data-href-field="link">
+        <div class="service-card-content">
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 3 7h8c1-2 3-4 3-7a7 7 0 0 0-7-7z"/><path d="M9 21h6"/></svg>
+          </div>
+          <h3 data-field="title"></h3>
+          <p data-field="desc"></p>
+          <span class="service-card-link" data-field="link_text"></span>
+        </div>
+      </a>
+    </template>
 
   </div>
 </section>
@@ -214,44 +224,50 @@
     <h2 data-i18n="gallery.h2">Jeder Weg hat seinen Rhythmus</h2>
     <p data-i18n="gallery.p">Natur ist für mich ein täglicher Spiegel des Lebens – voller Weisheit, Schönheit und Wandel.</p>
   </div>
-  <div class="gallery-track">
-    <div class="gallery-item">
+  <div class="gallery-track" data-list="gallery">
+    <template>
+      <div class="gallery-item">
+        <img data-src-field="image" alt="" loading="lazy">
+        <div class="gallery-caption" data-field="caption"></div>
+      </div>
+    </template>
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.27%20%281%29.jpeg" alt="Alpine Berglandschaft" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap1">Alpengipfel · Schweiz</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.29.jpeg" alt="Bergstrasse" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap2">Weite Wege · Südafrika</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.30.jpeg" alt="Endlose Strasse" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap3">Offene Weite · Karoo</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.31.jpeg" alt="Felsige Küste" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap4">Wilde Küste · Garden Route</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.32.jpeg" alt="Brandende Wellen" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap5">Kraft des Meeres</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.33.jpeg" alt="Gerade Strasse" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap6">Der Weg ist das Ziel</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.13.34.jpeg" alt="Bergstrasse mit Vegetation" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap7">Neue Horizonte</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.16.27.jpeg" alt="Fluss im Wald" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap8">Ruhig fliessen</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.16.29.jpeg" alt="Steinpfad auf dem Berg" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap9">Schritt für Schritt</div>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-default>
       <img src="images/WhatsApp%20Image%202026-05-07%20at%2023.16.35.jpeg" alt="Meeresblick" loading="lazy">
       <div class="gallery-caption" data-i18n="gallery.cap10">Weitsicht</div>
     </div>
@@ -263,17 +279,24 @@
   <div class="home-testimonials-inner fade-up">
     <span class="eyebrow" data-i18n="testi.eb">KIND WORDS</span>
     <h2 data-i18n="testi.h2">What clients say</h2>
-    <div class="testimonials-grid">
-      <div class="testi-card">
+    <div class="testimonials-grid" data-list="testimonials">
+      <div class="testi-card" data-default>
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q1">"Working with Pascale gave me the clarity I had been searching for years. She listens deeply and holds space beautifully."</p>
         <p class="testi-client" data-i18n="testi.c1">S.M., Psychosocial Counselling client</p>
       </div>
-      <div class="testi-card">
+      <div class="testi-card" data-default>
         <div class="testi-stars">★★★★★</div>
         <p class="testi-quote" data-i18n="testi.q2">"The supervision sessions helped me grow both professionally and personally. I always left feeling more grounded."</p>
         <p class="testi-client" data-i18n="testi.c2">T.B., Supervision client, Bern</p>
       </div>
+      <template>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote" data-field="quote"></p>
+          <p class="testi-client" data-field="cite"></p>
+        </div>
+      </template>
       <div class="testi-card testi-placeholder-card">
         <p data-i18n="testi.placeholder">Your testimonial will appear here once received from a client</p>
       </div>

@@ -77,9 +77,9 @@
   <div class="legal-hero-inner">
     <p class="legal-breadcrumb">
       <a href="index.html">Komm sprich mit mir</a> &nbsp;/&nbsp;
-      <span id="pageTitle">Nutzung &amp; Impressum</span>
+      <span id="pageTitle" data-i18n="nutzung_page_title">Nutzung &amp; Impressum</span>
     </p>
-    <h1 id="pageH1">Nutzungsbedingungen</h1>
+    <h1 id="pageH1" data-i18n="nutzung_h1">Nutzungsbedingungen</h1>
   </div>
 </div>
 
@@ -88,13 +88,13 @@
   <a href="index.html" class="legal-back" data-i18n="legal.back">← Zurück zur Startseite</a>
 
   <div class="legal-content">
-    <div id="pageBody">
-      <p>Sämtliche Texte und Bilder auf dieser Website dürfen nicht ohne Einverständnis der Autorin und Seiteninhaberin verwendet werden. Auch nicht Auszugsweise oder in abgeänderter Form. Sämtliche von mir publizierten externen Links wurden zum Zeitpunkt des Publizierens durch mich geprüft und für gut/stimmig befunden, das Besuchen derselben erfolgt jedoch auf eigene Verantwortung.</p>
+    <div data-blocks="nutzung_blocks">
+      <p data-default>Sämtliche Texte und Bilder auf dieser Website dürfen nicht ohne Einverständnis der Autorin und Seiteninhaberin verwendet werden. Auch nicht Auszugsweise oder in abgeänderter Form. Sämtliche von mir publizierten externen Links wurden zum Zeitpunkt des Publizierens durch mich geprüft und für gut/stimmig befunden, das Besuchen derselben erfolgt jedoch auf eigene Verantwortung.</p>
     </div>
 
-    <div class="legal-responsible" id="pageResp">
-      <p><strong id="pageRespLabel">Verantwortlich für sämtliche Inhalte dieser Seite, ausser externer links:</strong></p>
-      <p id="pageRespName">Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern</p>
+    <div class="legal-responsible">
+      <p><strong data-i18n="nutzung_resp_label">Verantwortlich für sämtliche Inhalte dieser Seite, ausser externer links:</strong></p>
+      <p data-i18n="nutzung_resp_name">Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern</p>
     </div>
   </div>
 </div>
@@ -141,41 +141,5 @@
 </footer>
 
 <script type="module" src="./main.js"></script>
-<script type="module">
-  /* Page-specific content translations */
-  const pageT = {
-    de: {
-      title:     'Nutzung & Impressum',
-      h1:        'Nutzungsbedingungen',
-      body:      '<p>Sämtliche Texte und Bilder auf dieser Website dürfen nicht ohne Einverständnis der Autorin und Seiteninhaberin verwendet werden. Auch nicht Auszugsweise oder in abgeänderter Form. Sämtliche von mir publizierten externen Links wurden zum Zeitpunkt des Publizierens durch mich geprüft und für gut/stimmig befunden, das Besuchen derselben erfolgt jedoch auf eigene Verantwortung.</p>',
-      respLabel: 'Verantwortlich für sämtliche Inhalte dieser Seite, ausser externer links:',
-      respName:  'Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern',
-    },
-    en: {
-      title:     'Terms of Use & Imprint',
-      h1:        'Terms of Use',
-      body:      '<p>All texts and images on this website may not be used without the consent of the author and site owner. Not even in excerpts or in modified form. All external links published by me were reviewed at the time of publication and found to be appropriate; however, visiting them is done at your own risk.</p>',
-      respLabel: 'Responsible for all content on this site, except external links:',
-      respName:  'Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern',
-    }
-  };
-
-  function applyPageContent(lang) {
-    const p = pageT[lang];
-    document.getElementById('pageTitle').textContent   = p.title;
-    document.getElementById('pageH1').textContent      = p.h1;
-    document.getElementById('pageBody').innerHTML      = p.body;
-    document.getElementById('pageRespLabel').textContent = p.respLabel;
-    document.getElementById('pageRespName').textContent  = p.respName;
-    document.title = p.title + ' – Komm sprich mit mir';
-  }
-
-  /* Register with main.js lang-switch callback system */
-  window._langCallbacks = window._langCallbacks || [];
-  window._langCallbacks.push(applyPageContent);
-
-  /* Apply current lang (set by main.js before this script runs) */
-  applyPageContent(window.currentLang || 'de');
-</script>
 </body>
 </html>

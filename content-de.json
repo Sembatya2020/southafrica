@@ -4,7 +4,6 @@
   "hero_p": "Psychosoziale Beratung und Coaching. Ein prozessorientierter Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.",
   "hero_btn1": "Termin anfragen",
   "hero_btn2": "Mehr über mich",
-
   "welcome_eyebrow": "Willkommen",
   "welcome_h2": "Ein Raum, in dem das, was dich beschäftigt, sichtbar werden darf.",
   "welcome_p1": "Du befindest dich in einer Phase der Unklarheit, bist vielleicht unsicher, wie es bei dir weitergehen könnte? Belastet dich eine Krise, fühlst du Ängste oder Trauer oder möchtest dich weiterentwickeln und neue Wege entdecken?",
@@ -13,7 +12,6 @@
   "welcome_p4": "Körperempfindungen, innere Bilder, Bewegung und Stillstand, Töne und Worte – alles darf da sein.",
   "welcome_p5": "Du musst nichts mitbringen. Es reicht, wenn du spürst, dass du hinschauen möchtest.",
   "welcome_p6": "Wenn du selbst mit Klienten arbeitest, stehe ich dir als BSO anerkannte Supervisorin zur Verfügung, um deine fachliche Arbeit gemeinsam zu reflektieren und weiterzuentwickeln.",
-
   "services_eyebrow": "Mein Angebot",
   "services_h2": "Drei Wege, miteinander zu arbeiten",
   "services_p": "Ob für deinen persönlichen Weg, deine fachliche Reflexion oder deine berufliche Entwicklung – ich begleite dich prozessorientiert und auf Augenhöhe.",
@@ -23,32 +21,26 @@
   "services_card2_p": "Als BSO anerkannte Supervisorin begleite ich Fachpersonen beim Reflektieren ihrer Arbeit – auf Augenhöhe.",
   "services_card3_h3": "Erstgespräch",
   "services_card3_p": "Du bist unsicher, ob mein Angebot zu dir passt? Melde dich gerne unverbindlich – ich freue mich, von dir zu hören.",
-
   "phil_quote": "„Ewig forschend, weit reisend, immer wieder Neues entdeckend…“",
   "phil_cite": "Pascale Myriam Kohli",
-
   "aboutT_eyebrow": "Über mich",
   "aboutT_h2": "Pascale Myriam Kohli",
   "aboutT_p1": "Prozessorientierte Psychosoziale Beraterin SGFB, Supervisorin & Coach BSO. Ich arbeite zwischen der Schweiz und Südafrika und bringe Erfahrung aus mehreren Jahren im psychiatrischen und psychotherapeutischen Umfeld mit.",
   "aboutT_p2": "Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Mit feinem Gespür und Klarheit darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen.",
   "aboutT_btn": "Mehr über mich",
-
   "testi_eb": "KUNDENSTIMMEN",
   "testi_h2": "Was Klient:innen sagen",
   "testi_q1": "Die Zusammenarbeit mit Pascale gab mir die Klarheit, nach der ich jahrelang gesucht hatte. Sie hört tief zu und hält den Raum auf wunderbare Weise.",
   "testi_c1": "S.M., Klientin für Psychosoziale Beratung",
   "testi_q2": "Die Supervisionssitzungen haben mir geholfen, sowohl beruflich als auch persönlich zu wachsen. Ich ging jedes Mal geerdeter nach Hause.",
   "testi_c2": "T.B., Supervisions-Klient, Bern",
-
   "cta_h2": "Bereit für ein erstes Gespräch?",
   "cta_p": "Wenn du unsicher bist, ob mein Angebot zu dir passt – melde dich gerne unverbindlich.",
   "cta_btn1": "Kontakt aufnehmen",
   "cta_btn2": "Preise ansehen",
-
   "footer_brand": "Prozessorientierte Psychosoziale Beratung, Supervision und Coaching.",
   "footer_copyright": "© 2026 Komm sprich mit mir · Pascale Myriam Kohli",
   "footer_note": "Anfragen bitte nur per E-Mail.",
-
   "beratung_page_title": "Beratung & Coaching",
   "beratung_h1": "Coaching und Beratung",
   "beratung_subtitle": "Prozessorientierte Psychosoziale Beratung SGFB · Bern & Online",
@@ -66,7 +58,6 @@
   "beratung_info": "<strong>Prozessorientierte Psychosoziale Beraterin SGFB</strong>",
   "beratung_info2": "Mitglied der Schweizerischen Gesellschaft für Beratung (SGfB).",
   "beratung_cta": "Unverbindlich anfragen",
-
   "supervision_page_title": "Supervision",
   "supervision_h1": "Supervision",
   "supervision_subtitle": "BSO anerkannte Supervisorin · Bern",
@@ -87,7 +78,6 @@
   "supervision_bso": "<strong>BSO anerkannte Supervisorin</strong>",
   "supervision_bso2": "Als Mitglied des Berufsverbands für Supervision, Coaching und Organisationsberatung (BSO) arbeite ich nach anerkannten Qualitätsstandards.",
   "supervision_cta": "Supervisionsanfrage stellen",
-
   "preise_page_title": "Preise",
   "preise_h1": "Preise",
   "preise_subtitle": "Damit du dich orientieren kannst",
@@ -111,7 +101,6 @@
   "preise_uns_h": "Unsicher, ob es passt?",
   "preise_uns_p": "Wenn du unsicher bist, ob mein Angebot zu dir passt, melde dich gerne unverbindlich.",
   "preise_uns_cta": "Unverbindlich anfragen",
-
   "about_page_title": "Über mich",
   "about_h1": "Persönlich",
   "about_subtitle": "Pascale Myriam Kohli",
@@ -135,7 +124,6 @@
   "about_insp_p": "Wichtige Impulse für meine Arbeit erhielt ich unter anderem durch das Wirken von Arnold Mindell, Richard Schwartz, Bessel van der Kolk, Daan van Kampenhout, Colin Tipping und Godfrey O'Flaherty. Ausserdem von allen Dozierenden des Instituts für Prozessarbeit, insbesondere Martin Boss.",
   "about_bg_em": "<em>Meine Arbeit entwickelt sich kontinuierlich weiter – durch Erfahrung, Weiterbildung und den lebendigen Austausch mit Menschen.</em>",
   "about_cta": "Kontakt aufnehmen",
-
   "kontakt_page_title": "Kontakt",
   "kontakt_h1": "Komm, sprich mit mir…",
   "kontakt_subtitle": "Online oder in Bern",
@@ -150,5 +138,474 @@
   "kontakt_book_eb": "Online-Buchung",
   "kontakt_book_h": "Termin direkt buchen",
   "kontakt_book_p": "Wähle eine Sitzungsart und einen passenden Zeitpunkt – die Bestätigung kommt automatisch per E-Mail.",
-  "kontakt_book_soon": "Das Buchungssystem wird bald aktiviert."
+  "kontakt_book_soon": "Das Buchungssystem wird bald aktiviert.",
+  "welcome_blocks": [
+    {
+      "type": "text",
+      "text": "Du befindest dich in einer Phase der Unklarheit, bist vielleicht unsicher, wie es bei dir weitergehen könnte? Belastet dich eine Krise, fühlst du Ängste oder Trauer oder möchtest dich weiterentwickeln und neue Wege entdecken?"
+    },
+    {
+      "type": "text",
+      "text": "Dann sei willkommen in einem Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf."
+    },
+    {
+      "type": "text",
+      "text": "Ich begleite dich als aufmerksame Gesprächspartnerin, Mitforschende und Impulsgeberin. Meine Arbeitsweise ist prozessorientiert."
+    },
+    {
+      "type": "text",
+      "text": "Körperempfindungen, innere Bilder, Bewegung und Stillstand, Töne und Worte – alles darf da sein."
+    },
+    {
+      "type": "text",
+      "text": "<em>Du musst nichts mitbringen. Es reicht, wenn du spürst, dass du hinschauen möchtest.</em>"
+    },
+    {
+      "type": "text",
+      "text": "Wenn du selbst mit Klienten arbeitest, stehe ich dir als BSO anerkannte Supervisorin zur Verfügung, um deine fachliche Arbeit gemeinsam zu reflektieren und weiterzuentwickeln."
+    }
+  ],
+  "services_cards": [
+    {
+      "title": "Beratung & Coaching",
+      "desc": "Prozessorientierte psychosoziale Beratung SGFB für Menschen in Phasen der Unklarheit, Krise oder Entwicklung.",
+      "link_text": "Mehr erfahren →",
+      "link": "beratung.html"
+    },
+    {
+      "title": "Supervision",
+      "desc": "Als BSO anerkannte Supervisorin begleite ich Fachpersonen beim Reflektieren ihrer Arbeit – auf Augenhöhe.",
+      "link_text": "Mehr erfahren →",
+      "link": "supervision.html"
+    },
+    {
+      "title": "Erstgespräch",
+      "desc": "Du bist unsicher, ob mein Angebot zu dir passt? Melde dich gerne unverbindlich – ich freue mich, von dir zu hören.",
+      "link_text": "Kontakt aufnehmen →",
+      "link": "kontakt.html"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Die Zusammenarbeit mit Pascale gab mir die Klarheit, nach der ich jahrelang gesucht hatte. Sie hört tief zu und hält den Raum auf wunderbare Weise.",
+      "cite": "S.M., Klientin für Psychosoziale Beratung"
+    },
+    {
+      "quote": "Die Supervisionssitzungen haben mir geholfen, sowohl beruflich als auch persönlich zu wachsen. Ich ging jedes Mal geerdeter nach Hause.",
+      "cite": "T.B., Supervisions-Klient, Bern"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.27 (1).jpeg",
+      "caption": "Alpengipfel · Schweiz"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.29.jpeg",
+      "caption": "Weite Wege · Südafrika"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.30.jpeg",
+      "caption": "Offene Weite · Karoo"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.31.jpeg",
+      "caption": "Wilde Küste · Garden Route"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.32.jpeg",
+      "caption": "Kraft des Meeres"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.33.jpeg",
+      "caption": "Der Weg ist das Ziel"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.34.jpeg",
+      "caption": "Neue Horizonte"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.16.27.jpeg",
+      "caption": "Ruhig fliessen"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.16.29.jpeg",
+      "caption": "Schritt für Schritt"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.16.35.jpeg",
+      "caption": "Weitsicht"
+    }
+  ],
+  "beratung_blocks": [
+    {
+      "type": "text",
+      "text": "Vielleicht befindest du dich an einem Punkt, an dem vieles unklar ist, trägst Fragen in dir, fühlst dich bewegt, angespannt oder suchend. Vielleicht bist du traurig oder auch wütend. Und du wünschst dir dabei Begleitung."
+    },
+    {
+      "type": "text",
+      "text": "In meiner Arbeit als prozessorientierte psychosoziale Beraterin SGFB begleite ich dich dabei, dich selbst besser zu verstehen und wieder Orientierung zu finden."
+    },
+    {
+      "type": "text",
+      "text": "Wir setzen uns gemeinsam hin und lauschen dem, was sich zeigt – in deinen Worten, deinen Bewegungen, deinem Erleben."
+    },
+    {
+      "type": "heading",
+      "text": "Raum für das, was sich zeigt"
+    },
+    {
+      "type": "text",
+      "text": "Manchmal entsteht Raum für Erkenntnis. Manchmal ist es stimmig, einfach still zu werden. Wie die Oberfläche eines Sees, die sich langsam glättet."
+    },
+    {
+      "type": "text",
+      "text": "Und vielleicht entsteht daraus der Moment, vorsichtig hinzuschauen – oder auch mutig einzutauchen."
+    },
+    {
+      "type": "text",
+      "text": "Ich bin offen für das, was sich zeigt. Für Erkenntnis, aber auch für Unklarheit."
+    },
+    {
+      "type": "heading",
+      "text": "Auch im Nicht-Wissen sein"
+    },
+    {
+      "type": "text",
+      "text": "Wir können gemeinsam erkunden, wie es sich anfühlt, nicht sofort Antworten zu haben. Was macht das mit deinem Körper, deinem Herzen?"
+    },
+    {
+      "type": "text",
+      "text": "Und vielleicht entsteht daraus eine neue Erfahrung: Dass du auch im Nicht-Wissen sein kannst und nicht alles unmittelbar gelöst werden muss. Und dass auch darin etwas Tragendes liegt – weil es der Anfang von Klarheit sein kann."
+    },
+    {
+      "type": "text",
+      "text": "<em>Wenn dich das anspricht, komm sehr gerne auf mich zu.</em>"
+    },
+    {
+      "type": "text",
+      "text": "<strong>Prozessorientierte Psychosoziale Beraterin SGFB</strong>"
+    },
+    {
+      "type": "text",
+      "text": "Mitglied der Schweizerischen Gesellschaft für Beratung (SGfB)."
+    },
+    {
+      "type": "button",
+      "text": "Unverbindlich anfragen",
+      "link": "kontakt.html"
+    }
+  ],
+  "supervision_blocks": [
+    {
+      "type": "text",
+      "text": "Wenn du selbst mit Menschen arbeitest, kennst du die Komplexität, die diese Arbeit mit sich bringt."
+    },
+    {
+      "type": "text",
+      "text": "Möchtest du deine Fälle reflektieren, mehr Klarheit gewinnen oder dich in deiner Rolle als Fachperson weiterentwickeln? Oder gibt es Situationen, die dich herausfordern, berühren oder auch verunsichern?"
+    },
+    {
+      "type": "text",
+      "text": "Ich biete dir einen Raum, in dem du deine Arbeit in Ruhe betrachten und gemeinsam mit mir reflektieren kannst."
+    },
+    {
+      "type": "text",
+      "text": "Als Supervisorin begleite ich dich dabei, deine Wahrnehmungen zu differenzieren, Zusammenhänge klarer zu sehen und neue Perspektiven zu entwickeln."
+    },
+    {
+      "type": "heading",
+      "text": "Meine Haltung"
+    },
+    {
+      "type": "text",
+      "text": "Meine Haltung ist prozessorientiert. Das bedeutet, wir wenden uns nicht nur dem Inhalt deiner Arbeit zu, sondern auch dem, was zwischen den Zeilen geschieht — in der Beziehung zu deinen Klientinnen und Klienten, in deinem eigenen Erleben und im grösseren Kontext deiner Tätigkeit."
+    },
+    {
+      "type": "text",
+      "text": "Ich arbeite strukturiert und gleichzeitig offen für das, was sich zeigt."
+    },
+    {
+      "type": "heading",
+      "text": "Meine Erfahrung"
+    },
+    {
+      "type": "text",
+      "text": "Meine Erfahrung umfasst mehrere Jahre Tätigkeit im psychiatrischen und psychotherapeutischen Umfeld, in denen ich eng mit Fachpersonen zusammengearbeitet habe. Ich habe Verlaufs- und Behandlungsberichte sowie Gutachten mitverfasst und dabei Einblick in unterschiedlichste Fallkonstellationen und therapeutische Prozesse erhalten. Auch habe ich viele Prüfungsabsolventen am Institut für Prozessarbeit als Beisitzerin begleitet."
+    },
+    {
+      "type": "text",
+      "text": "Diese Erfahrung ermöglicht es mir, komplexe Situationen differenziert zu erfassen und dich fundiert in deiner Arbeit zu begleiten."
+    },
+    {
+      "type": "heading",
+      "text": "Raum für Unsicherheit"
+    },
+    {
+      "type": "text",
+      "text": "Gleichzeitig verstehe ich Supervision auch als einen Raum, in dem Unsicherheiten Platz haben dürfen. Nicht alles muss sofort gewusst oder gelöst werden."
+    },
+    {
+      "type": "text",
+      "text": "Manchmal entsteht gerade im gemeinsamen Innehalten und Reflektieren eine neue Klarheit."
+    },
+    {
+      "type": "text",
+      "text": "Ich begegne dir auf Augenhöhe, mit Respekt für deine Arbeit und mit dem Interesse, dich in deiner fachlichen und persönlichen Entwicklung zu unterstützen."
+    },
+    {
+      "type": "text",
+      "text": "<strong>BSO anerkannte Supervisorin</strong>"
+    },
+    {
+      "type": "text",
+      "text": "Als Mitglied des Berufsverbands für Supervision, Coaching und Organisationsberatung (BSO) arbeite ich nach anerkannten Qualitätsstandards."
+    },
+    {
+      "type": "button",
+      "text": "Supervisionsanfrage stellen",
+      "link": "kontakt.html"
+    }
+  ],
+  "about_intro_blocks": [
+    {
+      "type": "text",
+      "text": "Meine Lebensgeschichte ist bunt und vielfältig – wie ein Ackerblumenstrauss. Ich kenne schwierige Erfahrungen wie Verlust, Angst, Einsamkeit und Neuanfänge – und zugleich auch Liebe, Freude, Verbundenheit und Lebendigkeit."
+    },
+    {
+      "type": "text",
+      "text": "Diese unterschiedlichen Erfahrungen haben in mir Offenheit gegenüber den unterschiedlichsten Realitäten des Lebens geweckt und Resilienz wachsen lassen."
+    },
+    {
+      "type": "text",
+      "text": "Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Das Unausgesprochene. Vielleicht das Unsagbare. Ich habe ein sehr feines Gespür für das, was unter der Oberfläche wirkt. Mit meiner Klarheit im Fühlen und im Ausdruck darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen."
+    }
+  ],
+  "about_personal_blocks": [
+    {
+      "type": "text",
+      "text": "In den letzten Jahren habe ich mich intensiv mit Themen wie Trauma, Dissoziation und Resilienz auseinandergesetzt – dies auch, um meine eigenen Themen zu erkennen und zu verstehen. Eine wichtige Erkenntnis für mich daraus ist: Nicht alles muss vollständig „heilen“. Oft geht es vielmehr darum, einen tragenden Umgang mit dem zu finden, was da ist."
+    },
+    {
+      "type": "text",
+      "text": "Ich lebe und arbeite zwischen der Schweiz und Südafrika. Diese Erfahrung hat meinen Blick auf Themen wie Zugehörigkeit, Privilegien und soziale Gerechtigkeit erweitert und geschärft."
+    },
+    {
+      "type": "text",
+      "text": "Ich bin Mutter einer bald erwachsenen Tochter und lebe in einer Partnerschaft."
+    }
+  ],
+  "about_background_blocks": [
+    {
+      "type": "heading",
+      "text": "Mein fachlicher Hintergrund"
+    },
+    {
+      "type": "text",
+      "text": "Meine Arbeit ist geprägt durch eine kontinuierliche Auseinandersetzung mit prozessorientierter Psychologie, Trauma, Beziehung und menschlicher Entwicklung."
+    },
+    {
+      "type": "text",
+      "text": "Ich habe am Institut für Prozessarbeit in Zürich studiert und bin diplomierte psychosoziale Beraterin (SGfB) sowie Supervisorin/Coach (BSO), sowie Kauffrau und Lehrlingsausbildnerin. Ich habe viele Jahre in der forensischen Psychiatrie und in der Psychotherapie Behandlungsberichte und Gutachten für verschiedene Fachpersonen und Fachstellen geschrieben."
+    },
+    {
+      "type": "subheading",
+      "text": "Weiterbildungen"
+    },
+    {
+      "type": "text",
+      "text": "Ergänzend habe ich mich in verschiedenen Bereichen weitergebildet, unter anderem in:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Arbeit mit inneren Teilen",
+        "Trauma- und Bindungsarbeit",
+        "Körper- und bewusstseinsorientierte Methoden",
+        "systemische und rituelle Ansätze"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Inspirationen"
+    },
+    {
+      "type": "text",
+      "text": "Wichtige Impulse für meine Arbeit erhielt ich unter anderem durch das Wirken von Arnold Mindell, Richard Schwartz, Bessel van der Kolk, Daan van Kampenhout, Colin Tipping und Godfrey O'Flaherty. Ausserdem von allen Dozierenden des Instituts für Prozessarbeit, insbesondere Martin Boss."
+    },
+    {
+      "type": "text",
+      "text": "<em>Meine Arbeit entwickelt sich kontinuierlich weiter – durch Erfahrung, Weiterbildung und den lebendigen Austausch mit Menschen.</em>"
+    }
+  ],
+  "preise_cards": [
+    {
+      "eyebrow": "90 Minuten",
+      "currency": "CHF",
+      "price": "160",
+      "unit": "/ Stunde",
+      "desc": "Für Fachpersonen, die ihre Arbeit reflektieren und weiterentwickeln möchten.",
+      "link_text": "Mehr zu Supervision →",
+      "link": "supervision.html"
+    },
+    {
+      "eyebrow": "Sitzungen in Bern",
+      "currency": "CHF",
+      "price": "120",
+      "unit": "/ Stunde",
+      "desc": "Persönliche Sitzungen in meinem Praxisraum in Bern.",
+      "link_text": "Mehr zu Beratung →",
+      "link": "beratung.html"
+    },
+    {
+      "eyebrow": "15 Minuten",
+      "currency": "CHF",
+      "price": "0",
+      "unit": "",
+      "desc": "Sitzungen via Zoom – ortsunabhängig, von zuhause oder unterwegs.",
+      "link_text": "Termin anfragen →",
+      "link": "kontakt.html"
+    }
+  ],
+  "preise_discounts": [
+    {
+      "amount": "10 %",
+      "label": "Rabatt bei 5 Sitzungen"
+    },
+    {
+      "amount": "15 %",
+      "label": "Rabatt bei 10 Sitzungen"
+    }
+  ],
+  "kontakt_methods": [
+    {
+      "title": "Telefon",
+      "value": "+41 79 855 58 27",
+      "value_href": "tel:+41798555827"
+    },
+    {
+      "title": "E-Mail",
+      "value": "pascale.kohli@hin.ch",
+      "value_href": "mailto:pascale.kohli@hin.ch"
+    },
+    {
+      "title": "Threema",
+      "note": "ID: C8HF3JS5",
+      "value": "Nachricht senden →",
+      "value_href": "https://threema.id/C8HF3JS5"
+    },
+    {
+      "title": "WhatsApp",
+      "value": "Nachricht senden →",
+      "value_href": "https://wa.me/41798555827"
+    }
+  ],
+  "agb_page_title": "AGB",
+  "agb_h1": "Allgemeine Geschäftsbedingungen",
+  "agb_blocks": [
+    {
+      "type": "heading",
+      "text": "1. Geltungsbereich"
+    },
+    {
+      "type": "text",
+      "text": "Diese Allgemeinen Geschäftsbedingungen gelten für alle therapeutischen Begleitungen und Beratungsleistungen von Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern."
+    },
+    {
+      "type": "heading",
+      "text": "2. Termine und Absagen"
+    },
+    {
+      "type": "text",
+      "text": "Vereinbarte Termine können bis zu 24 Stunden im Voraus kostenlos abgesagt oder verschoben werden. Bei kurzfristigeren Absagen ohne triftigen Grund (z.B. Krankheit, Notfall) wird der volle Sitzungsbetrag in Rechnung gestellt."
+    },
+    {
+      "type": "heading",
+      "text": "3. Vertraulichkeit"
+    },
+    {
+      "type": "text",
+      "text": "Alle Inhalte der Gespräche werden streng vertraulich behandelt. Die therapeutische Schweigepflicht gilt unbeschränkt. Ausnahmen bestehen ausschliesslich bei gesetzlicher Pflicht zur Offenlegung (z.B. akute Selbst- oder Fremdgefährdung)."
+    },
+    {
+      "type": "heading",
+      "text": "4. Honorar"
+    },
+    {
+      "type": "text",
+      "text": "Das Honorar wird individuell vereinbart und vor dem ersten Gespräch schriftlich bestätigt. Die Rechnung ist innert 30 Tagen nach Erhalt zu begleichen."
+    },
+    {
+      "type": "heading",
+      "text": "5. Haftung"
+    },
+    {
+      "type": "text",
+      "text": "Die therapeutische Begleitung ersetzt keine medizinische oder psychiatrische Behandlung. Bei akuten psychischen Erkrankungen ist eine ärztliche Fachkraft beizuziehen. Die Beraterin haftet nicht für Entscheidungen, die der Klient auf Grundlage der Gespräche trifft."
+    },
+    {
+      "type": "heading",
+      "text": "6. Datenschutz"
+    },
+    {
+      "type": "text",
+      "text": "Personenbezogene Daten werden ausschliesslich zum Zweck der Terminvereinbarung und Rechnungsstellung verwendet und nicht an Dritte weitergegeben. Es gelten die Bestimmungen der Datenschutzrichtlinie."
+    }
+  ],
+  "datenschutz_page_title": "Datenschutzrichtlinie",
+  "datenschutz_h1": "Datenschutzrichtlinie",
+  "datenschutz_blocks": [
+    {
+      "type": "text",
+      "text": "Die Betreiberin dieser Site nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Sie behandelt Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
+    },
+    {
+      "type": "text",
+      "text": "Insbesondere ist die auf der Website unter Kontakt angegebene Emailadresse HIN-gesichert und garantiert somit maximalen Schutz ihrer Daten bei persönlichen Anfragen."
+    },
+    {
+      "type": "text",
+      "text": "Diese Internetsite sammelt und speichert nur die nötigsten Daten über ihre Besucher. Der Eigentümer und Betreiber der Site setzt keine Cookies ein und verwendet auch keine Analyse- oder Auswertungswerkzeuge von Drittanbietern. Bei Anfragen über das Kontaktformular oder über die dort angegebene Mailadresse werden die hinterlassenen Angaben nur gerade für die Beantwortung der Anfrage verwendet und nicht weiter gespeichert."
+    },
+    {
+      "type": "heading",
+      "text": "Logfiles des Providers"
+    },
+    {
+      "type": "text",
+      "text": "Der Provider, bei dem die Site gehostet wird (green.ch), legt so genannte Logfiles an, um seine Dienstleistungen «zuverlässig, technisch einwandfrei und auch gesetzeskonform erbringen zu können.» Diese enthalten laut seinen Angaben Informationen wie:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "IP-Adressen",
+        "Datum und Uhrzeit",
+        "Protokollinformationen wie Protokolltyp und -version, die gewünschte Aktion, Statuscodes oder Angaben zu den transferierten Daten (z.B. die Grösse einer Frage oder einer Antwort)",
+        "Fehlermeldungen",
+        "Je nachdem anwendungsspezifische Informationen wie zum Beispiel Message-IDs bei E-Mails, oder bei Webzugriffen Angaben zum verwendeten Browser (User-Agent String) oder gegebenenfalls der Seite, von welcher der Besucher auf die Webseite gelangt ist."
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Der Provider verwendet diese Informationen unter anderem zum Nachvollziehen und Lösen von technischen Problemen, zum Finden von Fehlern, zum Abwehren von Angriffen auf seine Infrastruktur, zur Unterstützung von nachträglichen Analysen bei gehackten Kundenwebseiten oder auch zum Erstellen der Besucherstatistiken für die gehosteten Webseiten."
+    },
+    {
+      "type": "text",
+      "text": "Die Daten verbleiben gespeichert, solange es entweder betrieblich notwendig oder gesetzlich beziehungsweise vertraglich vorgeschrieben ist und werden danach automatisch gelöscht. Für die meisten Daten ist dies maximal ein halbes Jahr."
+    },
+    {
+      "type": "text",
+      "text": "(c) by Pascale Y. Kohli, 2020"
+    }
+  ],
+  "nutzung_page_title": "Nutzung & Impressum",
+  "nutzung_h1": "Nutzungsbedingungen",
+  "nutzung_resp_label": "Verantwortlich für sämtliche Inhalte dieser Seite, ausser externer links:",
+  "nutzung_resp_name": "Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern",
+  "nutzung_blocks": [
+    {
+      "type": "text",
+      "text": "Sämtliche Texte und Bilder auf dieser Website dürfen nicht ohne Einverständnis der Autorin und Seiteninhaberin verwendet werden. Auch nicht Auszugsweise oder in abgeänderter Form. Sämtliche von mir publizierten externen Links wurden zum Zeitpunkt des Publizierens durch mich geprüft und für gut/stimmig befunden, das Besuchen derselben erfolgt jedoch auf eigene Verantwortung."
+    }
+  ]
 }

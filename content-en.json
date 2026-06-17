@@ -4,7 +4,6 @@
   "hero_p": "Psychosocial counselling and coaching. A process-oriented space where what occupies you can become visible and understood.",
   "hero_btn1": "Request appointment",
   "hero_btn2": "More about me",
-
   "welcome_eyebrow": "Welcome",
   "welcome_h2": "A space where what occupies you can become visible.",
   "welcome_p1": "Are you in a phase of uncertainty, perhaps unsure how to move forward? Are you burdened by a crisis, feeling fear or grief — or would you like to grow and discover new paths?",
@@ -13,7 +12,6 @@
   "welcome_p4": "Body sensations, inner images, movement and stillness, sounds and words — everything is welcome.",
   "welcome_p5": "You don't need to bring anything. It is enough to sense that you want to take a closer look.",
   "welcome_p6": "If you work with clients yourself, I am available as a BSO-certified supervisor to reflect on and develop your professional practice together.",
-
   "services_eyebrow": "What I offer",
   "services_h2": "Three ways to work together",
   "services_p": "Whether for your personal path, your professional reflection or your career development — I accompany you process-oriented and at eye level.",
@@ -23,32 +21,26 @@
   "services_card2_p": "As a BSO-certified supervisor I support professionals in reflecting on their work — at eye level.",
   "services_card3_h3": "First conversation",
   "services_card3_p": "Unsure whether my offering suits you? Get in touch without obligation — I look forward to hearing from you.",
-
   "phil_quote": "\"Forever curious, widely travelled, always discovering something new…\"",
   "phil_cite": "Pascale Myriam Kohli",
-
   "aboutT_eyebrow": "About me",
   "aboutT_h2": "Pascale Myriam Kohli",
   "aboutT_p1": "Process-oriented psychosocial counsellor SGFB, supervisor & coach BSO. I work between Switzerland and South Africa and bring several years of experience in psychiatric and psychotherapeutic environments.",
   "aboutT_p2": "I am interested in the unspoken — what is there but rarely gets a space. With sensitivity and clarity, I support people in understanding inner processes and taking new steps.",
   "aboutT_btn": "More about me",
-
   "testi_eb": "KIND WORDS",
   "testi_h2": "What clients say",
   "testi_q1": "Working with Pascale gave me the clarity I had been searching for years. She listens deeply and holds space beautifully.",
   "testi_c1": "S.M., Psychosocial Counselling client",
   "testi_q2": "The supervision sessions helped me grow both professionally and personally. I always left feeling more grounded.",
   "testi_c2": "T.B., Supervision client, Bern",
-
   "cta_h2": "Ready for a first conversation?",
   "cta_p": "If you're unsure whether my offering fits you — get in touch without obligation.",
   "cta_btn1": "Get in touch",
   "cta_btn2": "View pricing",
-
   "footer_brand": "Process-oriented psychosocial counselling, supervision and coaching.",
   "footer_copyright": "© 2026 Komm sprich mit mir · Pascale Myriam Kohli",
   "footer_note": "Enquiries by email only, please.",
-
   "beratung_page_title": "Counselling & Coaching",
   "beratung_h1": "Coaching and Counselling",
   "beratung_subtitle": "Process-oriented Psychosocial Counselling SGFB · Bern & Online",
@@ -66,7 +58,6 @@
   "beratung_info": "<strong>Process-oriented Psychosocial Counsellor SGFB</strong>",
   "beratung_info2": "Member of the Swiss Society for Counselling (SGfB).",
   "beratung_cta": "Get in touch",
-
   "supervision_page_title": "Supervision",
   "supervision_h1": "Supervision",
   "supervision_subtitle": "BSO-certified Supervisor · Bern",
@@ -87,7 +78,6 @@
   "supervision_bso": "<strong>BSO-certified Supervisor</strong>",
   "supervision_bso2": "As a member of the professional association for supervision, coaching and organisational consulting (BSO), I work to recognised quality standards.",
   "supervision_cta": "Request supervision",
-
   "preise_page_title": "Pricing",
   "preise_h1": "Pricing",
   "preise_subtitle": "So you can find your bearings",
@@ -111,7 +101,6 @@
   "preise_uns_h": "Unsure if it fits?",
   "preise_uns_p": "If you're unsure whether my offer is right for you, feel free to get in touch.",
   "preise_uns_cta": "Get in touch",
-
   "about_page_title": "About me",
   "about_h1": "Personal",
   "about_subtitle": "Pascale Myriam Kohli",
@@ -135,7 +124,6 @@
   "about_insp_p": "Important impulses for my work came from the work of Arnold Mindell, Richard Schwartz, Bessel van der Kolk, Daan van Kampenhout, Colin Tipping and Godfrey O'Flaherty, as well as from all the lecturers at the Institute for Process Work, especially Martin Boss.",
   "about_bg_em": "<em>My work develops continuously – through experience, further training and the living exchange with people.</em>",
   "about_cta": "Get in touch",
-
   "kontakt_page_title": "Contact",
   "kontakt_h1": "Come, talk to me…",
   "kontakt_subtitle": "Online or in Bern",
@@ -150,5 +138,474 @@
   "kontakt_book_eb": "Online booking",
   "kontakt_book_h": "Book a session directly",
   "kontakt_book_p": "Choose a session type and a time that suits you — you'll receive a confirmation by email automatically.",
-  "kontakt_book_soon": "The booking system will be live soon."
+  "kontakt_book_soon": "The booking system will be live soon.",
+  "welcome_blocks": [
+    {
+      "type": "text",
+      "text": "Are you in a phase of uncertainty, perhaps unsure how to move forward? Are you burdened by a crisis, feeling fear or grief — or would you like to grow and discover new paths?"
+    },
+    {
+      "type": "text",
+      "text": "Then welcome to a space where what occupies you can become visible and understood."
+    },
+    {
+      "type": "text",
+      "text": "I accompany you as an attentive conversation partner, fellow researcher and source of inspiration. My approach is process-oriented."
+    },
+    {
+      "type": "text",
+      "text": "Body sensations, inner images, movement and stillness, sounds and words — everything is welcome."
+    },
+    {
+      "type": "text",
+      "text": "<em>You don't need to bring anything. It is enough to sense that you want to take a closer look.</em>"
+    },
+    {
+      "type": "text",
+      "text": "If you work with clients yourself, I am available as a BSO-certified supervisor to reflect on and develop your professional practice together."
+    }
+  ],
+  "services_cards": [
+    {
+      "title": "Counselling & Coaching",
+      "desc": "Process-oriented psychosocial counselling SGFB for people in phases of uncertainty, crisis or development.",
+      "link_text": "Learn more →",
+      "link": "beratung.html"
+    },
+    {
+      "title": "Supervision",
+      "desc": "As a BSO-certified supervisor I support professionals in reflecting on their work — at eye level.",
+      "link_text": "Learn more →",
+      "link": "supervision.html"
+    },
+    {
+      "title": "First conversation",
+      "desc": "Unsure whether my offering suits you? Get in touch without obligation — I look forward to hearing from you.",
+      "link_text": "Get in touch →",
+      "link": "kontakt.html"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Working with Pascale gave me the clarity I had been searching for years. She listens deeply and holds space beautifully.",
+      "cite": "S.M., Psychosocial Counselling client"
+    },
+    {
+      "quote": "The supervision sessions helped me grow both professionally and personally. I always left feeling more grounded.",
+      "cite": "T.B., Supervision client, Bern"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.27 (1).jpeg",
+      "caption": "Alpine peaks · Switzerland"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.29.jpeg",
+      "caption": "Open roads · South Africa"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.30.jpeg",
+      "caption": "Wide open spaces · Karoo"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.31.jpeg",
+      "caption": "Wild coast · Garden Route"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.32.jpeg",
+      "caption": "Power of the ocean"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.33.jpeg",
+      "caption": "The journey is the destination"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.13.34.jpeg",
+      "caption": "New horizons"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.16.27.jpeg",
+      "caption": "Flowing gently"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.16.29.jpeg",
+      "caption": "Step by step"
+    },
+    {
+      "image": "images/WhatsApp Image 2026-05-07 at 23.16.35.jpeg",
+      "caption": "Far-sighted"
+    }
+  ],
+  "beratung_blocks": [
+    {
+      "type": "text",
+      "text": "Perhaps you are at a point where much feels unclear, you carry questions, you feel moved, tense or searching. Perhaps you feel sad or angry. And you would like to be accompanied."
+    },
+    {
+      "type": "text",
+      "text": "In my work as a process-oriented psychosocial counsellor SGFB, I accompany you in better understanding yourself and finding orientation again."
+    },
+    {
+      "type": "text",
+      "text": "We sit together and listen to what shows itself – in your words, your movements, your experience."
+    },
+    {
+      "type": "heading",
+      "text": "Space for what shows itself"
+    },
+    {
+      "type": "text",
+      "text": "Sometimes a space for insight emerges. Sometimes it feels right to simply become still. Like the surface of a lake slowly settling."
+    },
+    {
+      "type": "text",
+      "text": "And perhaps from that the moment arises to look carefully – or to dive in courageously."
+    },
+    {
+      "type": "text",
+      "text": "I am open to what shows itself. To insight, but also to uncertainty."
+    },
+    {
+      "type": "heading",
+      "text": "Being with not-knowing"
+    },
+    {
+      "type": "text",
+      "text": "Together we can explore how it feels not to have answers right away. What does that do to your body, your heart?"
+    },
+    {
+      "type": "text",
+      "text": "And perhaps a new experience emerges: that you can also be in not-knowing, that not everything must be resolved immediately. And that this too can carry you – because it can be the beginning of clarity."
+    },
+    {
+      "type": "text",
+      "text": "<em>If this speaks to you, you are very welcome to reach out.</em>"
+    },
+    {
+      "type": "text",
+      "text": "<strong>Process-oriented Psychosocial Counsellor SGFB</strong>"
+    },
+    {
+      "type": "text",
+      "text": "Member of the Swiss Society for Counselling (SGfB)."
+    },
+    {
+      "type": "button",
+      "text": "Get in touch",
+      "link": "kontakt.html"
+    }
+  ],
+  "supervision_blocks": [
+    {
+      "type": "text",
+      "text": "If you work with people yourself, you know the complexity that this work brings with it."
+    },
+    {
+      "type": "text",
+      "text": "Would you like to reflect on your cases, gain more clarity or develop further in your role as a professional? Or are there situations that challenge, move or even unsettle you?"
+    },
+    {
+      "type": "text",
+      "text": "I offer you a space in which you can look at your work calmly and reflect on it together with me."
+    },
+    {
+      "type": "text",
+      "text": "As a supervisor, I accompany you in differentiating your perceptions, seeing connections more clearly and developing new perspectives."
+    },
+    {
+      "type": "heading",
+      "text": "My Attitude"
+    },
+    {
+      "type": "text",
+      "text": "My attitude is process-oriented. This means we attend not only to the content of your work, but also to what happens between the lines — in the relationship with your clients, in your own experience and in the broader context of your practice."
+    },
+    {
+      "type": "text",
+      "text": "I work in a structured way while remaining open to whatever shows itself."
+    },
+    {
+      "type": "heading",
+      "text": "My Experience"
+    },
+    {
+      "type": "text",
+      "text": "My experience spans several years in psychiatric and psychotherapeutic environments, where I worked closely with professionals. I co-authored progress reports, treatment reports and assessments, gaining insight into a wide range of case constellations and therapeutic processes. I also accompanied many examination candidates at the Institute for Process Work as an assessor."
+    },
+    {
+      "type": "text",
+      "text": "This experience enables me to grasp complex situations with nuance and to accompany you in your work with a solid foundation."
+    },
+    {
+      "type": "heading",
+      "text": "Space for Uncertainty"
+    },
+    {
+      "type": "text",
+      "text": "At the same time, I understand supervision as a space where uncertainty is allowed to have its place. Not everything needs to be immediately known or resolved."
+    },
+    {
+      "type": "text",
+      "text": "Sometimes a new clarity emerges precisely through pausing and reflecting together."
+    },
+    {
+      "type": "text",
+      "text": "I meet you at eye level, with respect for your work and with genuine interest in supporting you in your professional and personal development."
+    },
+    {
+      "type": "text",
+      "text": "<strong>BSO-certified Supervisor</strong>"
+    },
+    {
+      "type": "text",
+      "text": "As a member of the professional association for supervision, coaching and organisational consulting (BSO), I work to recognised quality standards."
+    },
+    {
+      "type": "button",
+      "text": "Request supervision",
+      "link": "kontakt.html"
+    }
+  ],
+  "about_intro_blocks": [
+    {
+      "type": "text",
+      "text": "My life story is colourful and varied – like a bouquet of wildflowers. I know difficult experiences like loss, fear, loneliness and new beginnings – as well as love, joy, connection and aliveness."
+    },
+    {
+      "type": "text",
+      "text": "These different experiences have awakened in me an openness to the most varied realities of life and allowed resilience to grow."
+    },
+    {
+      "type": "text",
+      "text": "I am interested in the unspoken – what is there but often gets no space. The unspoken. Perhaps the unsayable. I have a very fine sense for what works beneath the surface. With my clarity in feeling and expression, I am able to support people in understanding inner processes and taking new steps."
+    }
+  ],
+  "about_personal_blocks": [
+    {
+      "type": "text",
+      "text": "In recent years I have engaged intensively with topics such as trauma, dissociation and resilience – also to recognise and understand my own themes. An important insight for me from this is: not everything has to fully \"heal\". Often, it is more about finding a way of carrying what is there."
+    },
+    {
+      "type": "text",
+      "text": "I live and work between Switzerland and South Africa. This experience has broadened and sharpened my view on topics such as belonging, privilege and social justice."
+    },
+    {
+      "type": "text",
+      "text": "I am the mother of a soon-to-be-adult daughter and live in a partnership."
+    }
+  ],
+  "about_background_blocks": [
+    {
+      "type": "heading",
+      "text": "My Professional Background"
+    },
+    {
+      "type": "text",
+      "text": "My work is shaped by a continuous engagement with process-oriented psychology, trauma, relationship and human development."
+    },
+    {
+      "type": "text",
+      "text": "I studied at the Institute for Process Work in Zurich and am a certified psychosocial counsellor (SGfB) as well as a supervisor/coach (BSO), and also a commercial professional and vocational trainer. I spent many years in forensic psychiatry and psychotherapy writing treatment reports and assessments for various professionals and specialist agencies."
+    },
+    {
+      "type": "subheading",
+      "text": "Continuing Education"
+    },
+    {
+      "type": "text",
+      "text": "In addition I have trained in various areas, among others in:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Work with inner parts",
+        "Trauma and attachment work",
+        "Body- and awareness-oriented methods",
+        "Systemic and ritual approaches"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Inspirations"
+    },
+    {
+      "type": "text",
+      "text": "Important impulses for my work came from the work of Arnold Mindell, Richard Schwartz, Bessel van der Kolk, Daan van Kampenhout, Colin Tipping and Godfrey O'Flaherty, as well as from all the lecturers at the Institute for Process Work, especially Martin Boss."
+    },
+    {
+      "type": "text",
+      "text": "<em>My work develops continuously – through experience, further training and the living exchange with people.</em>"
+    }
+  ],
+  "preise_cards": [
+    {
+      "eyebrow": "90 minutes",
+      "currency": "CHF",
+      "price": "160",
+      "unit": "/ hour",
+      "desc": "For professionals who wish to reflect on and develop their work.",
+      "link_text": "More on supervision →",
+      "link": "supervision.html"
+    },
+    {
+      "eyebrow": "Sessions in Bern",
+      "currency": "CHF",
+      "price": "120",
+      "unit": "/ hour",
+      "desc": "In-person sessions in my practice room in Bern.",
+      "link_text": "More on counselling →",
+      "link": "beratung.html"
+    },
+    {
+      "eyebrow": "15 minutes",
+      "currency": "CHF",
+      "price": "0",
+      "unit": "",
+      "desc": "Sessions via Zoom – location-independent, from home or on the go.",
+      "link_text": "Request appointment →",
+      "link": "kontakt.html"
+    }
+  ],
+  "preise_discounts": [
+    {
+      "amount": "10 %",
+      "label": "discount on 5 sessions"
+    },
+    {
+      "amount": "15 %",
+      "label": "discount on 10 sessions"
+    }
+  ],
+  "kontakt_methods": [
+    {
+      "title": "Phone",
+      "value": "+41 79 855 58 27",
+      "value_href": "tel:+41798555827"
+    },
+    {
+      "title": "Email",
+      "value": "pascale.kohli@hin.ch",
+      "value_href": "mailto:pascale.kohli@hin.ch"
+    },
+    {
+      "title": "Threema",
+      "note": "ID: C8HF3JS5",
+      "value": "Send message →",
+      "value_href": "https://threema.id/C8HF3JS5"
+    },
+    {
+      "title": "WhatsApp",
+      "value": "Send message →",
+      "value_href": "https://wa.me/41798555827"
+    }
+  ],
+  "agb_page_title": "T & C",
+  "agb_h1": "General Terms & Conditions",
+  "agb_blocks": [
+    {
+      "type": "heading",
+      "text": "1. Scope"
+    },
+    {
+      "type": "text",
+      "text": "These General Terms and Conditions apply to all therapeutic accompaniment and counselling services provided by Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern."
+    },
+    {
+      "type": "heading",
+      "text": "2. Appointments and Cancellations"
+    },
+    {
+      "type": "text",
+      "text": "Scheduled appointments may be cancelled or rescheduled free of charge up to 24 hours in advance. For cancellations at shorter notice without a valid reason (e.g. illness, emergency), the full session fee will be charged."
+    },
+    {
+      "type": "heading",
+      "text": "3. Confidentiality"
+    },
+    {
+      "type": "text",
+      "text": "All content discussed in sessions is treated with strict confidentiality. Professional confidentiality applies without restriction. Exceptions exist solely where there is a legal obligation to disclose (e.g. acute risk of harm to self or others)."
+    },
+    {
+      "type": "heading",
+      "text": "4. Fees"
+    },
+    {
+      "type": "text",
+      "text": "Fees are agreed individually and confirmed in writing before the first session. Invoices are due within 30 days of receipt."
+    },
+    {
+      "type": "heading",
+      "text": "5. Liability"
+    },
+    {
+      "type": "text",
+      "text": "Therapeutic counselling does not replace medical or psychiatric treatment. In the case of acute mental illness, a qualified medical professional should be consulted. The counsellor accepts no liability for decisions made by the client on the basis of the sessions."
+    },
+    {
+      "type": "heading",
+      "text": "6. Data Protection"
+    },
+    {
+      "type": "text",
+      "text": "Personal data is used exclusively for the purpose of appointment scheduling and invoicing and is not passed on to third parties. The provisions of the Privacy Policy apply."
+    }
+  ],
+  "datenschutz_page_title": "Privacy Policy",
+  "datenschutz_h1": "Privacy Policy",
+  "datenschutz_blocks": [
+    {
+      "type": "text",
+      "text": "The operator of this site takes the protection of your personal data very seriously. Your personal data is treated confidentially and in accordance with the statutory data protection regulations as well as this privacy policy."
+    },
+    {
+      "type": "text",
+      "text": "In particular, the email address provided on the website under Contact is HIN-secured, thus guaranteeing maximum protection of your data for personal enquiries."
+    },
+    {
+      "type": "text",
+      "text": "This website collects and stores only the minimum necessary data about its visitors. The owner and operator of the site does not use cookies and does not use any analysis or evaluation tools from third parties. For enquiries via the contact form or the email address provided there, the information submitted will only be used to respond to the enquiry and will not be stored further."
+    },
+    {
+      "type": "heading",
+      "text": "Provider Log Files"
+    },
+    {
+      "type": "text",
+      "text": "The provider hosting the site (green.ch) creates so-called log files in order to provide its services \"reliably, technically flawlessly and also in compliance with the law.\" According to their information, these contain information such as:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "IP addresses",
+        "Date and time",
+        "Protocol information such as protocol type and version, the requested action, status codes or information about the data transferred (e.g. the size of a request or response)",
+        "Error messages",
+        "Depending on the context, application-specific information such as message IDs for emails, or for web access, information about the browser used (user agent string) or the page from which the visitor accessed the website."
+      ]
+    },
+    {
+      "type": "text",
+      "text": "The provider uses this information, among other things, to trace and resolve technical problems, to find errors, to defend against attacks on its infrastructure, to support subsequent analyses of hacked customer websites, and to create visitor statistics for the hosted websites."
+    },
+    {
+      "type": "text",
+      "text": "The data remains stored for as long as it is operationally necessary or required by law or contract, and is then automatically deleted. For most data, this is a maximum of six months."
+    },
+    {
+      "type": "text",
+      "text": "(c) by Pascale Y. Kohli, 2020"
+    }
+  ],
+  "nutzung_page_title": "Terms of Use & Imprint",
+  "nutzung_h1": "Terms of Use",
+  "nutzung_resp_label": "Responsible for all content on this site, except external links:",
+  "nutzung_resp_name": "Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern",
+  "nutzung_blocks": [
+    {
+      "type": "text",
+      "text": "All texts and images on this website may not be used without the consent of the author and site owner. Not even in excerpts or in modified form. All external links published by me were reviewed at the time of publication and found to be appropriate; however, visiting them is done at your own risk."
+    }
+  ]
 }

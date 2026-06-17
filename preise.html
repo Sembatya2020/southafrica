@@ -91,40 +91,53 @@
   </div>
 
   <!-- Pricing cards -->
-  <div class="pricing-grid">
+  <div class="pricing-grid" data-list="preise_cards">
 
-    <div class="pricing-card fade-up">
-      <span class="pricing-eyebrow" id="pr-eb1" data-i18n="preise_eb1">90 Minuten</span>
+    <div class="pricing-card fade-up" data-default>
+      <span class="pricing-eyebrow" data-i18n="preise_eb1">90 Minuten</span>
       <div class="pricing-amount">
         <span class="pricing-currency">CHF</span>
         <span class="pricing-number">160</span>
-        <span class="pricing-unit" id="pr-u1" data-i18n="preise_unit">/ Stunde</span>
+        <span class="pricing-unit" data-i18n="preise_unit">/ Stunde</span>
       </div>
-      <p class="pricing-desc" id="pr-d1" data-i18n="preise_d1">Für Fachpersonen, die ihre Arbeit reflektieren und weiterentwickeln möchten.</p>
-      <a href="supervision.html" class="pricing-link" id="pr-l1" data-i18n="preise_l1">Mehr zu Supervision →</a>
+      <p class="pricing-desc" data-i18n="preise_d1">Für Fachpersonen, die ihre Arbeit reflektieren und weiterentwickeln möchten.</p>
+      <a href="supervision.html" class="pricing-link" data-i18n="preise_l1">Mehr zu Supervision →</a>
     </div>
 
-    <div class="pricing-card pricing-card--featured fade-up">
-      <span class="pricing-eyebrow" id="pr-eb2" data-i18n="preise_eb2">Sitzungen in Bern</span>
+    <div class="pricing-card pricing-card--featured fade-up" data-default>
+      <span class="pricing-eyebrow" data-i18n="preise_eb2">Sitzungen in Bern</span>
       <div class="pricing-amount">
         <span class="pricing-currency">CHF</span>
         <span class="pricing-number">120</span>
-        <span class="pricing-unit" id="pr-u2" data-i18n="preise_unit">/ Stunde</span>
+        <span class="pricing-unit" data-i18n="preise_unit">/ Stunde</span>
       </div>
-      <p class="pricing-desc" id="pr-d2" data-i18n="preise_d2">Persönliche Sitzungen in meinem Praxisraum in Bern.</p>
-      <a href="beratung.html" class="pricing-link" id="pr-l2" data-i18n="preise_l2">Mehr zu Beratung →</a>
+      <p class="pricing-desc" data-i18n="preise_d2">Persönliche Sitzungen in meinem Praxisraum in Bern.</p>
+      <a href="beratung.html" class="pricing-link" data-i18n="preise_l2">Mehr zu Beratung →</a>
     </div>
 
-    <div class="pricing-card fade-up">
-      <span class="pricing-eyebrow" id="pr-eb3" data-i18n="preise_eb3">15 Minuten</span>
+    <div class="pricing-card fade-up" data-default>
+      <span class="pricing-eyebrow" data-i18n="preise_eb3">15 Minuten</span>
       <div class="pricing-amount">
         <span class="pricing-currency">CHF</span>
         <span class="pricing-number">0</span>
-        <span class="pricing-unit" id="pr-u3"></span>
+        <span class="pricing-unit"></span>
       </div>
-      <p class="pricing-desc" id="pr-d3" data-i18n="preise_d3">Sitzungen via Zoom – ortsunabhängig, von zuhause oder unterwegs.</p>
-      <a href="kontakt.html" class="pricing-link" id="pr-l3" data-i18n="preise_l3">Termin anfragen →</a>
+      <p class="pricing-desc" data-i18n="preise_d3">Sitzungen via Zoom – ortsunabhängig, von zuhause oder unterwegs.</p>
+      <a href="kontakt.html" class="pricing-link" data-i18n="preise_l3">Termin anfragen →</a>
     </div>
+
+    <template>
+      <div class="pricing-card">
+        <span class="pricing-eyebrow" data-field="eyebrow"></span>
+        <div class="pricing-amount">
+          <span class="pricing-currency" data-field="currency">CHF</span>
+          <span class="pricing-number" data-field="price"></span>
+          <span class="pricing-unit" data-field="unit"></span>
+        </div>
+        <p class="pricing-desc" data-field="desc"></p>
+        <a class="pricing-link" data-href-field="link" data-field="link_text"></a>
+      </div>
+    </template>
 
   </div>
 
@@ -132,16 +145,21 @@
   <div class="pricing-discounts fade-up">
     <h2 id="pr-disc-h" data-i18n="preise_disc_h">Mehrfach-Buchungen</h2>
     <p class="pricing-discounts-intro" id="pr-disc-intro" data-i18n="preise_disc_intro">Bei der Buchung von mehreren Sitzungen biete ich folgende Reduktionen an:</p>
-    <div class="discounts-row">
-      <div class="discount-item">
+    <div class="discounts-row" data-list="preise_discounts">
+      <div class="discount-item" data-default>
         <span class="discount-num">10 %</span>
-        <span class="discount-label" id="pr-disc-l1" data-i18n="preise_disc_l1">Rabatt bei 5 Sitzungen</span>
+        <span class="discount-label" data-i18n="preise_disc_l1">Rabatt bei 5 Sitzungen</span>
       </div>
-      <div class="discount-divider"></div>
-      <div class="discount-item">
+      <div class="discount-item" data-default>
         <span class="discount-num">15 %</span>
-        <span class="discount-label" id="pr-disc-l2" data-i18n="preise_disc_l2">Rabatt bei 10 Sitzungen</span>
+        <span class="discount-label" data-i18n="preise_disc_l2">Rabatt bei 10 Sitzungen</span>
       </div>
+      <template>
+        <div class="discount-item">
+          <span class="discount-num" data-field="amount"></span>
+          <span class="discount-label" data-field="label"></span>
+        </div>
+      </template>
     </div>
   </div>
 

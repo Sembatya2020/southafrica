@@ -267,12 +267,24 @@
     }, {});
   }
 
-  /* Remap flat underscore keys (hero_h1) to dot-notation (hero.h1) */
-  function remapKeys(obj) {
-    return Object.keys(obj).reduce(function(acc, key) {
-      acc[key.replace(/_/g, '.')] = obj[key];
-      return acc;
-    }, {});
+  /* Raw CMS content per language — used by the list/block renderers below.
+     Scalars get merged into `t`; arrays/objects stay here. */
+  var cmsRaw = { de: {}, en: {} };
+
+  /* Merge the simple text fields of a CMS file into the translation table.
+     Each key is stored under BOTH its original underscore form (hero_h1 —
+     used by the inner pages) AND its dot form (hero.h1 — used by the
+     homepage), so a single content file feeds every page regardless of
+     which key style its HTML uses. Arrays/objects are skipped here; the
+     list & block renderers read those straight from `cmsRaw`. */
+  function mergeScalars(target, src) {
+    if (!src) return;
+    Object.keys(src).forEach(function(key) {
+      var v = src[key];
+      if (v === null || typeof v === 'object') return; // lists/blocks handled separately
+      target[key] = v;
+      target[key.replace(/_/g, '.')] = v;
+    });
   }
 
   /* Load content-de.json and content-en.json from CMS and merge into t */
@@ -282,9 +294,130 @@
       fetch('content-de.json?v=' + ts).then(function(r) { return r.json(); }).catch(function() { return null; }),
       fetch('content-en.json?v=' + ts).then(function(r) { return r.json(); }).catch(function() { return null; })
     ]).then(function(results) {
-      if (results[0]) Object.assign(t.de, remapKeys(results[0]));
-      if (results[1]) Object.assign(t.en, remapKeys(results[1]));
+      if (results[0]) { cmsRaw.de = results[0]; mergeScalars(t.de, results[0]); }
+      if (results[1]) { cmsRaw.en = results[1]; mergeScalars(t.en, results[1]); }
     }).catch(function() {}).finally(callback);
+  }
+
+  /* ─── DYNAMIC CONTENT (add / remove / reorder from the CMS) ─────────
+     Two container types, both driven by an array in the content file:
+
+       <div data-list="KEY"> … <template>…</template> </div>
+         Repeats the <template> once per array item. Inside the template,
+         elements carry data-field / data-field-html / data-href-field /
+         data-src-field to receive each item's properties (a plain string
+         item fills any field).
+
+       <div data-blocks="KEY"> … </div>
+         A typed list (heading / text / quote / bullets / button / spacer /
+         image). Lets the editor freely add, remove and reorder elements.
+
+     Any children marked data-default are shown as a fallback and removed
+     only when the CMS actually provides content — so the page still works
+     (and stays good for search engines) if a file is missing or empty. */
+
+  function fieldValue(item, name, isString) {
+    if (isString) return item;
+    return item ? item[name] : undefined;
+  }
+
+  function applyFields(el, item, isString) {
+    if (el.hasAttribute('data-field')) {
+      var v = fieldValue(item, el.getAttribute('data-field'), isString);
+      if (v != null && v !== '') el.textContent = v;
+      else if (el.hasAttribute('data-optional')) el.style.display = 'none';
+    }
+    if (el.hasAttribute('data-field-html')) {
+      var vh = fieldValue(item, el.getAttribute('data-field-html'), isString);
+      if (vh != null && vh !== '') el.innerHTML = vh;
+      else if (el.hasAttribute('data-optional')) el.style.display = 'none';
+    }
+    if (el.hasAttribute('data-href-field')) {
+      var hv = fieldValue(item, el.getAttribute('data-href-field'), isString);
+      if (hv) el.setAttribute('href', hv);
+    }
+    if (el.hasAttribute('data-src-field')) {
+      var sv = fieldValue(item, el.getAttribute('data-src-field'), isString);
+      if (sv) el.setAttribute('src', sv);
+    }
+  }
+
+  function clearDynamic(container) {
+    container.querySelectorAll('[data-default],[data-list-item]').forEach(function(n) { n.remove(); });
+  }
+
+  function renderLists(data) {
+    document.querySelectorAll('[data-list]').forEach(function(container) {
+      var items = data[container.getAttribute('data-list')];
+      var tpl = container.querySelector(':scope > template');
+      if (!tpl || !Array.isArray(items)) return;
+      clearDynamic(container);
+      items.forEach(function(item) {
+        var node = tpl.content.firstElementChild.cloneNode(true);
+        if (!node) return;
+        node.setAttribute('data-list-item', '');
+        node.classList.add('visible'); // dynamic items aren't watched by the reveal observer
+        var isString = (item === null || typeof item !== 'object');
+        applyFields(node, item, isString);
+        node.querySelectorAll('[data-field],[data-field-html],[data-href-field],[data-src-field]')
+          .forEach(function(el) { applyFields(el, item, isString); });
+        container.insertBefore(node, tpl);
+      });
+    });
+  }
+
+  function makeBlock(b, opts) {
+    opts = opts || {};
+    var type = (b && b.type) || 'text';
+    var el;
+    switch (type) {
+      case 'heading':    el = document.createElement('h2'); el.textContent = b.text || ''; break;
+      case 'subheading': el = document.createElement('h3'); el.textContent = b.text || ''; break;
+      case 'quote':      el = document.createElement('blockquote'); el.innerHTML = b.text || ''; break;
+      case 'bullets':
+        el = document.createElement('ul');
+        if (opts.bulletClass) el.className = opts.bulletClass;
+        (b.items || []).forEach(function(it) {
+          var li = document.createElement('li'); li.innerHTML = it; el.appendChild(li);
+        });
+        break;
+      case 'button':
+        el = document.createElement('a');
+        el.className = 'btn-primary'; el.style.display = 'inline-block';
+        el.textContent = b.text || '';
+        if (b.link) el.href = b.link;
+        break;
+      case 'spacer':
+        el = document.createElement('div');
+        el.style.height = b.size || '2rem'; el.setAttribute('aria-hidden', 'true');
+        break;
+      case 'image':
+        el = document.createElement('img');
+        el.loading = 'lazy';
+        if (b.image) el.src = b.image;
+        el.alt = b.alt || '';
+        break;
+      default:
+        el = document.createElement('p'); el.innerHTML = (b && b.text) || '';
+    }
+    el.setAttribute('data-list-item', '');
+    return el;
+  }
+
+  function renderBlocks(data) {
+    document.querySelectorAll('[data-blocks]').forEach(function(container) {
+      var blocks = data[container.getAttribute('data-blocks')];
+      if (!Array.isArray(blocks)) return;
+      var opts = { bulletClass: container.getAttribute('data-bullets-class') || '' };
+      clearDynamic(container);
+      blocks.forEach(function(b) { container.appendChild(makeBlock(b, opts)); });
+    });
+  }
+
+  function renderDynamic(lang) {
+    var data = cmsRaw[lang] || {};
+    renderLists(data);
+    renderBlocks(data);
   }
 
   function applyLang(lang) {
@@ -294,6 +427,10 @@
     document.documentElement.lang = lang;
 
     const dict = t[lang];
+
+    // Dynamic (add/remove/reorder) content from the CMS, rendered before the
+    // scalar pass so any data-i18n fallbacks inside still get localized.
+    renderDynamic(lang);
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const v = dict[el.dataset.i18n];

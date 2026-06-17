@@ -77,9 +77,9 @@
   <div class="legal-hero-inner">
     <p class="legal-breadcrumb">
       <a href="index.html">Komm sprich mit mir</a> &nbsp;/&nbsp;
-      <span id="pageTitle">AGB</span>
+      <span id="pageTitle" data-i18n="agb_page_title">AGB</span>
     </p>
-    <h1 id="pageH1">Allgemeine Geschäftsbedingungen</h1>
+    <h1 id="pageH1" data-i18n="agb_h1">Allgemeine Geschäftsbedingungen</h1>
   </div>
 </div>
 
@@ -87,32 +87,32 @@
 <div class="legal-content-wrap">
   <a href="index.html" class="legal-back" data-i18n="legal.back">← Zurück zur Startseite</a>
 
-  <div class="legal-content" id="pageContent">
+  <div class="legal-content" id="pageContent" data-blocks="agb_blocks">
 
-    <h2 id="s1title">1. Geltungsbereich</h2>
-    <p id="s1body">Diese Allgemeinen Geschäftsbedingungen gelten für alle therapeutischen Begleitungen und Beratungsleistungen von Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern.</p>
+    <h2 data-default>1. Geltungsbereich</h2>
+    <p data-default>Diese Allgemeinen Geschäftsbedingungen gelten für alle therapeutischen Begleitungen und Beratungsleistungen von Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern.</p>
 
-    <h2 id="s2title">2. Termine und Absagen</h2>
-    <p id="s2body">Vereinbarte Termine können bis zu 24 Stunden im Voraus kostenlos abgesagt oder verschoben werden. Bei kurzfristigeren Absagen ohne triftigen Grund (z.B. Krankheit, Notfall) wird der volle Sitzungsbetrag in Rechnung gestellt.</p>
+    <h2 data-default>2. Termine und Absagen</h2>
+    <p data-default>Vereinbarte Termine können bis zu 24 Stunden im Voraus kostenlos abgesagt oder verschoben werden. Bei kurzfristigeren Absagen ohne triftigen Grund (z.B. Krankheit, Notfall) wird der volle Sitzungsbetrag in Rechnung gestellt.</p>
 
-    <h2 id="s3title">3. Vertraulichkeit</h2>
-    <p id="s3body">Alle Inhalte der Gespräche werden streng vertraulich behandelt. Die therapeutische Schweigepflicht gilt unbeschränkt. Ausnahmen bestehen ausschliesslich bei gesetzlicher Pflicht zur Offenlegung (z.B. akute Selbst- oder Fremdgefährdung).</p>
+    <h2 data-default>3. Vertraulichkeit</h2>
+    <p data-default>Alle Inhalte der Gespräche werden streng vertraulich behandelt. Die therapeutische Schweigepflicht gilt unbeschränkt. Ausnahmen bestehen ausschliesslich bei gesetzlicher Pflicht zur Offenlegung (z.B. akute Selbst- oder Fremdgefährdung).</p>
 
-    <h2 id="s4title">4. Honorar</h2>
-    <p id="s4body">Das Honorar wird individuell vereinbart und vor dem ersten Gespräch schriftlich bestätigt. Die Rechnung ist innert 30 Tagen nach Erhalt zu begleichen.</p>
+    <h2 data-default>4. Honorar</h2>
+    <p data-default>Das Honorar wird individuell vereinbart und vor dem ersten Gespräch schriftlich bestätigt. Die Rechnung ist innert 30 Tagen nach Erhalt zu begleichen.</p>
 
-    <h2 id="s5title">5. Haftung</h2>
-    <p id="s5body">Die therapeutische Begleitung ersetzt keine medizinische oder psychiatrische Behandlung. Bei akuten psychischen Erkrankungen ist eine ärztliche Fachkraft beizuziehen. Die Beraterin haftet nicht für Entscheidungen, die der Klient auf Grundlage der Gespräche trifft.</p>
+    <h2 data-default>5. Haftung</h2>
+    <p data-default>Die therapeutische Begleitung ersetzt keine medizinische oder psychiatrische Behandlung. Bei akuten psychischen Erkrankungen ist eine ärztliche Fachkraft beizuziehen. Die Beraterin haftet nicht für Entscheidungen, die der Klient auf Grundlage der Gespräche trifft.</p>
 
-    <h2 id="s6title">6. Datenschutz</h2>
-    <p id="s6body">Personenbezogene Daten werden ausschliesslich zum Zweck der Terminvereinbarung und Rechnungsstellung verwendet und nicht an Dritte weitergegeben. Es gelten die Bestimmungen der Datenschutzrichtlinie.</p>
+    <h2 data-default>6. Datenschutz</h2>
+    <p data-default>Personenbezogene Daten werden ausschliesslich zum Zweck der Terminvereinbarung und Rechnungsstellung verwendet und nicht an Dritte weitergegeben. Es gelten die Bestimmungen der Datenschutzrichtlinie.</p>
 
-    <div class="legal-responsible">
-      <p><strong>Pascale Myriam Kohli</strong></p>
-      <p>Rathausgasse 48, 3011 Bern</p>
-      <p><a href="mailto:pascale.kohli@hin.ch" style="color:var(--gold)">pascale.kohli@hin.ch</a></p>
-    </div>
+  </div>
 
+  <div class="legal-responsible">
+    <p><strong>Pascale Myriam Kohli</strong></p>
+    <p>Rathausgasse 48, 3011 Bern</p>
+    <p><a href="mailto:pascale.kohli@hin.ch" style="color:var(--gold)">pascale.kohli@hin.ch</a></p>
   </div>
 </div>
 
@@ -156,56 +156,5 @@
 </footer>
 
 <script type="module" src="./main.js"></script>
-<script type="module">
-  const pageT = {
-    de: {
-      title:   'AGB',
-      h1:      'Allgemeine Geschäftsbedingungen',
-      s1title: '1. Geltungsbereich',
-      s1body:  'Diese Allgemeinen Geschäftsbedingungen gelten für alle therapeutischen Begleitungen und Beratungsleistungen von Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern.',
-      s2title: '2. Termine und Absagen',
-      s2body:  'Vereinbarte Termine können bis zu 24 Stunden im Voraus kostenlos abgesagt oder verschoben werden. Bei kurzfristigeren Absagen ohne triftigen Grund (z.B. Krankheit, Notfall) wird der volle Sitzungsbetrag in Rechnung gestellt.',
-      s3title: '3. Vertraulichkeit',
-      s3body:  'Alle Inhalte der Gespräche werden streng vertraulich behandelt. Die therapeutische Schweigepflicht gilt unbeschränkt. Ausnahmen bestehen ausschliesslich bei gesetzlicher Pflicht zur Offenlegung (z.B. akute Selbst- oder Fremdgefährdung).',
-      s4title: '4. Honorar',
-      s4body:  'Das Honorar wird individuell vereinbart und vor dem ersten Gespräch schriftlich bestätigt. Die Rechnung ist innert 30 Tagen nach Erhalt zu begleichen.',
-      s5title: '5. Haftung',
-      s5body:  'Die therapeutische Begleitung ersetzt keine medizinische oder psychiatrische Behandlung. Bei akuten psychischen Erkrankungen ist eine ärztliche Fachkraft beizuziehen. Die Beraterin haftet nicht für Entscheidungen, die der Klient auf Grundlage der Gespräche trifft.',
-      s6title: '6. Datenschutz',
-      s6body:  'Personenbezogene Daten werden ausschliesslich zum Zweck der Terminvereinbarung und Rechnungsstellung verwendet und nicht an Dritte weitergegeben. Es gelten die Bestimmungen der Datenschutzrichtlinie.',
-    },
-    en: {
-      title:   'T & C',
-      h1:      'General Terms & Conditions',
-      s1title: '1. Scope',
-      s1body:  'These General Terms and Conditions apply to all therapeutic accompaniment and counselling services provided by Pascale Myriam Kohli, Rathausgasse 48, 3011 Bern.',
-      s2title: '2. Appointments and Cancellations',
-      s2body:  'Scheduled appointments may be cancelled or rescheduled free of charge up to 24 hours in advance. For cancellations at shorter notice without a valid reason (e.g. illness, emergency), the full session fee will be charged.',
-      s3title: '3. Confidentiality',
-      s3body:  'All content discussed in sessions is treated with strict confidentiality. Professional confidentiality applies without restriction. Exceptions exist solely where there is a legal obligation to disclose (e.g. acute risk of harm to self or others).',
-      s4title: '4. Fees',
-      s4body:  'Fees are agreed individually and confirmed in writing before the first session. Invoices are due within 30 days of receipt.',
-      s5title: '5. Liability',
-      s5body:  'Therapeutic counselling does not replace medical or psychiatric treatment. In the case of acute mental illness, a qualified medical professional should be consulted. The counsellor accepts no liability for decisions made by the client on the basis of the sessions.',
-      s6title: '6. Data Protection',
-      s6body:  'Personal data is used exclusively for the purpose of appointment scheduling and invoicing and is not passed on to third parties. The provisions of the Privacy Policy apply.',
-    }
-  };
-
-  function applyPageContent(lang) {
-    const p = pageT[lang];
-    document.getElementById('pageTitle').textContent = p.title;
-    document.getElementById('pageH1').textContent    = p.h1;
-    ['s1','s2','s3','s4','s5','s6'].forEach(s => {
-      document.getElementById(s + 'title').textContent = p[s + 'title'];
-      document.getElementById(s + 'body').textContent  = p[s + 'body'];
-    });
-    document.title = p.title + ' – Komm sprich mit mir';
-  }
-
-  window._langCallbacks = window._langCallbacks || [];
-  window._langCallbacks.push(applyPageContent);
-  applyPageContent(window.currentLang || 'de');
-</script>
 </body>
 </html>

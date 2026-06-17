@@ -77,9 +77,9 @@
   <div class="legal-hero-inner">
     <p class="legal-breadcrumb">
       <a href="index.html">Komm sprich mit mir</a> &nbsp;/&nbsp;
-      <span id="pageTitle">Datenschutzrichtlinie</span>
+      <span id="pageTitle" data-i18n="datenschutz_page_title">Datenschutzrichtlinie</span>
     </p>
-    <h1 id="pageH1">Datenschutzrichtlinie</h1>
+    <h1 id="pageH1" data-i18n="datenschutz_h1">Datenschutzrichtlinie</h1>
   </div>
 </div>
 
@@ -87,19 +87,19 @@
 <div class="legal-content-wrap">
   <a href="index.html" class="legal-back" data-i18n="legal.back">← Zurück zur Startseite</a>
 
-  <div class="legal-content" id="pageContent">
+  <div class="legal-content" id="pageContent" data-blocks="datenschutz_blocks">
 
-    <p>Die Betreiberin dieser Site nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Sie behandelt Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+    <p data-default>Die Betreiberin dieser Site nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Sie behandelt Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
 
-    <p>Insbesondere ist die auf der Website unter Kontakt angegebene Emailadresse HIN-gesichert und garantiert somit maximalen Schutz ihrer Daten bei persönlichen Anfragen.</p>
+    <p data-default>Insbesondere ist die auf der Website unter Kontakt angegebene Emailadresse HIN-gesichert und garantiert somit maximalen Schutz ihrer Daten bei persönlichen Anfragen.</p>
 
-    <p>Diese Internetsite sammelt und speichert nur die nötigsten Daten über ihre Besucher. Der Eigentümer und Betreiber der Site setzt keine Cookies ein und verwendet auch keine Analyse- oder Auswertungswerkzeuge von Drittanbietern. Bei Anfragen über das Kontaktformular oder über die dort angegebene Mailadresse werden die hinterlassenen Angaben nur gerade für die Beantwortung der Anfrage verwendet und nicht weiter gespeichert.</p>
+    <p data-default>Diese Internetsite sammelt und speichert nur die nötigsten Daten über ihre Besucher. Der Eigentümer und Betreiber der Site setzt keine Cookies ein und verwendet auch keine Analyse- oder Auswertungswerkzeuge von Drittanbietern. Bei Anfragen über das Kontaktformular oder über die dort angegebene Mailadresse werden die hinterlassenen Angaben nur gerade für die Beantwortung der Anfrage verwendet und nicht weiter gespeichert.</p>
 
-    <h2 id="logfilesTitle">Logfiles des Providers</h2>
+    <h2 data-default>Logfiles des Providers</h2>
 
-    <p id="logfilesIntro">Der Provider, bei dem die Site gehostet wird (green.ch), legt so genannte Logfiles an, um seine Dienstleistungen «zuverlässig, technisch einwandfrei und auch gesetzeskonform erbringen zu können.» Diese enthalten laut seinen Angaben Informationen wie:</p>
+    <p data-default>Der Provider, bei dem die Site gehostet wird (green.ch), legt so genannte Logfiles an, um seine Dienstleistungen «zuverlässig, technisch einwandfrei und auch gesetzeskonform erbringen zu können.» Diese enthalten laut seinen Angaben Informationen wie:</p>
 
-    <ul id="logfilesList">
+    <ul data-default>
       <li>IP-Adressen</li>
       <li>Datum und Uhrzeit</li>
       <li>Protokollinformationen wie Protokolltyp und -version, die gewünschte Aktion, Statuscodes oder Angaben zu den transferierten Daten (z.B. die Grösse einer Frage oder einer Antwort)</li>
@@ -107,11 +107,11 @@
       <li>Je nachdem anwendungsspezifische Informationen wie zum Beispiel Message-IDs bei E-Mails, oder bei Webzugriffen Angaben zum verwendeten Browser (User-Agent String) oder gegebenenfalls der Seite, von welcher der Besucher auf die Webseite gelangt ist.</li>
     </ul>
 
-    <p id="logfilesUse">Der Provider verwendet diese Informationen unter anderem zum Nachvollziehen und Lösen von technischen Problemen, zum Finden von Fehlern, zum Abwehren von Angriffen auf seine Infrastruktur, zur Unterstützung von nachträglichen Analysen bei gehackten Kundenwebseiten oder auch zum Erstellen der Besucherstatistiken für die gehosteten Webseiten.</p>
+    <p data-default>Der Provider verwendet diese Informationen unter anderem zum Nachvollziehen und Lösen von technischen Problemen, zum Finden von Fehlern, zum Abwehren von Angriffen auf seine Infrastruktur, zur Unterstützung von nachträglichen Analysen bei gehackten Kundenwebseiten oder auch zum Erstellen der Besucherstatistiken für die gehosteten Webseiten.</p>
 
-    <p id="retention">Die Daten verbleiben gespeichert, solange es entweder betrieblich notwendig oder gesetzlich beziehungsweise vertraglich vorgeschrieben ist und werden danach automatisch gelöscht. Für die meisten Daten ist dies maximal ein halbes Jahr.</p>
+    <p data-default>Die Daten verbleiben gespeichert, solange es entweder betrieblich notwendig oder gesetzlich beziehungsweise vertraglich vorgeschrieben ist und werden danach automatisch gelöscht. Für die meisten Daten ist dies maximal ein halbes Jahr.</p>
 
-    <p class="legal-copyright" id="pageCopyright">(c) by Pascale Y. Kohli, 2020</p>
+    <p class="legal-copyright" data-default>(c) by Pascale Y. Kohli, 2020</p>
 
   </div>
 </div>
@@ -158,61 +158,5 @@
 </footer>
 
 <script type="module" src="./main.js"></script>
-<script type="module">
-  const pageT = {
-    de: {
-      title:          'Datenschutzrichtlinie',
-      h1:             'Datenschutzrichtlinie',
-      p1:             'Die Betreiberin dieser Site nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Sie behandelt Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.',
-      p2:             'Insbesondere ist die auf der Website unter Kontakt angegebene Emailadresse HIN-gesichert und garantiert somit maximalen Schutz ihrer Daten bei persönlichen Anfragen.',
-      p3:             'Diese Internetsite sammelt und speichert nur die nötigsten Daten über ihre Besucher. Der Eigentümer und Betreiber der Site setzt keine Cookies ein und verwendet auch keine Analyse- oder Auswertungswerkzeuge von Drittanbietern. Bei Anfragen über das Kontaktformular oder über die dort angegebene Mailadresse werden die hinterlassenen Angaben nur gerade für die Beantwortung der Anfrage verwendet und nicht weiter gespeichert.',
-      logfilesTitle:  'Logfiles des Providers',
-      logfilesIntro:  'Der Provider, bei dem die Site gehostet wird (green.ch), legt so genannte Logfiles an, um seine Dienstleistungen «zuverlässig, technisch einwandfrei und auch gesetzeskonform erbringen zu können.» Diese enthalten laut seinen Angaben Informationen wie:',
-      logfilesList: ['IP-Adressen', 'Datum und Uhrzeit', 'Protokollinformationen wie Protokolltyp und -version, die gewünschte Aktion, Statuscodes oder Angaben zu den transferierten Daten (z.B. die Grösse einer Frage oder einer Antwort)', 'Fehlermeldungen', 'Je nachdem anwendungsspezifische Informationen wie zum Beispiel Message-IDs bei E-Mails, oder bei Webzugriffen Angaben zum verwendeten Browser (User-Agent String) oder gegebenenfalls der Seite, von welcher der Besucher auf die Webseite gelangt ist.'],
-      logfilesUse:    'Der Provider verwendet diese Informationen unter anderem zum Nachvollziehen und Lösen von technischen Problemen, zum Finden von Fehlern, zum Abwehren von Angriffen auf seine Infrastruktur, zur Unterstützung von nachträglichen Analysen bei gehackten Kundenwebseiten oder auch zum Erstellen der Besucherstatistiken für die gehosteten Webseiten.',
-      retention:      'Die Daten verbleiben gespeichert, solange es entweder betrieblich notwendig oder gesetzlich beziehungsweise vertraglich vorgeschrieben ist und werden danach automatisch gelöscht. Für die meisten Daten ist dies maximal ein halbes Jahr.',
-      copyright:      '(c) by Pascale Y. Kohli, 2020',
-    },
-    en: {
-      title:          'Privacy Policy',
-      h1:             'Privacy Policy',
-      p1:             'The operator of this site takes the protection of your personal data very seriously. Your personal data is treated confidentially and in accordance with the statutory data protection regulations as well as this privacy policy.',
-      p2:             'In particular, the email address provided on the website under Contact is HIN-secured, thus guaranteeing maximum protection of your data for personal enquiries.',
-      p3:             'This website collects and stores only the minimum necessary data about its visitors. The owner and operator of the site does not use cookies and does not use any analysis or evaluation tools from third parties. For enquiries via the contact form or the email address provided there, the information submitted will only be used to respond to the enquiry and will not be stored further.',
-      logfilesTitle:  'Provider Log Files',
-      logfilesIntro:  'The provider hosting the site (green.ch) creates so-called log files in order to provide its services "reliably, technically flawlessly and also in compliance with the law." According to their information, these contain information such as:',
-      logfilesList: ['IP addresses', 'Date and time', 'Protocol information such as protocol type and version, the requested action, status codes or information about the data transferred (e.g. the size of a request or response)', 'Error messages', 'Depending on the context, application-specific information such as message IDs for emails, or for web access, information about the browser used (user agent string) or the page from which the visitor accessed the website.'],
-      logfilesUse:    'The provider uses this information, among other things, to trace and resolve technical problems, to find errors, to defend against attacks on its infrastructure, to support subsequent analyses of hacked customer websites, and to create visitor statistics for the hosted websites.',
-      retention:      'The data remains stored for as long as it is operationally necessary or required by law or contract, and is then automatically deleted. For most data, this is a maximum of six months.',
-      copyright:      '(c) by Pascale Y. Kohli, 2020',
-    }
-  };
-
-  function applyPageContent(lang) {
-    const p = pageT[lang];
-    document.getElementById('pageTitle').textContent      = p.title;
-    document.getElementById('pageH1').textContent         = p.h1;
-    document.getElementById('logfilesTitle').textContent  = p.logfilesTitle;
-    document.getElementById('logfilesIntro').textContent  = p.logfilesIntro;
-    document.getElementById('logfilesUse').textContent    = p.logfilesUse;
-    document.getElementById('retention').textContent      = p.retention;
-    document.getElementById('pageCopyright').textContent  = p.copyright;
-    document.title = p.title + ' – Komm sprich mit mir';
-
-    /* Rebuild paragraph content */
-    const content = document.getElementById('pageContent');
-    const paras = content.querySelectorAll('p:not(.legal-copyright):not(#logfilesIntro):not(#logfilesUse):not(#retention)');
-    const texts = [p.p1, p.p2, p.p3];
-    paras.forEach((el, i) => { if (texts[i]) el.textContent = texts[i]; });
-
-    /* Rebuild list */
-    const list = document.getElementById('logfilesList');
-    list.innerHTML = p.logfilesList.map(item => `<li>${item}</li>`).join('');
-  }
-
-  window._langCallbacks = window._langCallbacks || [];
-  window._langCallbacks.push(applyPageContent);
-  applyPageContent(window.currentLang || 'de');
-</script>
 </body>
 </html>
