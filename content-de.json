@@ -1,4 +1,5 @@
 {
+  "footer_link_nutzung": "Nutzung & Impressum",
   "supervision_p4": "Als Supervisorin begleite ich dich dabei, deine Wahrnehmungen zu differenzieren, Zusammenhänge klarer zu sehen und neue Perspektiven zu entwickeln.",
   "welcome_p3": "Ich begleite dich als aufmerksame Gesprächspartnerin, Mitforschende und Impulsgeberin. Meine Arbeitsweise ist prozessorientiert.",
   "beratung_info": "<strong>Prozessorientierte Psychosoziale Beraterin SGFB</strong>",
@@ -145,6 +146,7 @@
       "link": "kontakt.html"
     }
   ],
+  "footer_link_datenschutz": "Datenschutzrichtlinie",
   "supervision_bso": "<strong>BSO anerkannte Supervisorin</strong>",
   "welcome_p5": "Du musst nichts mitbringen. Dein Wunsch, ein Thema vertieft anzusehen oder auch nur schon der Wunsch nach einem Gespräch sind völlig ausreichend.",
   "supervision_p7": "Meine Erfahrung umfasst mehrere Jahre Tätigkeit im psychiatrischen und psychotherapeutischen Umfeld, in denen ich eng mit Fachpersonen zusammengearbeitet habe. Ich habe Verlaufs- und Behandlungsberichte sowie Gutachten mitverfasst und dabei Einblick in unterschiedlichste Fallkonstellationen und therapeutische Prozesse erhalten. Auch habe ich viele Prüfungsabsolventen am Institut für Prozessarbeit als Beisitzerin begleitet.",
@@ -177,6 +179,7 @@
   "nutzung_resp_label": "Verantwortlich für sämtliche Inhalte dieser Seite, ausser externer links:",
   "about_b3": "Körper- und bewusstseinsorientierte Methoden",
   "footer_copyright": "© 2026 Komm sprich mit mir · Pascale Myriam Kohli",
+  "gallery_p": "Natur ist für mich ein täglicher Spiegel des Lebens – voller Weisheit, Schönheit und Wandel.",
   "welcome_p6": "Wenn du selbst mit Klienten arbeitest, stehe ich dir als BSO anerkannte Supervisorin zur Verfügung, um deine fachliche Arbeit gemeinsam zu reflektieren und weiterzuentwickeln.",
   "footer_brand": "Prozessorientierte Psychosoziale Beratung, Supervision & Coaching.",
   "nutzung_blocks": [
@@ -248,9 +251,11 @@
   "testi_eb": "KUNDENSTIMMEN",
   "nutzung_page_title": "Nutzung & Impressum",
   "about_wb_h": "Weiterbildungen",
+  "footer_link_privacy": "Datenschutz",
   "nutzung_h1": "Nutzungsbedingungen",
   "welcome_h2": "Ein Raum, in dem das, was dich beschäftigt, sichtbar werden darf.",
   "kontakt_page_title": "Kontakt",
+  "footer_link_imprint": "Impressum",
   "services_eyebrow": "Mein Angebot",
   "testi_q1": "Die Zusammenarbeit mit Pascale gab mir die Klarheit, nach der ich jahrelang gesucht hatte. Sie hört tief zu und hält den Raum auf wunderbare Weise.",
   "preise_disc_l1": "Rabatt bei 5 Sitzungen",
@@ -479,6 +484,7 @@
   "preise_d3": "Ein kostenloses Kennenlerngespräch. 15 Minuten, damit wir beide die Möglichkeiten einer Zusammenarbeit erforschen können.",
   "testi_c1": "S.M., Klientin für Psychosoziale Beratung",
   "about_p4": "In den letzten Jahren habe ich mich intensiv mit Themen wie Trauma, Dissoziation und Resilienz auseinandergesetzt – dies auch, um meine eigenen Themen zu erkennen und zu verstehen. Eine wichtige Erkenntnis für mich daraus ist: Nicht alles muss vollständig „heilen“. Oft geht es vielmehr darum, einen tragenden Umgang mit dem zu finden, was da ist.",
+  "gallery_h2": "Jeder Weg hat seinen Rhythmus",
   "beratung_p4": "Manchmal entsteht Raum für Erkenntnis. Manchmal ist es stimmig, einfach still zu werden. Wie die Oberfläche eines Sees, die sich langsam glättet.",
   "kontakt_subtitle": "Online Beratungspraxis",
   "testi_c2": "T.B., Supervisions-Klient, Bern",
@@ -558,6 +564,7 @@
   "hero_btn1": "Termin anfragen",
   "aboutT_p2": "Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Mit feinem Gespür und Klarheit darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen.",
   "kontakt_whatsapp_h": "WhatsApp",
+  "footer_link_agb": "AGB",
   "phil_cite": "Pascale Myriam Kohli",
   "beratung_page_title": "Beratung & Coaching",
   "beratung_p8": "Und vielleicht entsteht daraus eine neue Erfahrung: Dass du auch im Nicht-Wissen sein kannst und nicht alles unmittelbar gelöst werden muss. Und dass auch darin etwas Tragendes liegt – weil es der Anfang von Klarheit sein kann.",
@@ -577,8 +584,7 @@
       "unit": "/ 90 Minuten",
       "desc": "SUPERVISION\nFür Fachpersonen in den Bereichen Beratung und Therapie, die ihre Arbeit reflektieren und weiterentwickeln möchten.",
       "link_text": "Mehr zu Supervision →",
-      "link": "supervision.html",
-      "featured": false
+      "link": "supervision.html"
     },
     {
       "eyebrow": "15 Minuten",
@@ -587,17 +593,16 @@
       "unit": "/ Sitzung",
       "desc": "Ein kostenloses Kennenlerngespräch. 15 Minuten, damit wir beide die Möglichkeiten einer Zusammenarbeit erforschen können.",
       "link_text": "Termin anfragen →",
-      "link": "kontakt.html",
-      "featured": true
+      "link": "kontakt.html"
     },
     {
       "currency": "CHF",
       "eyebrow": "Beratung & Coaching",
-      "price": "160",
-      "unit": "/ Sitzung",
-      "featured": false
+      "price": "165",
+      "unit": "/ Sitzung"
     }
   ],
+  "gallery_eyebrow": "Inspiration",
   "supervision_p1": "Wenn du selbst mit Menschen arbeitest, kennst du die Komplexität, die diese Arbeit mit sich bringt.",
   "about_insp_h": "Inspirationen",
   "beratung_cta": "Unverbindlich anfragen",
@@ -607,13 +612,5 @@
   "supervision_p3": "Ich biete dir einen Raum, in dem du deine Arbeit in Ruhe betrachten und gemeinsam mit mir reflektieren kannst.",
   "preise_subtitle": "Was kostet meine Zeit?",
   "kontakt_mail_h": "E-Mail",
-  "welcome_p2": "Dann sei willkommen in einem Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf.",
-  "gallery_eyebrow": "Inspiration",
-  "gallery_h2": "Jeder Weg hat seinen Rhythmus",
-  "gallery_p": "Natur ist für mich ein täglicher Spiegel des Lebens – voller Weisheit, Schönheit und Wandel.",
-  "footer_link_agb": "AGB",
-  "footer_link_nutzung": "Nutzung & Impressum",
-  "footer_link_datenschutz": "Datenschutzrichtlinie",
-  "footer_link_privacy": "Datenschutz",
-  "footer_link_imprint": "Impressum"
+  "welcome_p2": "Dann sei willkommen in einem Raum, in dem das, was dich beschäftigt, sichtbar und verstehbar werden darf."
 }
