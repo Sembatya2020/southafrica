@@ -1,4 +1,4 @@
-﻿/* ═══════════════════════════════════════════════════════════════
+/* ═══════════════════════════════════════════════════════════════
    KOMM SPRICH MIT MIR — main.js
    - i18n (DE / EN)
    - navbar scroll state
@@ -349,7 +349,7 @@
   function renderLists(data) {
     document.querySelectorAll('[data-list]').forEach(function(container) {
       var items = data[container.getAttribute('data-list')];
-      var tpl = container.querySelector(':scope > template');
+      var tpl = container.querySelector('template');
       if (!tpl || !Array.isArray(items)) return;
       clearDynamic(container);
       items.forEach(function(item) {
@@ -437,7 +437,7 @@
       if (v !== undefined) el.textContent = v;
     });
     document.querySelectorAll('[data-i18n-html]').forEach(el => {
-      const v = dict[el.dataset.i18nHtml];
+      const v = dict[el.dataset.i18nHtml || el.dataset.i18n_html];
       if (v !== undefined) el.innerHTML = v;
     });
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {

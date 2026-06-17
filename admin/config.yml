@@ -75,6 +75,9 @@ collections:
           - { name: aboutT_btn,     label: "Start · Über mich – Button", widget: string, required: false }
 
           # ─── Startseite: Galerie ───
+          - { name: gallery_eyebrow, label: "Start · Galerie – Kleiner Text", widget: string, required: false }
+          - { name: gallery_h2,      label: "Start · Galerie – Überschrift", widget: string, required: false }
+          - { name: gallery_p,       label: "Start · Galerie – Einleitung", widget: text, required: false }
           - name: gallery
             label: "Start · Galerie (Bilder)"
             label_singular: "Bild"
@@ -260,6 +263,9 @@ collections:
           - { name: aboutT_btn,     label: "Home · About – Button", widget: string, required: false }
 
           # ─── Home: Gallery ───
+          - { name: gallery_eyebrow, label: "Home · Gallery – Small text", widget: string, required: false }
+          - { name: gallery_h2,      label: "Home · Gallery – Heading", widget: string, required: false }
+          - { name: gallery_p,       label: "Home · Gallery – Intro", widget: text, required: false }
           - name: gallery
             label: "Home · Gallery (images)"
             label_singular: "Image"
