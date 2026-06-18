@@ -582,20 +582,20 @@
   "preise_uns_h": "Unsicher, ob es passt?",
   "preise_cards": [
     {
-      "eyebrow": "90 Minuten",
+      "eyebrow": "Supervision",
       "currency": "CHF",
-      "price": "160",
+      "price": "180",
       "unit": "/ pro Sitzung",
       "desc": "Für Fachpersonen, die ihre Arbeit reflektieren und weiterentwickeln möchten.",
       "link_text": "Mehr zu Supervision →",
       "link": "supervision.html"
     },
     {
-      "eyebrow": "Sitzungen in Bern",
+      "eyebrow": "Beratung & Coaching",
       "currency": "CHF",
-      "price": "120",
-      "unit": "/ pro Sitzung",
-      "desc": "Persönliche Sitzungen in meinem Praxisraum in Bern.",
+      "price": "160",
+      "unit": "/ pro Sitzung à 90 Min.",
+      "desc": "Buche deinen ganz persönlichen 90-Minuten Slot mit mir und lass mich teilhaben an dem, was dich gerade bewegt...",
       "link_text": "Mehr zu Beratung →",
       "link": "beratung.html",
       "featured": true
