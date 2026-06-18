@@ -1,9 +1,6 @@
 [build]
-  # Static site: serve the repo root directly. No build step (so a build can
-  # never fail and block publishing). content-*.json and /admin live at the
-  # root and are served as-is.
-  publish = "."
-  command = "echo 'Static site – no build step needed'"
+  command = "npm run build"
+  publish = "dist"
 
 [[headers]]
   for = "/admin/*"

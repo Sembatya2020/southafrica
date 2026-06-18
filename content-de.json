@@ -356,7 +356,7 @@
   "preise_eb1": "90 Minuten",
   "kontakt_cred": "Prozessorientierte Psychosoziale Beraterin SGFB<br>Supervisorin &amp; Coach BSO",
   "preise_l2": "Mehr zu Beratung →",
-  "preise_eb2": " ",
+  "preise_eb2": "Sitzungen in Bern",
   "about_wb_p": "Ergänzend habe ich mich in verschiedenen Bereichen weitergebildet, unter anderem in:",
   "hero_h1": "<em>Komm, sprich mit mir…</em>",
   "preise_l3": "Termin anfragen →",
@@ -376,43 +376,43 @@
   "preise_pay_p": "Die Bezahlung erfolgt direkt nach der Sitzung – in bar, per <strong>Twint</strong> oder <strong>PayPal</strong>.",
   "gallery": [
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.13.27 (1).jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.13.27%20(1).jpeg",
       "caption": "Alpengipfel · Schweiz"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.13.29.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.13.29.jpeg",
       "caption": "Weite Wege · Südafrika"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.13.30.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.13.30.jpeg",
       "caption": "Offene Weite · Karoo"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.13.31.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.13.31.jpeg",
       "caption": "Wilde Küste · Garden Route"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.13.32.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.13.32.jpeg",
       "caption": "Kraft des Meeres"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.13.33.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.13.33.jpeg",
       "caption": "Der Weg ist das Ziel"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.13.34.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.13.34.jpeg",
       "caption": "Neue Horizonte"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.16.27.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.16.27.jpeg",
       "caption": "Ruhig fliessen"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.16.29.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.16.29.jpeg",
       "caption": "Schritt für Schritt"
     },
     {
-      "image": "images/WhatsApp Image 2026-05-07 at 23.16.35.jpeg",
+      "image": "images/WhatsApp%20Image%202026-05-07%20at%2023.16.35.jpeg",
       "caption": "Weitsicht"
     }
   ],
@@ -477,7 +477,7 @@
     }
   ],
   "beratung_p2": "In meiner Arbeit als prozessorientierte psychosoziale Beraterin SGFB begleite ich dich dabei, dich selbst besser verstehen zu lernen und - wenn Du es wünscht - deinen inneren Kompass neu zu kalibrieren.",
-  "preise_d2": " ",
+  "preise_d2": "Persönliche Sitzungen in meinem Praxisraum in Bern.",
   "about_p3": "Mich interessiert das Unausgesprochene – das, was da ist, aber oft keinen Raum bekommt. Das Unausgesprochene. Vielleicht das Unsagbare. Ich habe ein sehr feines Gespür für das, was unter der Oberfläche wirkt. Mit meiner Klarheit im Fühlen und im Ausdruck darf ich Menschen unterstützen, innere Prozesse zu verstehen und neue Schritte zu gehen.",
   "footer_note": "Erstanfragen bitte nur schriftlich - vorzugsweise per E-Mail. Vielen Dank.",
   "beratung_p3": "Wir setzen uns gemeinsam hin und lauschen dem, was sich zeigt – in deinen Worten, deinen Bewegungen, deinem Erleben.",
@@ -578,28 +578,31 @@
   "preise_uns_h": "Unsicher, ob es passt?",
   "preise_cards": [
     {
-      "eyebrow": "Supervision",
+      "eyebrow": "90 Minuten",
       "currency": "CHF",
-      "price": "180",
-      "unit": "/ 90 Minuten",
-      "desc": "SUPERVISION\nFür Fachpersonen in den Bereichen Beratung und Therapie, die ihre Arbeit reflektieren und weiterentwickeln möchten.",
+      "price": "160",
+      "unit": "/ pro Sitzung",
+      "desc": "Für Fachpersonen, die ihre Arbeit reflektieren und weiterentwickeln möchten.",
       "link_text": "Mehr zu Supervision →",
       "link": "supervision.html"
+    },
+    {
+      "eyebrow": "Sitzungen in Bern",
+      "currency": "CHF",
+      "price": "120",
+      "unit": "/ pro Sitzung",
+      "desc": "Persönliche Sitzungen in meinem Praxisraum in Bern.",
+      "link_text": "Mehr zu Beratung →",
+      "link": "beratung.html"
     },
     {
       "eyebrow": "15 Minuten",
       "currency": "CHF",
       "price": "0",
-      "unit": "/ Sitzung",
+      "unit": "",
       "desc": "Ein kostenloses Kennenlerngespräch. 15 Minuten, damit wir beide die Möglichkeiten einer Zusammenarbeit erforschen können.",
       "link_text": "Termin anfragen →",
       "link": "kontakt.html"
-    },
-    {
-      "currency": "CHF",
-      "eyebrow": "Beratung & Coaching.",
-      "price": "160",
-      "unit": "/ Sitzung"
     }
   ],
   "gallery_eyebrow": "Inspiration",
