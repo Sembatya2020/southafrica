@@ -593,7 +593,8 @@
       "unit": "/ pro Sitzung",
       "desc": "Persönliche Sitzungen in meinem Praxisraum in Bern.",
       "link_text": "Mehr zu Beratung →",
-      "link": "beratung.html"
+      "link": "beratung.html",
+      "featured": true
     },
     {
       "eyebrow": "15 Minuten",

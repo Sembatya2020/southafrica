@@ -458,7 +458,8 @@
       "unit": "/ hour",
       "desc": "In-person sessions in my practice room in Bern.",
       "link_text": "More on counselling →",
-      "link": "beratung.html"
+      "link": "beratung.html",
+      "featured": true
     },
     {
       "eyebrow": "15 minutes",
