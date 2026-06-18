@@ -449,8 +449,7 @@
       "unit": "/ hour",
       "desc": "For professionals who wish to reflect on and develop their work.",
       "link_text": "More on supervision →",
-      "link": "supervision.html",
-      "featured": false
+      "link": "supervision.html"
     },
     {
       "eyebrow": "Sessions in Bern",
@@ -459,8 +458,7 @@
       "unit": "/ hour",
       "desc": "In-person sessions in my practice room in Bern.",
       "link_text": "More on counselling →",
-      "link": "beratung.html",
-      "featured": true
+      "link": "beratung.html"
     },
     {
       "eyebrow": "15 minutes",
@@ -469,8 +467,7 @@
       "unit": "",
       "desc": "Sessions via Zoom – location-independent, from home or on the go.",
       "link_text": "Request appointment →",
-      "link": "kontakt.html",
-      "featured": false
+      "link": "kontakt.html"
     }
   ],
   "preise_discounts": [
