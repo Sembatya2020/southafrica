@@ -104,6 +104,7 @@ collections:
           - { name: cta_p,    label: "Start · CTA – Text", widget: text, required: false }
           - { name: cta_btn1, label: "Start · CTA – Button 1", widget: string, required: false }
           - { name: cta_btn2, label: "Start · CTA – Button 2", widget: string, required: false }
+          - { name: brand_name,       label: "Allgemein – Markenname (Breadcrumb)", widget: string, required: false }
           - { name: footer_logo,      label: "Footer – Markenzeile (z.B. Komm · sprich · mit mir)", widget: string, required: false }
           - { name: footer_brand,     label: "Footer – Kurzbeschreibung", widget: text, required: false }
           - { name: footer_copyright, label: "Footer – Copyright", widget: string, required: false }
@@ -195,6 +196,7 @@ collections:
           - { name: kontakt_book_h,    label: "Kontakt – Buchung Titel", widget: string, required: false }
           - { name: kontakt_book_p,    label: "Kontakt – Buchung Text", widget: text, required: false }
           - { name: kontakt_book_soon, label: "Kontakt – Buchung bald Text", widget: string, required: false }
+          - { name: kontakt_book_fallback, label: "Kontakt – Buchung Fallback-Button", widget: string, required: false }
 
           # ─── AGB ───
           - { name: agb_page_title, label: "AGB – Seitentitel", widget: string, required: false }
@@ -301,6 +303,7 @@ collections:
           - { name: cta_p,    label: "Home · CTA – Text", widget: text, required: false }
           - { name: cta_btn1, label: "Home · CTA – Button 1", widget: string, required: false }
           - { name: cta_btn2, label: "Home · CTA – Button 2", widget: string, required: false }
+          - { name: brand_name,       label: "General – Brand name (breadcrumb)", widget: string, required: false }
           - { name: footer_logo,      label: "Footer – Brand line (e.g. Komm · sprich · mit mir)", widget: string, required: false }
           - { name: footer_brand,     label: "Footer – Description", widget: text, required: false }
           - { name: footer_copyright, label: "Footer – Copyright", widget: string, required: false }
@@ -392,6 +395,7 @@ collections:
           - { name: kontakt_book_h,    label: "Contact – Booking heading", widget: string, required: false }
           - { name: kontakt_book_p,    label: "Contact – Booking text", widget: text, required: false }
           - { name: kontakt_book_soon, label: "Contact – Booking soon text", widget: string, required: false }
+          - { name: kontakt_book_fallback, label: "Contact – Booking fallback button", widget: string, required: false }
 
           # ─── Terms (AGB) ───
           - { name: agb_page_title, label: "Terms – Page title", widget: string, required: false }

@@ -39,6 +39,7 @@
   "cta_btn1": "Get in touch",
   "cta_btn2": "View pricing",
   "footer_brand": "Process-oriented psychosocial counselling, supervision and coaching.",
+  "brand_name": "Komm sprich mit mir",
   "footer_logo": "Komm · sprich · mit mir",
   "footer_copyright": "© 2026 Komm sprich mit mir · Pascale Myriam Kohli",
   "footer_note": "Enquiries by email only, please.",
@@ -139,6 +140,7 @@
   "kontakt_note_p": "I will then be happy to contact you by telephone.",
   "kontakt_book_eb": "Online booking",
   "kontakt_book_h": "Book a session directly",
+  "kontakt_book_fallback": "Go to booking page",
   "kontakt_book_p": "Choose a session type and a time that suits you — you'll receive a confirmation by email automatically.",
   "kontakt_book_soon": "The booking system will be live soon.",
   "welcome_blocks": [

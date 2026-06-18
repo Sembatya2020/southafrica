@@ -25,6 +25,7 @@
       'nav.services':    'Angebote',
       'nav.gallery':     'Galerie',
       'nav.approach':    'Mein Ansatz',
+      'brand.name':      'Komm sprich mit mir',
 
       /* Hero */
       'hero.eyebrow': 'Psychosoziale Beratung · Coaching',
@@ -131,6 +132,7 @@
       /* Form */
       'contact.submit': 'Nachricht senden',
       'supervision_cta_link': 'kontakt.html#kontaktBooking',
+      'kontakt_book_fallback': 'Zur Buchungsseite',
     },
 
     en: {
@@ -144,6 +146,7 @@
       'nav.services':    'Services',
       'nav.gallery':     'Gallery',
       'nav.approach':    'My Approach',
+      'brand.name':      'Komm sprich mit mir',
 
       /* Hero */
       'hero.eyebrow': 'Psychosocial Counselling · Coaching',
@@ -250,6 +253,7 @@
       /* Form */
       'contact.submit': 'Send message',
       'supervision_cta_link': 'kontakt.html#kontaktBooking',
+      'kontakt_book_fallback': 'Go to booking page',
     }
   };
 
