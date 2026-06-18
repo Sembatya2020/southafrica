@@ -1,8 +1,35 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { resolve, join } from 'path';
+import { cpSync, existsSync } from 'fs';
+
+function copyStaticRuntimeFiles() {
+  return {
+    name: 'copy-static-runtime-files',
+    closeBundle() {
+      const root = __dirname;
+      const dist = resolve(root, 'dist');
+      const entries = [
+        'content.json',
+        'content-de.json',
+        'content-en.json',
+        'admin',
+        'images'
+      ];
+
+      entries.forEach((entry) => {
+        const src = join(root, entry);
+        const dest = join(dist, entry);
+        if (existsSync(src)) {
+          cpSync(src, dest, { recursive: true });
+        }
+      });
+    }
+  };
+}
 
 export default defineConfig({
   base: './',
+  plugins: [copyStaticRuntimeFiles()],
   build: {
     rollupOptions: {
       input: {
