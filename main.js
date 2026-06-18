@@ -321,15 +321,21 @@
     return item ? item[name] : undefined;
   }
 
+  function hasRenderableValue(v) {
+    if (v == null) return false;
+    if (typeof v === 'string') return v.trim() !== '';
+    return true;
+  }
+
   function applyFields(el, item, isString) {
     if (el.hasAttribute('data-field')) {
       var v = fieldValue(item, el.getAttribute('data-field'), isString);
-      if (v != null && v !== '') el.textContent = v;
+      if (hasRenderableValue(v)) el.textContent = v;
       else if (el.hasAttribute('data-optional')) el.style.display = 'none';
     }
     if (el.hasAttribute('data-field-html')) {
       var vh = fieldValue(item, el.getAttribute('data-field-html'), isString);
-      if (vh != null && vh !== '') el.innerHTML = vh;
+      if (hasRenderableValue(vh)) el.innerHTML = vh;
       else if (el.hasAttribute('data-optional')) el.style.display = 'none';
     }
     if (el.hasAttribute('data-href-field')) {
