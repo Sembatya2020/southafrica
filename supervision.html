@@ -1,176 +1,178 @@
-﻿<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Supervision – BSO anerkannte Supervisorin Pascale Yska Kohli, Bern. Prozessorientierte Supervision für Fachpersonen.">
-  <title>Supervision – Komm sprich mit mir</title>
+  <meta name="description" content="The Approach — a phenomenological diagnostic that turns complexity into actionable causality models and feedback loops executives can act on.">
+  <title>The Approach — Aligning Strategy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script>(function(){try{var t=localStorage.getItem("kspmm.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e7872'/%3E%3Cpath d='M8 23 L16 8 L24 23' fill='none' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='11.5' y1='17.5' x2='20.5' y2='17.5' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script>(function(){try{var t=localStorage.getItem("as.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body class="legal-page">
 
-<!-- ─── COOKIE BANNER ─────────────────────────────────────────── -->
-<div class="cookie-banner" id="cookieBanner" role="dialog">
-  <p data-i18n="cookie.text">Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzungserfahrung zu bieten.</p>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie settings">
+  <p>This website uses minimal cookies to remember your display preferences. No tracking or advertising cookies are used.</p>
   <div class="cookie-actions">
-    <button class="cookie-btn cookie-accept"        id="cookieAccept"      data-i18n="cookie.accept">Akzeptieren</button>
-    <button class="cookie-btn cookie-decline"       id="cookieDecline"     data-i18n="cookie.decline">Ablehnen</button>
-    <button class="cookie-btn cookie-settings-link" id="cookieSettingsBtn" data-i18n="cookie.settings">Einstellungen</button>
+    <button class="cookie-btn cookie-accept" id="cookieAccept">Accept</button>
+    <button class="cookie-btn cookie-decline" id="cookieDecline">Decline</button>
   </div>
 </div>
 
-<!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Komm sprich mit mir"></a>
+    <a href="index.html" class="nav-logo">Aligning Strategy</a>
     <ul class="nav-links">
-      <li><a href="index.html"        class="nav-link"        data-i18n="nav.home">Home</a></li>
-      <li><a href="supervision.html"  class="nav-link active" data-i18n="nav.supervision">Supervision</a></li>
-      <li><a href="beratung.html"     class="nav-link"        data-i18n="nav.beratung">Beratung</a></li>
-      <li><a href="ueber-mich.html"   class="nav-link"        data-i18n="nav.about">Über mich</a></li>
-      <li><a href="preise.html"       class="nav-link"        data-i18n="nav.preise">Preise</a></li>
-      <li><a href="kontakt.html"      class="nav-link"        data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="supervision.html" class="nav-link active">Approach</a></li>
+      <li><a href="beratung.html"    class="nav-link">Value</a></li>
+      <li><a href="ueber-mich.html"  class="nav-link">Founder</a></li>
+      <li><a href="preise.html"      class="nav-link">Diagnostic</a></li>
+      <li><a href="kontakt.html"     class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-right">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <span class="lang-sep">|</span>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour mode" title="Light / Dark">
         <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
-      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
-  <button class="mobile-close" id="mobileClose">&#10005;</button>
-  <a href="index.html"        data-i18n="nav.home">Home</a>
-  <a href="supervision.html"  data-i18n="nav.supervision">Supervision</a>
-  <a href="beratung.html"     data-i18n="nav.beratung">Beratung</a>
-  <a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a>
-  <a href="preise.html"       data-i18n="nav.preise">Preise</a>
-  <a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a>
-  <div class="mobile-lang">
-    <button class="lang-btn active" data-lang="de">DE</button>
-    <span class="lang-sep">|</span>
-    <button class="lang-btn" data-lang="en">EN</button>
-  </div>
-  <div class="mobile-theme">
-    <button class="theme-toggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
-      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-    </button>
-  </div>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#10005;</button>
+  <a href="index.html">Home</a>
+  <a href="supervision.html">Approach</a>
+  <a href="beratung.html">Value</a>
+  <a href="ueber-mich.html">Founder</a>
+  <a href="preise.html">Diagnostic</a>
+  <a href="kontakt.html">Contact</a>
 </div>
 
 <!-- ─── PAGE HERO ─────────────────────────────────────────────── -->
-<div class="legal-hero" style="background-image:url('/images/WhatsApp%20Image%202026-05-07%20at%2023.13.27%20%281%29.jpeg')">
+<div class="legal-hero" style="background-image:url('/images/WhatsApp%20Image%202026-05-07%20at%2023.13.31.jpeg')">
   <div class="legal-hero-inner">
-    <p class="legal-breadcrumb">
-      <a href="index.html" data-i18n="brand.name">Komm sprich mit mir</a> &nbsp;/&nbsp;
-      <span id="pageTitle" data-i18n="supervision_page_title">Supervision</span>
-    </p>
-    <h1 id="pageH1" data-i18n="supervision_h1">Supervision</h1>
-    <p id="pageSubtitle" style="margin-top:0.8rem;font-size:0.95rem;letter-spacing:0.06em" data-i18n="supervision_subtitle">BSO anerkannte Supervisorin · Bern</p>
+    <p class="legal-breadcrumb"><a href="index.html">Aligning Strategy</a> &nbsp;/&nbsp; <span>Approach</span></p>
+    <h1>The Approach</h1>
+    <p class="legal-subtitle">Phenomenological diagnostic · Causality models · Feedback loops</p>
   </div>
 </div>
 
-<!-- ─── CONTENT ───────────────────────────────────────────────── -->
-<div class="legal-content-wrap">
-  <a href="index.html" class="legal-back" data-i18n="legal.back">← Zurück zur Startseite</a>
+<div class="as-wrap">
+  <a href="index.html" class="legal-back">← Back to home</a>
 
-  <div class="legal-content" id="pageContent" data-blocks="supervision_blocks">
+  <!-- PROBLEM -->
+  <span class="eyebrow" style="display:block;margin-top:2rem">The problem</span>
+  <h2 class="as-section-title" style="margin-top:0.6rem">When the organisation is busy, but the system is failing.</h2>
+  <p class="as-lead">Many organisations respond to complexity with simplification — headcount cuts, asset sales, budget freezes, margin exercises, cosmetic restructures. These quiet symptoms temporarily while the underlying causality stays untouched; the business looks calmer on paper yet drifts closer to the edge.</p>
 
-    <p data-default data-i18n="supervision_p1">Wenn du selbst mit Menschen arbeitest, kennst du die Komplexität, die diese Arbeit mit sich bringt.</p>
-
-    <p data-default data-i18n="supervision_p2">Möchtest du deine Fälle reflektieren, mehr Klarheit gewinnen oder dich in deiner Rolle als Fachperson weiterentwickeln? Oder gibt es Situationen, die dich herausfordern, berühren oder auch verunsichern?</p>
-
-    <p data-default data-i18n="supervision_p3">Ich biete dir einen Raum, in dem du deine Arbeit in Ruhe betrachten und gemeinsam mit mir reflektieren kannst.</p>
-
-    <p data-default data-i18n="supervision_p4">Als Supervisorin begleite ich dich dabei, deine Wahrnehmungen zu differenzieren, Zusammenhänge klarer zu sehen und neue Perspektiven zu entwickeln.</p>
-
-    <h2 data-default data-i18n="supervision_h2_1">Meine Haltung</h2>
-
-    <p data-default data-i18n="supervision_p5">Meine Haltung ist prozessorientiert. Das bedeutet, wir wenden uns nicht nur dem Inhalt deiner Arbeit zu, sondern auch dem, was zwischen den Zeilen geschieht — in der Beziehung zu deinen Klientinnen und Klienten, in deinem eigenen Erleben und im grösseren Kontext deiner Tätigkeit.</p>
-
-    <p data-default data-i18n="supervision_p6">Ich arbeite strukturiert und gleichzeitig offen für das, was sich zeigt.</p>
-
-    <h2 data-default data-i18n="supervision_h2_2">Meine Erfahrung</h2>
-
-    <p data-default data-i18n="supervision_p7">Meine Erfahrung umfasst mehrere Jahre Tätigkeit im psychiatrischen und psychotherapeutischen Umfeld, in denen ich eng mit Fachpersonen zusammengearbeitet habe. Ich habe Verlaufs- und Behandlungsberichte sowie Gutachten mitverfasst und dabei Einblick in unterschiedlichste Fallkonstellationen und therapeutische Prozesse erhalten. Auch habe ich viele Prüfungsabsolventen am Institut für Prozessarbeit als Beisitzerin begleitet.</p>
-
-    <p data-default data-i18n="supervision_p8">Diese Erfahrung ermöglicht es mir, komplexe Situationen differenziert zu erfassen und dich fundiert in deiner Arbeit zu begleiten.</p>
-
-    <h2 data-default data-i18n="supervision_h2_3">Raum für Unsicherheit</h2>
-
-    <p data-default data-i18n="supervision_p9">Gleichzeitig verstehe ich Supervision auch als einen Raum, in dem Unsicherheiten Platz haben dürfen. Nicht alles muss sofort gewusst oder gelöst werden.</p>
-
-    <p data-default data-i18n="supervision_p10">Manchmal entsteht gerade im gemeinsamen Innehalten und Reflektieren eine neue Klarheit.</p>
-
-    <p data-default data-i18n="supervision_p11">Ich begegne dir auf Augenhöhe, mit Respekt für deine Arbeit und mit dem Interesse, dich in deiner fachlichen und persönlichen Entwicklung zu unterstützen.</p>
-
-    <div class="legal-responsible" style="margin-top:2.5rem" data-default>
-      <p data-i18n-html="supervision_bso"><strong>BSO anerkannte Supervisorin</strong></p>
-      <p data-i18n="supervision_bso2">Als Mitglied des Berufsverbands für Supervision, Coaching und Organisationsberatung (BSO) arbeite ich nach anerkannten Qualitätsstandards.</p>
+  <div class="as-grid as-grid-2">
+    <div class="as-card fade-up">
+      <h3>Common signals at executive level</h3>
+      <ul>
+        <li>High turnover but threatened and accelerating profitability decline.</li>
+        <li>A business model that no longer serves the organisation, its people, or shareholders.</li>
+        <li>Competitive pressure from dominant incumbents and low-cost niche challengers.</li>
+        <li>Executive stress, organisational fear, and decision-making that narrows under pressure.</li>
+        <li>Latent conflict handled through avoidance, politics, or blame.</li>
+      </ul>
     </div>
-
-    <div style="margin-top:2.5rem;text-align:center" data-default>
-      <a href="kontakt.html#kontaktBooking" class="btn-primary" data-i18n="supervision_cta" data-i18n-href="supervision_cta_link">Supervisionsanfrage stellen</a>
+    <div class="as-card fade-up">
+      <h3>The hidden trap</h3>
+      <p>One causality can generate hundreds of symptoms. Treat symptoms and you multiply effort and resentment; correct causality and symptoms fall away.</p>
+      <div class="as-pills">
+        <span class="as-pill">Cost overrun</span>
+        <span class="as-pill">Churn</span>
+        <span class="as-pill">Delays</span>
+        <span class="as-pill">Rework</span>
+        <span class="as-pill">Low trust</span>
+        <span class="as-pill as-pill-root">Root cause: systemic constraints</span>
+      </div>
     </div>
+  </div>
 
+  <!-- APPROACH -->
+  <span class="eyebrow" style="display:block;margin-top:3.5rem">The approach</span>
+  <h2 class="as-section-title" style="margin-top:0.6rem">A rigorous diagnostic that turns complexity into actionable causality.</h2>
+  <p class="as-lead">A phenomenological diagnostic discipline grounded in research methodology surfaces what is actually happening in the system; insights become systemic causality models and feedback loops (Peter Senge style) executives can act on.</p>
+
+  <div class="as-grid as-grid-3">
+    <div class="as-card fade-up">
+      <h3>Phenomenology → executive clarity</h3>
+      <p>Start with lived reality, not assumptions or generic frameworks.</p>
+    </div>
+    <div class="as-card fade-up">
+      <h3>Causality modeling</h3>
+      <p>Map how the organisation produces results through repeatable dynamics.</p>
+    </div>
+    <div class="as-card fade-up">
+      <h3>Feedback loops you can shift</h3>
+      <p>Find leverage points, re-balance, and design interventions that change the loop so performance holds.</p>
+    </div>
+  </div>
+
+  <div class="as-callout fade-up">
+    <h3>Why this is different from large consulting models</h3>
+    <p>Large firms scale by deploying teams and templates then measuring activity. Aligning Strategy scales impact by diagnosing the few causal constraints and running a structured cross-functional intervention — without creating dependency or hiding behind headcount.</p>
+  </div>
+
+  <div class="as-grid as-grid-2">
+    <div class="as-card fade-up">
+      <h3>Interactive cross-functional implementation</h3>
+      <p>Change is built with the people who run the system, across functions — so ownership and momentum are real, not delegated to a deck.</p>
+    </div>
+    <div class="as-card fade-up">
+      <h3>Insider–outsider partnership model</h3>
+      <p>Close enough to move the work, independent enough to tell the truth.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:2.8rem">
+    <a href="kontakt.html" class="btn-primary">Book a confidential diagnostic call</a>
   </div>
 </div>
 
-<!-- ─── FOOTER ─────────────────────────────────────────────────── -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <span class="footer-logo" data-i18n="footer.logo">Komm · sprich · mit mir</span>
-      <p data-i18n="footer.brand">Psychosoziale Beratung, Supervision und Coaching in Bern — mit Herz, Haltung und prozessorientiertem Ansatz.</p>
+      <span class="footer-logo">Aligning Strategy</span>
+      <p>Systemic causality consulting · Phenomenological diagnostic · Feedback-loop interventions.</p>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer.nav.header">Navigation</h4>
+      <h4>Navigation</h4>
       <ul>
-        <li><a href="index.html"        data-i18n="nav.home">Home</a></li>
-        <li><a href="supervision.html"  data-i18n="nav.supervision">Supervision</a></li>
-        <li><a href="beratung.html"     data-i18n="nav.beratung">Beratung</a></li>
-        <li><a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a></li>
-        <li><a href="preise.html"       data-i18n="nav.preise">Preise</a></li>
-        <li><a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="supervision.html">Approach</a></li>
+        <li><a href="beratung.html">Value</a></li>
+        <li><a href="ueber-mich.html">Founder</a></li>
+        <li><a href="preise.html">Diagnostic</a></li>
+        <li><a href="kontakt.html">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer.contact.header">Kontakt</h4>
+      <h4>Contact</h4>
       <ul>
-        <li><span>Pascale Myriam Kohli</span></li>
-        <li><a href="tel:+41798555827">+41 79 855 58 27</a></li>
-        <li><a href="mailto:pascale.kohli@hin.ch">pascale.kohli@hin.ch</a></li>
+        <li><span>Aligning Strategy</span></li>
+        <li><a href="tel:+27000000000">[+27 XX XXX XXXX]</a></li>
+        <li><a href="mailto:hello@aligningstrategy.com">[hello@aligningstrategy.com]</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-legal">
-    <a href="agb.html"           data-i18n="footer.link.agb">AGB</a>
-    <a href="nutzung.html"       data-i18n="footer.link.nutzung">Nutzung &amp; Impressum</a>
-    <a href="datenschutz.html"   data-i18n="footer.link.datenschutz">Datenschutzrichtlinie</a>
-    <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+    <a href="agb.html">Terms</a>
+    <a href="nutzung.html">Legal Notice</a>
+    <a href="datenschutz.html">Privacy</a>
+    <a href="kontakt.html">Contact</a>
   </div>
   <div class="footer-bottom">
-    <span data-i18n="footer.copyright">© 2025 Komm sprich mit mir · Pascale Yska Kohli</span>
+    <span>All conversations are treated as confidential and executive-grade. &nbsp;·&nbsp; © <span data-year>2026</span> Aligning Strategy</span>
     <div class="footer-links">
-      <a href="datenschutz.html" data-i18n="footer.link.privacy">Datenschutz</a>
-      <a href="nutzung.html"     data-i18n="footer.link.imprint">Impressum</a>
+      <a href="datenschutz.html">Privacy</a>
+      <a href="nutzung.html">Legal Notice</a>
     </div>
   </div>
 </footer>

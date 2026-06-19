@@ -1,161 +1,139 @@
-﻿<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Datenschutzrichtlinie – Komm sprich mit mir, Pascale Yska Kohli">
-  <title>Datenschutzrichtlinie – Komm sprich mit mir</title>
+  <meta name="description" content="Privacy policy — Aligning Strategy.">
+  <title>Privacy — Aligning Strategy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script>(function(){try{var t=localStorage.getItem("kspmm.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e7872'/%3E%3Cpath d='M8 23 L16 8 L24 23' fill='none' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='11.5' y1='17.5' x2='20.5' y2='17.5' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script>(function(){try{var t=localStorage.getItem("as.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body class="legal-page">
 
-<!-- ─── COOKIE BANNER ─────────────────────────────────────────── -->
-<div class="cookie-banner" id="cookieBanner" role="dialog">
-  <p data-i18n="cookie.text">Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzungserfahrung zu bieten.</p>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie settings">
+  <p>This website uses minimal cookies to remember your display preferences. No tracking or advertising cookies are used.</p>
   <div class="cookie-actions">
-    <button class="cookie-btn cookie-accept"        id="cookieAccept"      data-i18n="cookie.accept">Akzeptieren</button>
-    <button class="cookie-btn cookie-decline"       id="cookieDecline"     data-i18n="cookie.decline">Ablehnen</button>
-    <button class="cookie-btn cookie-settings-link" id="cookieSettingsBtn" data-i18n="cookie.settings">Einstellungen</button>
+    <button class="cookie-btn cookie-accept" id="cookieAccept">Accept</button>
+    <button class="cookie-btn cookie-decline" id="cookieDecline">Decline</button>
   </div>
 </div>
 
-<!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Komm sprich mit mir"></a>
+    <a href="index.html" class="nav-logo">Aligning Strategy</a>
     <ul class="nav-links">
-      <li><a href="index.html"        class="nav-link" data-i18n="nav.home">Home</a></li>
-      <li><a href="supervision.html"  class="nav-link" data-i18n="nav.supervision">Supervision</a></li>
-      <li><a href="beratung.html"     class="nav-link" data-i18n="nav.beratung">Beratung</a></li>
-      <li><a href="ueber-mich.html"   class="nav-link" data-i18n="nav.about">Über mich</a></li>
-      <li><a href="preise.html"       class="nav-link" data-i18n="nav.preise">Preise</a></li>
-      <li><a href="kontakt.html"      class="nav-link" data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="supervision.html" class="nav-link">Approach</a></li>
+      <li><a href="beratung.html"    class="nav-link">Value</a></li>
+      <li><a href="ueber-mich.html"  class="nav-link">Founder</a></li>
+      <li><a href="preise.html"      class="nav-link">Diagnostic</a></li>
+      <li><a href="kontakt.html"     class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-right">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <span class="lang-sep">|</span>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour mode" title="Light / Dark">
         <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
-      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
-  <button class="mobile-close" id="mobileClose">&#10005;</button>
-  <a href="index.html"        data-i18n="nav.home">Home</a>
-  <a href="supervision.html"  data-i18n="nav.supervision">Supervision</a>
-  <a href="beratung.html"     data-i18n="nav.beratung">Beratung</a>
-  <a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a>
-  <a href="preise.html"       data-i18n="nav.preise">Preise</a>
-  <a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a>
-  <div class="mobile-lang">
-    <button class="lang-btn active" data-lang="de">DE</button>
-    <span class="lang-sep">|</span>
-    <button class="lang-btn" data-lang="en">EN</button>
-  </div>
-  <div class="mobile-theme">
-    <button class="theme-toggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
-      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-    </button>
-  </div>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#10005;</button>
+  <a href="index.html">Home</a>
+  <a href="supervision.html">Approach</a>
+  <a href="beratung.html">Value</a>
+  <a href="ueber-mich.html">Founder</a>
+  <a href="preise.html">Diagnostic</a>
+  <a href="kontakt.html">Contact</a>
 </div>
 
-<!-- ─── PAGE HERO ─────────────────────────────────────────────── -->
 <div class="legal-hero">
   <div class="legal-hero-inner">
-    <p class="legal-breadcrumb">
-      <a href="index.html" data-i18n="brand.name">Komm sprich mit mir</a> &nbsp;/&nbsp;
-      <span id="pageTitle" data-i18n="datenschutz_page_title">Datenschutzrichtlinie</span>
-    </p>
-    <h1 id="pageH1" data-i18n="datenschutz_h1">Datenschutzrichtlinie</h1>
+    <p class="legal-breadcrumb"><a href="index.html">Aligning Strategy</a> &nbsp;/&nbsp; <span>Privacy</span></p>
+    <h1>Privacy Policy</h1>
   </div>
 </div>
 
-<!-- ─── CONTENT ───────────────────────────────────────────────── -->
 <div class="legal-content-wrap">
-  <a href="index.html" class="legal-back" data-i18n="legal.back">← Zurück zur Startseite</a>
+  <a href="index.html" class="legal-back">← Back to home</a>
 
-  <div class="legal-content" id="pageContent" data-blocks="datenschutz_blocks">
+  <div class="legal-content">
+    <!-- PLACEHOLDER PRIVACY POLICY — replace with a policy reviewed by your own legal adviser
+         and aligned to the data-protection law that applies to you (e.g. POPIA / GDPR). -->
+    <p><em>Placeholder text. Please replace with a privacy policy reviewed by your own legal adviser and aligned to the data-protection law that applies to you (for example, POPIA or GDPR).</em></p>
 
-    <p data-default>Die Betreiberin dieser Site nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Sie behandelt Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+    <h2>1. Who we are</h2>
+    <p>Aligning Strategy is the data controller for personal information collected through this website and through client engagements. Contact: [hello@aligningstrategy.com].</p>
 
-    <p data-default>Insbesondere ist die auf der Website unter Kontakt angegebene Emailadresse HIN-gesichert und garantiert somit maximalen Schutz ihrer Daten bei persönlichen Anfragen.</p>
+    <h2>2. What we collect</h2>
+    <p>We collect only the information you choose to provide — for example, your name, organisation, email address and the content of your enquiry — together with limited, non-identifying technical information needed to operate the site securely.</p>
 
-    <p data-default>Diese Internetsite sammelt und speichert nur die nötigsten Daten über ihre Besucher. Der Eigentümer und Betreiber der Site setzt keine Cookies ein und verwendet auch keine Analyse- oder Auswertungswerkzeuge von Drittanbietern. Bei Anfragen über das Kontaktformular oder über die dort angegebene Mailadresse werden die hinterlassenen Angaben nur gerade für die Beantwortung der Anfrage verwendet und nicht weiter gespeichert.</p>
+    <h2>3. How we use it</h2>
+    <p>We use your information solely to respond to your enquiry, to arrange and deliver engagements, and to meet legal obligations. We do not sell your information or use it for advertising.</p>
 
-    <h2 data-default>Logfiles des Providers</h2>
+    <h2>4. Cookies</h2>
+    <p>This site uses a small number of strictly functional cookies to remember display preferences (such as light or dark mode). No tracking, analytics or advertising cookies are used.</p>
 
-    <p data-default>Der Provider, bei dem die Site gehostet wird (green.ch), legt so genannte Logfiles an, um seine Dienstleistungen «zuverlässig, technisch einwandfrei und auch gesetzeskonform erbringen zu können.» Diese enthalten laut seinen Angaben Informationen wie:</p>
+    <h2>5. Sharing</h2>
+    <p>We do not share your personal information with third parties except where necessary to deliver an engagement with your consent, or where required by law.</p>
 
-    <ul data-default>
-      <li>IP-Adressen</li>
-      <li>Datum und Uhrzeit</li>
-      <li>Protokollinformationen wie Protokolltyp und -version, die gewünschte Aktion, Statuscodes oder Angaben zu den transferierten Daten (z.B. die Grösse einer Frage oder einer Antwort)</li>
-      <li>Fehlermeldungen</li>
-      <li>Je nachdem anwendungsspezifische Informationen wie zum Beispiel Message-IDs bei E-Mails, oder bei Webzugriffen Angaben zum verwendeten Browser (User-Agent String) oder gegebenenfalls der Seite, von welcher der Besucher auf die Webseite gelangt ist.</li>
-    </ul>
+    <h2>6. Your rights</h2>
+    <p>You may request access to, correction of, or deletion of your personal information, subject to applicable law. To exercise these rights, contact us at [hello@aligningstrategy.com].</p>
 
-    <p data-default>Der Provider verwendet diese Informationen unter anderem zum Nachvollziehen und Lösen von technischen Problemen, zum Finden von Fehlern, zum Abwehren von Angriffen auf seine Infrastruktur, zur Unterstützung von nachträglichen Analysen bei gehackten Kundenwebseiten oder auch zum Erstellen der Besucherstatistiken für die gehosteten Webseiten.</p>
+    <h2>7. Retention</h2>
+    <p>We retain personal information only for as long as needed for the purposes described above or as required by law, after which it is securely deleted.</p>
+  </div>
 
-    <p data-default>Die Daten verbleiben gespeichert, solange es entweder betrieblich notwendig oder gesetzlich beziehungsweise vertraglich vorgeschrieben ist und werden danach automatisch gelöscht. Für die meisten Daten ist dies maximal ein halbes Jahr.</p>
-
-    <p class="legal-copyright" data-default>(c) by Pascale Y. Kohli, 2020</p>
-
+  <div class="legal-responsible">
+    <p><strong>Aligning Strategy</strong></p>
+    <p>[Registered address]</p>
+    <p><a href="mailto:hello@aligningstrategy.com" style="color:var(--gold)">[hello@aligningstrategy.com]</a></p>
   </div>
 </div>
 
-<!-- ─── FOOTER ─────────────────────────────────────────────────── -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <span class="footer-logo" data-i18n="footer.logo">Komm · sprich · mit mir</span>
-      <p data-i18n="footer.brand">Therapeutische Begleitung mit Herz und Haltung — für Menschen, die sich verstanden fühlen möchten.</p>
+      <span class="footer-logo">Aligning Strategy</span>
+      <p>Systemic causality consulting · Phenomenological diagnostic · Feedback-loop interventions.</p>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer.nav.header">Navigation</h4>
+      <h4>Navigation</h4>
       <ul>
-        <li><a href="index.html"        data-i18n="nav.home">Home</a></li>
-        <li><a href="supervision.html"  data-i18n="nav.supervision">Supervision</a></li>
-        <li><a href="beratung.html"     data-i18n="nav.beratung">Beratung</a></li>
-        <li><a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a></li>
-        <li><a href="preise.html"       data-i18n="nav.preise">Preise</a></li>
-        <li><a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="supervision.html">Approach</a></li>
+        <li><a href="beratung.html">Value</a></li>
+        <li><a href="ueber-mich.html">Founder</a></li>
+        <li><a href="preise.html">Diagnostic</a></li>
+        <li><a href="kontakt.html">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer.contact.header">Kontakt</h4>
+      <h4>Contact</h4>
       <ul>
-        <li><span>Pascale Myriam Kohli</span></li>
-        <li><a href="tel:+41798555827">+41 79 855 58 27</a></li>
-        <li><a href="mailto:pascale.kohli@hin.ch">pascale.kohli@hin.ch</a></li>
+        <li><span>Aligning Strategy</span></li>
+        <li><a href="tel:+27000000000">[+27 XX XXX XXXX]</a></li>
+        <li><a href="mailto:hello@aligningstrategy.com">[hello@aligningstrategy.com]</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-legal">
-    <a href="agb.html"           data-i18n="footer.link.agb">AGB</a>
-    <a href="nutzung.html"       data-i18n="footer.link.nutzung">Nutzung &amp; Impressum</a>
-    <a href="datenschutz.html"   data-i18n="footer.link.datenschutz">Datenschutzrichtlinie</a>
-    <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+    <a href="agb.html">Terms</a>
+    <a href="nutzung.html">Legal Notice</a>
+    <a href="datenschutz.html">Privacy</a>
+    <a href="kontakt.html">Contact</a>
   </div>
   <div class="footer-bottom">
-    <span data-i18n="footer.copyright">© 2025 Komm sprich mit mir · Pascale Yska Kohli</span>
+    <span>All conversations are treated as confidential and executive-grade. &nbsp;·&nbsp; © <span data-year>2026</span> Aligning Strategy</span>
     <div class="footer-links">
-      <a href="datenschutz.html" data-i18n="footer.link.privacy">Datenschutz</a>
-      <a href="nutzung.html"     data-i18n="footer.link.imprint">Impressum</a>
+      <a href="datenschutz.html">Privacy</a>
+      <a href="nutzung.html">Legal Notice</a>
     </div>
   </div>
 </footer>

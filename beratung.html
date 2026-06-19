@@ -1,170 +1,145 @@
-﻿<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Coaching und Beratung mit Pascale Myriam Kohli – Prozessorientierte psychosoziale Beraterin SGFB in Bern.">
-  <title>Beratung &amp; Coaching – Komm sprich mit mir</title>
+  <meta name="description" content="The Value — durable margin restoration, business-model renewal, executive clarity, and private-equity value creation that holds.">
+  <title>The Value — Aligning Strategy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script>(function(){try{var t=localStorage.getItem("kspmm.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e7872'/%3E%3Cpath d='M8 23 L16 8 L24 23' fill='none' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='11.5' y1='17.5' x2='20.5' y2='17.5' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script>(function(){try{var t=localStorage.getItem("as.theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body class="legal-page">
 
-<!-- ─── COOKIE BANNER ─────────────────────────────────────────── -->
-<div class="cookie-banner" id="cookieBanner" role="dialog">
-  <p data-i18n="cookie.text">Diese Website verwendet Cookies.</p>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie settings">
+  <p>This website uses minimal cookies to remember your display preferences. No tracking or advertising cookies are used.</p>
   <div class="cookie-actions">
-    <button class="cookie-btn cookie-accept"        id="cookieAccept"      data-i18n="cookie.accept">Akzeptieren</button>
-    <button class="cookie-btn cookie-decline"       id="cookieDecline"     data-i18n="cookie.decline">Ablehnen</button>
-    <button class="cookie-btn cookie-settings-link" id="cookieSettingsBtn" data-i18n="cookie.settings">Einstellungen</button>
+    <button class="cookie-btn cookie-accept" id="cookieAccept">Accept</button>
+    <button class="cookie-btn cookie-decline" id="cookieDecline">Decline</button>
   </div>
 </div>
 
-<!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Komm sprich mit mir"></a>
+    <a href="index.html" class="nav-logo">Aligning Strategy</a>
     <ul class="nav-links">
-      <li><a href="index.html"        class="nav-link"        data-i18n="nav.home">Home</a></li>
-      <li><a href="supervision.html"  class="nav-link"        data-i18n="nav.supervision">Supervision</a></li>
-      <li><a href="beratung.html"     class="nav-link active" data-i18n="nav.beratung">Beratung</a></li>
-      <li><a href="ueber-mich.html"   class="nav-link"        data-i18n="nav.about">Über mich</a></li>
-      <li><a href="preise.html"       class="nav-link"        data-i18n="nav.preise">Preise</a></li>
-      <li><a href="kontakt.html"      class="nav-link"        data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="supervision.html" class="nav-link">Approach</a></li>
+      <li><a href="beratung.html"    class="nav-link active">Value</a></li>
+      <li><a href="ueber-mich.html"  class="nav-link">Founder</a></li>
+      <li><a href="preise.html"      class="nav-link">Diagnostic</a></li>
+      <li><a href="kontakt.html"     class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-right">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <span class="lang-sep">|</span>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour mode" title="Light / Dark">
         <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
-      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
-  <button class="mobile-close" id="mobileClose">&#10005;</button>
-  <a href="index.html"        data-i18n="nav.home">Home</a>
-  <a href="supervision.html"  data-i18n="nav.supervision">Supervision</a>
-  <a href="beratung.html"     data-i18n="nav.beratung">Beratung</a>
-  <a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a>
-  <a href="preise.html"       data-i18n="nav.preise">Preise</a>
-  <a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a>
-  <div class="mobile-lang">
-    <button class="lang-btn active" data-lang="de">DE</button>
-    <span class="lang-sep">|</span>
-    <button class="lang-btn" data-lang="en">EN</button>
-  </div>
-  <div class="mobile-theme">
-    <button class="theme-toggle" type="button" aria-label="Hell-/Dunkelmodus wechseln" title="Hell/Dunkel">
-      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-    </button>
-  </div>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#10005;</button>
+  <a href="index.html">Home</a>
+  <a href="supervision.html">Approach</a>
+  <a href="beratung.html">Value</a>
+  <a href="ueber-mich.html">Founder</a>
+  <a href="preise.html">Diagnostic</a>
+  <a href="kontakt.html">Contact</a>
 </div>
 
-<!-- ─── PAGE HERO ─────────────────────────────────────────────── -->
 <div class="legal-hero" style="background-image:url('/images/WhatsApp%20Image%202026-05-07%20at%2023.16.27.jpeg')">
   <div class="legal-hero-inner">
-    <p class="legal-breadcrumb">
-      <a href="index.html" data-i18n="brand.name">Komm sprich mit mir</a> &nbsp;/&nbsp;
-      <span id="pageTitle" data-i18n="beratung_page_title">Beratung &amp; Coaching</span>
-    </p>
-    <h1 id="pageH1" data-i18n="beratung_h1">Coaching und Beratung</h1>
-    <p id="pageSubtitle" class="legal-subtitle" data-i18n="beratung_subtitle">Prozessorientierte Psychosoziale Beratung SGFB · Bern &amp; Online</p>
+    <p class="legal-breadcrumb"><a href="index.html">Aligning Strategy</a> &nbsp;/&nbsp; <span>Value</span></p>
+    <h1>The Value</h1>
+    <p class="legal-subtitle">What changes when you correct causality — instead of cutting symptoms</p>
   </div>
 </div>
 
-<!-- ─── CONTENT ───────────────────────────────────────────────── -->
-<div class="legal-content-wrap">
-  <a href="index.html" class="legal-back" data-i18n="legal.back">← Zurück zur Startseite</a>
+<div class="as-wrap">
+  <a href="index.html" class="legal-back">← Back to home</a>
 
-  <div class="legal-content prose-content" id="pageContent" data-blocks="beratung_blocks">
+  <p class="as-lead" style="margin-top:2rem">The aim is not to look better for a quarter but to restore structural performance, so profitability, stability, and growth become the natural output of a healthier system.</p>
 
-    <p data-default data-i18n="beratung_p1">Vielleicht befindest du dich an einem Punkt, an dem vieles unklar ist, trägst Fragen in dir, fühlst dich bewegt, angespannt oder suchend. Vielleicht bist du traurig oder auch wütend. Und du wünschst dir dabei Begleitung.</p>
-
-    <p data-default data-i18n="beratung_p2">In meiner Arbeit als prozessorientierte psychosoziale Beraterin SGFB begleite ich dich dabei, dich selbst besser zu verstehen und wieder Orientierung zu finden.</p>
-
-    <p data-default data-i18n="beratung_p3">Wir setzen uns gemeinsam hin und lauschen dem, was sich zeigt – in deinen Worten, deinen Bewegungen, deinem Erleben.</p>
-
-    <h2 data-default data-i18n="beratung_h2_1">Raum für das, was sich zeigt</h2>
-
-    <p data-default data-i18n="beratung_p4">Manchmal entsteht Raum für Erkenntnis. Manchmal ist es stimmig, einfach still zu werden. Wie die Oberfläche eines Sees, die sich langsam glättet.</p>
-
-    <p data-default data-i18n="beratung_p5">Und vielleicht entsteht daraus der Moment, vorsichtig hinzuschauen – oder auch mutig einzutauchen.</p>
-
-    <p data-default data-i18n="beratung_p6">Ich bin offen für das, was sich zeigt. Für Erkenntnis, aber auch für Unklarheit.</p>
-
-    <h2 data-default data-i18n="beratung_h2_2">Auch im Nicht-Wissen sein</h2>
-
-    <p data-default data-i18n="beratung_p7">Wir können gemeinsam erkunden, wie es sich anfühlt, nicht sofort Antworten zu haben. Was macht das mit deinem Körper, deinem Herzen?</p>
-
-    <p data-default data-i18n="beratung_p8">Und vielleicht entsteht daraus eine neue Erfahrung: Dass du auch im Nicht-Wissen sein kannst und nicht alles unmittelbar gelöst werden muss. Und dass auch darin etwas Tragendes liegt – weil es der Anfang von Klarheit sein kann.</p>
-
-    <p data-default data-i18n-html="beratung_p9"><em>Wenn dich das anspricht, komm sehr gerne auf mich zu.</em></p>
-
-    <div class="legal-responsible" style="margin-top:2.5rem" data-default>
-      <p data-i18n-html="beratung_info"><strong>Prozessorientierte Psychosoziale Beraterin SGFB</strong></p>
-      <p data-i18n="beratung_info2">Mitglied der Schweizerischen Gesellschaft für Beratung (SGfB).</p>
+  <div class="as-grid as-grid-3">
+    <div class="as-card fade-up">
+      <h3>Durable margin restoration</h3>
+      <p>Profitability that returns because the system produces it — not because costs were temporarily starved.</p>
     </div>
-
-    <div style="margin-top:2.5rem;text-align:center" data-default>
-      <a href="kontakt.html" class="btn-primary" data-i18n="beratung_cta">Unverbindlich anfragen</a>
+    <div class="as-card fade-up">
+      <h3>Business model renewal</h3>
+      <p>A model realigned to serve the organisation, its people, and shareholders again.</p>
     </div>
+    <div class="as-card fade-up">
+      <h3>Executive clarity under complexity</h3>
+      <p>Decisions made from a shared causal map, not from noise and pressure.</p>
+    </div>
+    <div class="as-card fade-up">
+      <h3>Conflict converted into leverage</h3>
+      <p>Latent tension surfaced and used to drive alignment rather than block it.</p>
+    </div>
+    <div class="as-card fade-up">
+      <h3>Ownership replaces blame</h3>
+      <p>Teams move from fear and politics to shared accountability for results.</p>
+    </div>
+    <div class="as-card fade-up">
+      <h3>Private equity value creation that holds</h3>
+      <p>Five-year cycles: stabilise, correct, accelerate, embed.</p>
+    </div>
+  </div>
 
+  <div class="as-callout fade-up">
+    <h3>The guiding principle</h3>
+    <p>If you can see the system, you can shift it. If you can shift causality, symptoms reduce as a consequence — and performance becomes repeatable.</p>
+  </div>
+
+  <div style="margin-top:2.8rem">
+    <a href="kontakt.html" class="btn-primary">Request a confidential conversation</a>
   </div>
 </div>
 
-<!-- ─── FOOTER ─────────────────────────────────────────────────── -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <span class="footer-logo" data-i18n="footer.logo">Komm · sprich · mit mir</span>
-      <p data-i18n="footer.brand">Prozessorientierte Psychosoziale Beratung, Supervision und Coaching – online oder in Bern.</p>
+      <span class="footer-logo">Aligning Strategy</span>
+      <p>Systemic causality consulting · Phenomenological diagnostic · Feedback-loop interventions.</p>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer.nav.header">Navigation</h4>
+      <h4>Navigation</h4>
       <ul>
-        <li><a href="index.html"        data-i18n="nav.home">Home</a></li>
-        <li><a href="supervision.html"  data-i18n="nav.supervision">Supervision</a></li>
-        <li><a href="beratung.html"     data-i18n="nav.beratung">Beratung</a></li>
-        <li><a href="ueber-mich.html"   data-i18n="nav.about">Über mich</a></li>
-        <li><a href="preise.html"       data-i18n="nav.preise">Preise</a></li>
-        <li><a href="kontakt.html"      data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="supervision.html">Approach</a></li>
+        <li><a href="beratung.html">Value</a></li>
+        <li><a href="ueber-mich.html">Founder</a></li>
+        <li><a href="preise.html">Diagnostic</a></li>
+        <li><a href="kontakt.html">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer.contact.header">Kontakt</h4>
+      <h4>Contact</h4>
       <ul>
-        <li><span>Pascale Myriam Kohli</span></li>
-        <li><a href="tel:+41798555827">+41 79 855 58 27</a></li>
-        <li><a href="mailto:pascale.kohli@hin.ch">pascale.kohli@hin.ch</a></li>
+        <li><span>Aligning Strategy</span></li>
+        <li><a href="tel:+27000000000">[+27 XX XXX XXXX]</a></li>
+        <li><a href="mailto:hello@aligningstrategy.com">[hello@aligningstrategy.com]</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-legal">
-    <a href="agb.html"         data-i18n="footer.link.agb">AGB</a>
-    <a href="nutzung.html"     data-i18n="footer.link.nutzung">Nutzung &amp; Impressum</a>
-    <a href="datenschutz.html" data-i18n="footer.link.datenschutz">Datenschutzrichtlinie</a>
-    <a href="kontakt.html"     data-i18n="nav.contact">Kontakt</a>
+    <a href="agb.html">Terms</a>
+    <a href="nutzung.html">Legal Notice</a>
+    <a href="datenschutz.html">Privacy</a>
+    <a href="kontakt.html">Contact</a>
   </div>
   <div class="footer-bottom">
-    <span data-i18n="footer.copyright">© 2026 Komm sprich mit mir · Pascale Myriam Kohli</span>
+    <span>All conversations are treated as confidential and executive-grade. &nbsp;·&nbsp; © <span data-year>2026</span> Aligning Strategy</span>
     <div class="footer-links">
-      <a href="datenschutz.html" data-i18n="footer.link.privacy">Datenschutz</a>
-      <a href="nutzung.html"     data-i18n="footer.link.imprint">Impressum</a>
+      <a href="datenschutz.html">Privacy</a>
+      <a href="nutzung.html">Legal Notice</a>
     </div>
   </div>
 </footer>

@@ -9,10 +9,6 @@ function copyStaticRuntimeFiles() {
       const root = __dirname;
       const dist = resolve(root, 'dist');
       const entries = [
-        'content.json',
-        'content-de.json',
-        'content-en.json',
-        'admin',
         'images'
       ];
 
