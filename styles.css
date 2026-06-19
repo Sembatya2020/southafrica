@@ -757,7 +757,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 .hero-portrait-wrap {
   position: relative;
   width: 100%;
-  max-width: 390px;
+  max-width: 430px;
   margin-left: auto;
   aspect-ratio: 4 / 5;
   overflow: hidden;
@@ -787,12 +787,13 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
 .hero-bio {
   position: absolute;
-  left: 1.2rem;
-  bottom: 0.55rem;
+  left: 50%;
+  transform: translateX(-58%);
+  bottom: 0.48rem;
   z-index: 1;
-  width: min(620px, calc(100% - 2.4rem));
+  width: min(640px, 92vw);
   max-width: none;
-  padding: 0.46rem 0.72rem;
+  padding: 0.44rem 0.7rem;
   border: 1px solid rgba(29, 198, 126, 0.38);
   background: rgba(2, 8, 11, 0.64);
   backdrop-filter: blur(2px);
@@ -828,7 +829,6 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  white-space: nowrap;
 }
 
 .hero-bio li::before {
@@ -866,7 +866,8 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
   .hero-bio {
     left: 0.8rem;
-    right: auto;
+    right: 0.8rem;
+    transform: none;
     width: min(520px, calc(100% - 1.6rem));
   }
 
