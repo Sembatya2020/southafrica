@@ -780,7 +780,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center 18%;
+  object-position: center 8%;
   display: block;
   filter: none;
 }
@@ -788,10 +788,11 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 .hero-bio {
   position: absolute;
   left: 1.2rem;
-  bottom: 0.7rem;
+  bottom: 0.55rem;
   z-index: 1;
-  max-width: 350px;
-  padding: 0.62rem 0.78rem;
+  width: min(620px, calc(100% - 2.4rem));
+  max-width: none;
+  padding: 0.46rem 0.72rem;
   border: 1px solid rgba(29, 198, 126, 0.38);
   background: rgba(2, 8, 11, 0.64);
   backdrop-filter: blur(2px);
@@ -800,32 +801,34 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 .hero-bio h3 {
   font-family: 'Playfair Display', serif;
   color: #f5f7fb;
-  font-size: clamp(1.12rem, 1.8vw, 1.55rem);
+  font-size: clamp(0.98rem, 1.35vw, 1.26rem);
   line-height: 1.1;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.08rem;
 }
 
 .hero-role {
   color: #1dc67e;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.68rem;
+  font-size: 0.58rem;
   font-weight: 700;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.34rem;
 }
 
 .hero-bio ul {
   list-style: none;
   display: grid;
-  gap: 0.3rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.22rem 0.45rem;
 }
 
 .hero-bio li {
   color: rgba(236, 242, 247, 0.92);
-  font-size: 0.76rem;
+  font-size: 0.62rem;
   display: flex;
   align-items: center;
-  gap: 0.36rem;
+  gap: 0.3rem;
+  white-space: nowrap;
 }
 
 .hero-bio li::before {
@@ -864,6 +867,11 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   .hero-bio {
     left: 0.8rem;
     right: auto;
+    width: min(520px, calc(100% - 1.6rem));
+  }
+
+  .hero-bio ul {
+    grid-template-columns: 1fr;
   }
 }
 
