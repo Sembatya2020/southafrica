@@ -794,7 +794,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
 .hero-bio {
   position: absolute;
-  left: 50%;
+  left: 53%;
   transform: translateX(-50%);
   right: auto;
   bottom: 0.48rem;
