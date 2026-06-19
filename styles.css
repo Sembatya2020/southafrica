@@ -666,7 +666,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   font-size: clamp(1.55rem, 3.25vw, 2.55rem);
   line-height: 1.03;
   letter-spacing: -0.02em;
-  max-width: 12ch;
+  max-width: 19ch;
   margin: 0 0 0.8rem 0;
   text-transform: uppercase;
   text-shadow: 0 3px 22px rgba(0, 0, 0, 0.5);
@@ -682,6 +682,12 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
 .hero-content .hero-line {
   display: block;
+}
+
+.hero-content .hero-line-main,
+.hero-content .hero-line-accent {
+  max-width: 19ch;
+  text-wrap: balance;
 }
 
 .hero-divider {
