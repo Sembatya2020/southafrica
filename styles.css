@@ -797,7 +797,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   left: 53%;
   transform: translateX(-50%);
   right: auto;
-  bottom: 0.48rem;
+  bottom: 0.28rem;
   z-index: 1;
   width: min(600px, 97%);
   max-width: none;
