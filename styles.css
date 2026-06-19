@@ -663,7 +663,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: clamp(1.55rem, 3.25vw, 2.55rem);
+  font-size: clamp(1.35rem, 2.7vw, 2.1rem);
   line-height: 1.03;
   letter-spacing: -0.02em;
   max-width: 19ch;
@@ -713,14 +713,14 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   align-items: flex-start;
   margin: 0;
   width: 100%;
-  max-width: 420px;
+  max-width: 360px;
 }
 
 .hero-buttons .btn-primary,
 .hero-buttons .btn-outline {
   width: 100%;
-  padding: 0.84rem 1.1rem;
-  font-size: 0.84rem;
+  padding: 0.68rem 0.9rem;
+  font-size: 0.72rem;
   letter-spacing: 0.035em;
   font-weight: 700;
   text-align: left;
@@ -749,7 +749,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
 .hero-profile {
   position: relative;
-  min-height: 440px;
+  min-height: 390px;
   display: flex;
   align-items: flex-end;
 }
@@ -757,7 +757,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 .hero-portrait-wrap {
   position: relative;
   width: 100%;
-  max-width: 460px;
+  max-width: 390px;
   margin-left: auto;
   aspect-ratio: 4 / 5;
   overflow: hidden;
@@ -882,7 +882,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   }
 
   .hero-content h1 {
-    font-size: clamp(1.35rem, 8vw, 2rem);
+    font-size: clamp(1.18rem, 6.6vw, 1.7rem);
     max-width: 14ch;
   }
 
@@ -897,8 +897,8 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
   .hero-buttons .btn-primary,
   .hero-buttons .btn-outline {
-    font-size: 0.78rem;
-    padding: 0.78rem 0.9rem;
+    font-size: 0.68rem;
+    padding: 0.64rem 0.78rem;
   }
 
   .hero-portrait-wrap {
