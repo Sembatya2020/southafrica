@@ -646,13 +646,11 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   color: var(--gold-light);
 }
 
+.hero-content .hero-line {
+  display: block;
+}
+
 @media (max-width: 600px) {
-  .hero-content h1 {
-    font-size: clamp(1.45rem, 6.4vw, 1.95rem);
-    line-height: 1.24;
-    max-width: 20ch;
-    margin-bottom: 1.6rem;
-  }
   .hero-bg {
     background-position: top center;
   }
@@ -693,22 +691,55 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   letter-spacing: 0.075em;
 }
 
-@media (min-width: 1400px) {
-  .hero-content {
-    padding-top: calc(var(--nav-h) + 1.2rem);
-    max-width: 1140px;
-    gap: 0.6rem;
+@media (min-width: 900px) {
+  .hero-content .hero-line-main,
+  .hero-content .hero-line-accent {
+    white-space: nowrap;
   }
 
   .hero-content h1 {
-    font-size: clamp(1.32rem, 1.8vw, 1.84rem);
-    max-width: 26ch;
+    max-width: 40ch;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --nav-h: 86px;
+  }
+
+  #navbar {
+    backdrop-filter: saturate(135%) blur(5px);
+  }
+
+  .hero-content {
+    padding-top: calc(var(--nav-h) + 1rem);
+    max-width: 1140px;
+    gap: 0.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.58rem, 2.05vw, 2.22rem);
+    line-height: 1.14;
+    max-width: 31ch;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-content .hero-line-main,
+  .hero-content .hero-line-accent {
+    white-space: nowrap;
   }
 
   .hero-content p {
-    font-size: clamp(0.86rem, 0.9vw, 0.94rem);
-    max-width: 76ch;
-    margin-bottom: 1.3rem;
+    font-size: clamp(0.92rem, 0.98vw, 1rem);
+    max-width: 70ch;
+    margin-bottom: 1.2rem;
+    line-height: 1.58;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-outline {
+    padding: 0.72rem 1.36rem;
+    font-size: 0.73rem;
   }
 }
 
