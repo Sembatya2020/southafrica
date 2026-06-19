@@ -799,7 +799,7 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
   right: auto;
   bottom: 0.48rem;
   z-index: 1;
-  width: min(470px, 84%);
+  width: min(560px, 95%);
   max-width: none;
   padding: 0.38rem 0.6rem;
   border: 1px solid rgba(29, 198, 126, 0.38);
