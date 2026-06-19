@@ -73,9 +73,8 @@
 
   function buildBrandMarkup(siteName) {
     const name = typeof siteName === 'string' ? siteName : '';
-    const safeName = escapeHtml(name);
     const safeAlt = escapeHtml((name || 'Brand') + ' logo');
-    return '<img src="' + BRAND_LOGO_PATH + '" alt="' + safeAlt + '" class="brand-mark" loading="eager" decoding="async"><span class="brand-text">' + safeName + '</span>';
+    return '<img src="' + BRAND_LOGO_PATH + '" alt="' + safeAlt + '" class="brand-mark" loading="eager" decoding="async">';
   }
 
   function setAllText(selector, values, root) {
