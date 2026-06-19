@@ -14,6 +14,7 @@
 
   /* ─── THEME (light / dark) ───────────────────────────────────── */
   const THEME_KEY = 'as.theme';
+  const BRAND_LOGO_PATH = 'images/logo.png';
   function getTheme() {
     return document.documentElement.getAttribute('data-theme') || 'light';
   }
@@ -59,6 +60,22 @@
     if (typeof value !== 'string') return;
     const el = q(selector, root);
     if (el) el.setAttribute(attr, value);
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function buildBrandMarkup(siteName) {
+    const name = typeof siteName === 'string' ? siteName : '';
+    const safeName = escapeHtml(name);
+    const safeAlt = escapeHtml((name || 'Brand') + ' logo');
+    return '<img src="' + BRAND_LOGO_PATH + '" alt="' + safeAlt + '" class="brand-mark" loading="eager" decoding="async"><span class="brand-text">' + safeName + '</span>';
   }
 
   function setAllText(selector, values, root) {
@@ -182,13 +199,13 @@
     if (!content) return;
 
     setText('.cookie-banner p', content.cookieText);
-    setText('.nav-logo', content.siteName);
+    setHtml('.nav-logo', buildBrandMarkup(content.siteName));
     setAllText('.nav-links .nav-link', content.navLinks);
     setAllText('#mobileMenu a', content.navLinks);
 
     if (!content.footer) return;
 
-    setText('.footer-logo', content.siteName);
+    setHtml('.footer-logo', buildBrandMarkup(content.siteName));
     setText('.footer-brand p', content.footer.tagline);
     setAllText('.footer-col h4', [content.footer.navigationTitle, content.footer.contactTitle]);
     setText('.footer-col:nth-of-type(2) li span', content.footer.contactName);
