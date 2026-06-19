@@ -1,0 +1,27 @@
+{
+  "metaTitle": "Contact — Aligning Strategy",
+  "metaDescription": "Request a confidential conversation with Aligning Strategy — a partnership model built for truth, courage, and results that hold.",
+  "hero": {
+    "breadcrumb": "Contact",
+    "heading": "Request a confidential conversation",
+    "subtitle": "A partnership model built for truth, courage, and results that hold"
+  },
+  "backToHome": "← Back to home",
+  "lead": "Aligning Strategy partners with senior leadership to diagnose systemic causality quickly, build a shared feedback-loop model, and run a structured implementation that restores balance.",
+  "requestCard": {
+    "title": "Request a confidential conversation",
+    "labels": ["Email", "Phone", "Calendar"],
+    "values": ["[hello@aligningstrategy.com]", "[+27 XX XXX XXXX]", "[add scheduling link]"],
+    "button": "Email Aligning Strategy",
+    "buttonHref": "mailto:hello@aligningstrategy.com?subject=Confidential%20Diagnostic%20Conversation"
+  },
+  "expectCard": {
+    "title": "What you can expect",
+    "items": [
+      "A clear framing of the challenge in causality terms.",
+      "Agreement on the few leverage points that matter.",
+      "A managed pathway for courageous conversations.",
+      "A project-managed implementation approach."
+    ]
+  }
+}

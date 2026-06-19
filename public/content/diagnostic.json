@@ -1,0 +1,43 @@
+{
+  "metaTitle": "Self-Diagnostic — Aligning Strategy",
+  "metaDescription": "A self-diagnostic for leadership teams: is your organisation facing symptoms — or causality? Who Aligning Strategy is for.",
+  "hero": {
+    "breadcrumb": "Diagnostic",
+    "heading": "Symptoms — or causality?",
+    "subtitle": "A short self-diagnostic for leadership teams"
+  },
+  "backToHome": "← Back to home",
+  "fit": {
+    "eyebrow": "Who it's for",
+    "heading": "For leadership teams who want a real solution — not a temporary story.",
+    "cards": [
+      { "title": "Large corporates", "body": "4,000–20,000 employees, complex operations, intense competition, material financial stakes." },
+      { "title": "Boards & executive committees", "body": "Alignment blocked by noise, fear, politics, and unresolved conflict." },
+      { "title": "Private equity", "body": "Five-year value cycles needing durable correction, not optics." }
+    ]
+  },
+  "questions": {
+    "eyebrow": "Self-diagnostic",
+    "heading": "Is your organisation facing symptoms — or causality?",
+    "lead": "If several of these land uncomfortably, it usually signals the system — not the people — is constraining performance.",
+    "items": [
+      { "title": "Competing in a highly contested industry ecosystem", "sub": "Margins are pressured from several directions at once." },
+      { "title": "The business model no longer serves the organisation, its people, or shareholders", "sub": "What once worked now produces strain instead of returns." },
+      { "title": "High turnover but threatened profitability", "sub": "Activity is high while the financial trajectory is falling." },
+      { "title": "The model needs innovation to stay competitive", "sub": "Incremental tweaks are no longer enough to keep pace." },
+      { "title": "Scalability of the current operating model is in doubt", "sub": "Growth adds cost and friction faster than it adds value." },
+      { "title": "The organisation has moved from growth/maturity into decline", "sub": "The curve has turned and momentum is working against you." },
+      { "title": "Senior leaders are under sustained stress", "sub": "Pressure is constant, and the bandwidth to think clearly is shrinking." },
+      { "title": "Fear is present in the organisation", "sub": "People protect themselves rather than the enterprise." },
+      { "title": "Competitors are circling", "sub": "Dominant incumbents and niche challengers are both applying pressure." },
+      { "title": "Repeated failed attempts to shift the organisation", "sub": "Initiatives launch with energy and quietly revert to the old pattern." },
+      { "title": "Latent conflict is blocking progress", "sub": "Unspoken tension stalls decisions and execution." },
+      { "title": "Considering cosmetic changes to survive", "sub": "Cost cutting, asset sales, or financial engineering are on the table." }
+    ]
+  },
+  "callout": {
+    "title": "If several of these resonate",
+    "body": "It is rarely a people problem. It is usually the system. The next step is a confidential conversation to frame the challenge in causality terms and agree on the few leverage points that matter.",
+    "button": "Discuss your diagnostic confidentially"
+  }
+}

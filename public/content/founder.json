@@ -1,0 +1,43 @@
+{
+  "metaTitle": "The Founder — Godfrey O'Flaherty · Aligning Strategy",
+  "metaDescription": "Godfrey O'Flaherty — nearly 30 years in complex turnarounds and growth transformations, applied in high-stakes, time-sensitive environments.",
+  "hero": {
+    "breadcrumb": "Founder",
+    "heading": "Godfrey O'Flaherty",
+    "subtitle": "Senior leadership partnership in moments that matter"
+  },
+  "backToHome": "← Back to home",
+  "portraitCaption": "Portrait coming soon",
+  "portraitNote": "Image placeholder — Godfrey's photo will be added here.",
+  "lead": "Nearly 30 years in complex turnarounds and growth transformations. Godfrey helps executive teams make clean decisions inside messy reality — calm, rigorous systems thinking, and the facilitation of courageous conversations that unblock movement.",
+  "workCard": {
+    "title": "How he works",
+    "items": [
+      "Diagnoses causality fast, without premature solutions.",
+      "Builds alignment through truth-telling and structured dialogue.",
+      "Moves teams from fear and politics to ownership and execution.",
+      "Brings specialist facilitators only where required."
+    ]
+  },
+  "learningCard": {
+    "title": "Learning organisation capability",
+    "body": "Implementation is supported by coaching and leadership development, embedding learning-organisation habits (Senge) so capability remains after the engagement ends."
+  },
+  "proof": {
+    "eyebrow": "Proof",
+    "heading": "Trusted in high-complexity, time-sensitive environments.",
+    "lead": "Applied across industries with real stakes — large workforces, large balance sheets, major deadlines, severe competitive pressure.",
+    "selectedTitle": "Selected engagements",
+    "selectedItems": [
+      "<strong>De Beers</strong> Large-scale mining implementation model, diamond industry.",
+      "<strong>Barclays / ABSA</strong> Support through major acquisition integration dynamics.",
+      "<strong>Major South African construction firms</strong> 12–18 month profitability restoration programs at scale.",
+      "<strong>Soccer City &amp; Nelson Mandela Bay Stadium</strong> Full implementation under FIFA World Cup time constraints.",
+      "<strong>Aveng Group</strong> Resolution of severe financial stress in a major open-cast mining project."
+    ],
+    "signalsTitle": "What this signals",
+    "signalsBody": "The common thread across these engagements is not an industry — it is the conditions under which the work was done.",
+    "signalsPills": ["Scale", "Complexity", "Time pressure", "Multi-stakeholder conflict", "High financial stakes"]
+  },
+  "ctaButton": "Request a confidential conversation"
+}

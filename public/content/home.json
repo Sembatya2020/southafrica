@@ -1,0 +1,65 @@
+{
+  "metaTitle": "Aligning Strategy — Systemic causality consulting for high-stakes organisations",
+  "metaDescription": "Aligning Strategy — boutique consulting that diagnoses and corrects the few systemic causes behind hundreds of costly symptoms, restoring durable profitability, momentum and leadership alignment.",
+  "hero": {
+    "eyebrow": "Boutique consulting for complex, high-stakes organisations",
+    "lineMain": "Diagnose and correct systemic causality—",
+    "lineAccent": "before symptoms destroy enterprise value.",
+    "description": "We identify the few root dynamics that generate costly symptoms, then shift the feedback loops that keep an organisation stuck. The result is durable profitability, renewed momentum, and leadership alignment under real-world complexity.",
+    "explore": "Explore",
+    "buttonLeft": "See what changes (and what doesn't)",
+    "buttonRight": "Book a confidential diagnostic call"
+  },
+  "welcome": {
+    "eyebrow": "What leaders get",
+    "heading": "A systemic correction designed to hold — not another cost-cutting program.",
+    "paragraphs": [
+      "Aligning Strategy gives leadership teams clarity on their true constraints, a mapped causality model, and a structured cross-functional intervention that converts fear, blame, and factional drift into ownership and execution.",
+      "Not \"financial engineering.\" Not a deck full of templates. A senior, project-managed partnership designed to move the organisation — not populate it with billable bodies."
+    ],
+    "stats": [
+      { "number": "4,000–20,000", "label": "Typical organisation size" },
+      { "number": "60+", "label": "Complex turnarounds led" },
+      { "number": "Phenomenological", "label": "Diagnostic discipline" },
+      { "number": "Feedback loops", "label": "Systems correction model" }
+    ]
+  },
+  "work": {
+    "eyebrow": "The work",
+    "heading": "From symptoms to causality — and back to performance",
+    "description": "One causality can generate hundreds of symptoms. Treat symptoms and you multiply effort and resentment; correct causality and symptoms fall away.",
+    "cards": [
+      {
+        "title": "The Approach",
+        "description": "A phenomenological diagnostic that turns complexity into actionable causality models and feedback loops executives can act on.",
+        "linkText": "Explore the approach →"
+      },
+      {
+        "title": "The Value",
+        "description": "Durable margin restoration, business-model renewal, and private-equity value creation that holds — performance becomes repeatable.",
+        "linkText": "See what changes →"
+      },
+      {
+        "title": "The Founder",
+        "description": "Godfrey O'Flaherty — nearly 30 years in complex turnarounds, applied in high-stakes, time-sensitive environments.",
+        "linkText": "Meet the founder →"
+      }
+    ]
+  },
+  "principle": {
+    "quote": "\"If you can see the system, you can shift it. If you can shift causality, symptoms reduce as a consequence — and performance becomes repeatable.\"",
+    "cite": "The guiding principle"
+  },
+  "proof": {
+    "eyebrow": "Proof",
+    "heading": "Trusted in high-complexity, time-sensitive environments.",
+    "description": "Applied across industries with real stakes — large workforces, large balance sheets, major deadlines, severe competitive pressure. De Beers, Barclays / ABSA, major South African construction firms, Soccer City & Nelson Mandela Bay Stadium, and the Aveng Group, among others.",
+    "button": "See selected engagements"
+  },
+  "cta": {
+    "heading": "Is your organisation facing symptoms — or causality?",
+    "description": "If several signals land uncomfortably, it usually means the system — not the people — is constraining performance. Start with a confidential conversation.",
+    "buttonPrimary": "Request a confidential conversation",
+    "buttonSecondary": "Take the diagnostic"
+  }
+}

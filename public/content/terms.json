@@ -1,0 +1,24 @@
+{
+  "metaTitle": "Terms — Aligning Strategy",
+  "metaDescription": "Terms of engagement — Aligning Strategy.",
+  "hero": {
+    "breadcrumb": "Terms",
+    "heading": "Terms of Engagement"
+  },
+  "backToHome": "← Back to home",
+  "intro": "<em>Placeholder text. Please replace the clauses below with terms of engagement reviewed by your own legal adviser before going live.</em>",
+  "sections": [
+    { "title": "1. Scope", "body": "These terms apply to all advisory and implementation engagements provided by Aligning Strategy (\"we\", \"us\") to clients (\"you\"). Specific scope, deliverables, timelines and fees are set out in each individual engagement agreement, which prevails in the event of any conflict with these terms." },
+    { "title": "2. Engagements", "body": "Each engagement begins with a confidential diagnostic and a written agreement on objectives, the leverage points to be addressed, and the implementation approach. Either party may agree changes in writing as the work progresses." },
+    { "title": "3. Confidentiality", "body": "All information exchanged during an engagement is treated as strictly confidential and used solely for the purpose of the engagement. We do not disclose client information to third parties except where required by law or with your written consent." },
+    { "title": "4. Fees and invoicing", "body": "Fees are agreed in advance and confirmed in writing in the engagement agreement. Invoices are payable within the period stated on the invoice. Any additional scope is agreed and priced before work proceeds." },
+    { "title": "5. Liability", "body": "Our advice supports your decision-making; responsibility for decisions taken and actions implemented remains with you. To the extent permitted by law, our aggregate liability in connection with an engagement is limited to the fees paid for that engagement." },
+    { "title": "6. Governing law", "body": "These terms are governed by the laws of the jurisdiction stated in the engagement agreement. [Specify governing jurisdiction.]" }
+  ],
+  "responsible": [
+    "<strong>Aligning Strategy</strong>",
+    "[Registered name / company number]",
+    "[Registered address]",
+    "<a href=\"mailto:hello@aligningstrategy.com\" style=\"color:var(--gold)\">[hello@aligningstrategy.com]</a>"
+  ]
+}

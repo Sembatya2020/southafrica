@@ -1,0 +1,24 @@
+{
+  "metaTitle": "Privacy — Aligning Strategy",
+  "metaDescription": "Privacy policy — Aligning Strategy.",
+  "hero": {
+    "breadcrumb": "Privacy",
+    "heading": "Privacy Policy"
+  },
+  "backToHome": "← Back to home",
+  "intro": "<em>Placeholder text. Please replace with a privacy policy reviewed by your own legal adviser and aligned to the data-protection law that applies to you (for example, POPIA or GDPR).</em>",
+  "sections": [
+    { "title": "1. Who we are", "body": "Aligning Strategy is the data controller for personal information collected through this website and through client engagements. Contact: [hello@aligningstrategy.com]." },
+    { "title": "2. What we collect", "body": "We collect only the information you choose to provide — for example, your name, organisation, email address and the content of your enquiry — together with limited, non-identifying technical information needed to operate the site securely." },
+    { "title": "3. How we use it", "body": "We use your information solely to respond to your enquiry, to arrange and deliver engagements, and to meet legal obligations. We do not sell your information or use it for advertising." },
+    { "title": "4. Cookies", "body": "This site uses a small number of strictly functional cookies to remember display preferences (such as light or dark mode). No tracking, analytics or advertising cookies are used." },
+    { "title": "5. Sharing", "body": "We do not share your personal information with third parties except where necessary to deliver an engagement with your consent, or where required by law." },
+    { "title": "6. Your rights", "body": "You may request access to, correction of, or deletion of your personal information, subject to applicable law. To exercise these rights, contact us at [hello@aligningstrategy.com]." },
+    { "title": "7. Retention", "body": "We retain personal information only for as long as needed for the purposes described above or as required by law, after which it is securely deleted." }
+  ],
+  "responsible": [
+    "<strong>Aligning Strategy</strong>",
+    "[Registered address]",
+    "<a href=\"mailto:hello@aligningstrategy.com\" style=\"color:var(--gold)\">[hello@aligningstrategy.com]</a>"
+  ]
+}

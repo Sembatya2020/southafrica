@@ -1,0 +1,18 @@
+{
+  "siteName": "Aligning Strategy",
+  "cookieText": "This website uses minimal cookies to remember your display preferences. No tracking or advertising cookies are used.",
+  "navLinks": ["Home", "Approach", "Value", "Founder", "Diagnostic", "Contact"],
+  "footer": {
+    "tagline": "Systemic causality consulting · Phenomenological diagnostic · Feedback-loop interventions.",
+    "navigationTitle": "Navigation",
+    "contactTitle": "Contact",
+    "contactName": "Aligning Strategy",
+    "phoneLabel": "[+27 XX XXX XXXX]",
+    "phoneHref": "tel:+27000000000",
+    "emailLabel": "[hello@aligningstrategy.com]",
+    "emailHref": "mailto:hello@aligningstrategy.com",
+    "legalLinks": ["Terms", "Legal Notice", "Privacy", "Contact"],
+    "bottomLinks": ["Privacy", "Legal Notice"],
+    "bottomNotePrefix": "All conversations are treated as confidential and executive-grade."
+  }
+}

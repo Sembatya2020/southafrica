@@ -1,0 +1,23 @@
+{
+  "metaTitle": "Legal Notice — Aligning Strategy",
+  "metaDescription": "Legal notice and site usage — Aligning Strategy.",
+  "hero": {
+    "breadcrumb": "Legal Notice",
+    "heading": "Legal Notice & Site Usage"
+  },
+  "backToHome": "← Back to home",
+  "intro": "<em>Placeholder text. Please replace the bracketed details with your own registered information.</em>",
+  "sections": [
+    { "title": "Site operator", "body": "This website is operated by Aligning Strategy." },
+    { "title": "Contact details", "body": "[Registered name / company number]<br>[Registered address]<br>Email: [hello@aligningstrategy.com]<br>Phone: [+27 XX XXX XXXX]" },
+    { "title": "Responsible for content", "body": "Godfrey O'Flaherty, on behalf of Aligning Strategy." },
+    { "title": "Use of this website", "body": "The content on this website is provided for general information about Aligning Strategy's services and does not constitute advice. Specific advice is provided only under a written engagement agreement." },
+    { "title": "Intellectual property", "body": "All text and design on this website are the property of Aligning Strategy unless otherwise stated, and may not be reproduced without permission." },
+    { "title": "Liability for links", "body": "Where this website links to external sites, we have no control over their content and accept no responsibility for it." }
+  ],
+  "responsible": [
+    "<strong>Aligning Strategy</strong>",
+    "[Registered address]",
+    "<a href=\"mailto:hello@aligningstrategy.com\" style=\"color:var(--gold)\">[hello@aligningstrategy.com]</a>"
+  ]
+}

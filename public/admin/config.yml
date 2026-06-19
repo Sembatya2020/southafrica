@@ -1,0 +1,434 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "en"
+
+collections:
+  - name: "content"
+    label: "Website Content"
+    format: "json"
+    editor:
+      preview: false
+    files:
+      - label: "Global (Navigation, Footer, Cookie)"
+        name: "global"
+        file: "public/content/global.json"
+        fields:
+          - { label: "Site Name", name: "siteName", widget: "string" }
+          - { label: "Cookie Text", name: "cookieText", widget: "text" }
+          - label: "Navigation Labels"
+            name: "navLinks"
+            widget: "list"
+            field: { label: "Label", name: "label", widget: "string" }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Tagline", name: "tagline", widget: "text" }
+              - { label: "Navigation Title", name: "navigationTitle", widget: "string" }
+              - { label: "Contact Title", name: "contactTitle", widget: "string" }
+              - { label: "Contact Name", name: "contactName", widget: "string" }
+              - { label: "Phone Label", name: "phoneLabel", widget: "string" }
+              - { label: "Phone Link", name: "phoneHref", widget: "string" }
+              - { label: "Email Label", name: "emailLabel", widget: "string" }
+              - { label: "Email Link", name: "emailHref", widget: "string" }
+              - label: "Footer Legal Links"
+                name: "legalLinks"
+                widget: "list"
+                field: { label: "Label", name: "label", widget: "string" }
+              - label: "Footer Bottom Links"
+                name: "bottomLinks"
+                widget: "list"
+                field: { label: "Label", name: "label", widget: "string" }
+              - { label: "Footer Bottom Note Prefix", name: "bottomNotePrefix", widget: "string" }
+
+      - label: "Home"
+        name: "home"
+        file: "public/content/home.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Headline Line 1", name: "lineMain", widget: "string" }
+              - { label: "Headline Line 2", name: "lineAccent", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Explore Text", name: "explore", widget: "string" }
+              - { label: "Left Button", name: "buttonLeft", widget: "string" }
+              - { label: "Right Button", name: "buttonRight", widget: "string" }
+          - label: "Welcome Section"
+            name: "welcome"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+          - label: "Work Section"
+            name: "work"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Link Text", name: "linkText", widget: "string" }
+          - label: "Guiding Principle"
+            name: "principle"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Cite", name: "cite", widget: "string" }
+          - label: "Proof Teaser"
+            name: "proof"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button", name: "button", widget: "string" }
+          - label: "CTA Section"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Primary Button", name: "buttonPrimary", widget: "string" }
+              - { label: "Secondary Button", name: "buttonSecondary", widget: "string" }
+
+      - label: "Approach Page"
+        name: "approach"
+        file: "public/content/approach.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - label: "Problem Section"
+            name: "problem"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Lead", name: "lead", widget: "text" }
+              - { label: "Signals Title", name: "signalsTitle", widget: "string" }
+              - label: "Signals"
+                name: "signals"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+              - { label: "Trap Title", name: "trapTitle", widget: "string" }
+              - { label: "Trap Body", name: "trapBody", widget: "text" }
+              - label: "Trap Pills"
+                name: "trapPills"
+                widget: "list"
+                field: { label: "Pill", name: "pill", widget: "string" }
+          - label: "Approach Section"
+            name: "approach"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Lead", name: "lead", widget: "text" }
+              - label: "Method Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+              - { label: "Callout Title", name: "calloutTitle", widget: "string" }
+              - { label: "Callout Body", name: "calloutBody", widget: "text" }
+              - label: "Implementation Cards"
+                name: "implementationCards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+          - { label: "Bottom CTA Button", name: "ctaButton", widget: "string" }
+
+      - label: "Value Page"
+        name: "value"
+        file: "public/content/value.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - label: "Value Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+          - { label: "Callout Title", name: "calloutTitle", widget: "string" }
+          - { label: "Callout Body", name: "calloutBody", widget: "text" }
+          - { label: "Bottom CTA Button", name: "ctaButton", widget: "string" }
+
+      - label: "Founder Page"
+        name: "founder"
+        file: "public/content/founder.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - { label: "Portrait Caption", name: "portraitCaption", widget: "string" }
+          - { label: "Portrait Note", name: "portraitNote", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - label: "How He Works Card"
+            name: "workCard"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+          - label: "Learning Card"
+            name: "learningCard"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+          - label: "Proof"
+            name: "proof"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Lead", name: "lead", widget: "text" }
+              - { label: "Selected Title", name: "selectedTitle", widget: "string" }
+              - label: "Selected Items (HTML allowed)"
+                name: "selectedItems"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "text" }
+              - { label: "Signals Title", name: "signalsTitle", widget: "string" }
+              - { label: "Signals Body", name: "signalsBody", widget: "text" }
+              - label: "Signals Pills"
+                name: "signalsPills"
+                widget: "list"
+                field: { label: "Pill", name: "pill", widget: "string" }
+          - { label: "Bottom CTA Button", name: "ctaButton", widget: "string" }
+
+      - label: "Diagnostic Page"
+        name: "diagnostic"
+        file: "public/content/diagnostic.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - label: "Who It's For"
+            name: "fit"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+          - label: "Self Diagnostic"
+            name: "questions"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Lead", name: "lead", widget: "text" }
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "title", widget: "string" }
+                  - { label: "Support Line", name: "sub", widget: "string" }
+          - label: "Callout"
+            name: "callout"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Button", name: "button", widget: "string" }
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "public/content/contact.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - label: "Request Card"
+            name: "requestCard"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Contact Labels"
+                name: "labels"
+                widget: "list"
+                field: { label: "Label", name: "label", widget: "string" }
+              - label: "Contact Values"
+                name: "values"
+                widget: "list"
+                field: { label: "Value", name: "value", widget: "string" }
+              - { label: "Button Text", name: "button", widget: "string" }
+              - { label: "Button Link", name: "buttonHref", widget: "string" }
+          - label: "Expect Card"
+            name: "expectCard"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+
+      - label: "Terms Page"
+        name: "terms"
+        file: "public/content/terms.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - { label: "Intro (HTML allowed)", name: "intro", widget: "text" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body (HTML allowed)", name: "body", widget: "text" }
+          - label: "Responsible Block Lines (HTML allowed)"
+            name: "responsible"
+            widget: "list"
+            field: { label: "Line", name: "line", widget: "text" }
+
+      - label: "Privacy Page"
+        name: "privacy"
+        file: "public/content/privacy.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - { label: "Intro (HTML allowed)", name: "intro", widget: "text" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body (HTML allowed)", name: "body", widget: "text" }
+          - label: "Responsible Block Lines (HTML allowed)"
+            name: "responsible"
+            widget: "list"
+            field: { label: "Line", name: "line", widget: "text" }
+
+      - label: "Legal Notice Page"
+        name: "legal"
+        file: "public/content/legal.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Back To Home Label", name: "backToHome", widget: "string" }
+          - { label: "Intro (HTML allowed)", name: "intro", widget: "text" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body (HTML allowed)", name: "body", widget: "text" }
+          - label: "Responsible Block Lines (HTML allowed)"
+            name: "responsible"
+            widget: "list"
+            field: { label: "Line", name: "line", widget: "text" }
+
+      - label: "404 Page"
+        name: "notFound"
+        file: "public/content/notFound.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button", name: "button", widget: "string" }
+
+      - label: "Success Page"
+        name: "success"
+        file: "public/content/success.json"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button", name: "button", widget: "string" }

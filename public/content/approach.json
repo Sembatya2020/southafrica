@@ -1,0 +1,43 @@
+{
+  "metaTitle": "The Approach — Aligning Strategy",
+  "metaDescription": "The Approach — a phenomenological diagnostic that turns complexity into actionable causality models and feedback loops executives can act on.",
+  "hero": {
+    "breadcrumb": "Approach",
+    "heading": "The Approach",
+    "subtitle": "Phenomenological diagnostic · Causality models · Feedback loops"
+  },
+  "backToHome": "← Back to home",
+  "problem": {
+    "eyebrow": "The problem",
+    "heading": "When the organisation is busy, but the system is failing.",
+    "lead": "Many organisations respond to complexity with simplification — headcount cuts, asset sales, budget freezes, margin exercises, cosmetic restructures. These quiet symptoms temporarily while the underlying causality stays untouched; the business looks calmer on paper yet drifts closer to the edge.",
+    "signalsTitle": "Common signals at executive level",
+    "signals": [
+      "High turnover but threatened and accelerating profitability decline.",
+      "A business model that no longer serves the organisation, its people, or shareholders.",
+      "Competitive pressure from dominant incumbents and low-cost niche challengers.",
+      "Executive stress, organisational fear, and decision-making that narrows under pressure.",
+      "Latent conflict handled through avoidance, politics, or blame."
+    ],
+    "trapTitle": "The hidden trap",
+    "trapBody": "One causality can generate hundreds of symptoms. Treat symptoms and you multiply effort and resentment; correct causality and symptoms fall away.",
+    "trapPills": ["Cost overrun", "Churn", "Delays", "Rework", "Low trust", "Root cause: systemic constraints"]
+  },
+  "approach": {
+    "eyebrow": "The approach",
+    "heading": "A rigorous diagnostic that turns complexity into actionable causality.",
+    "lead": "A phenomenological diagnostic discipline grounded in research methodology surfaces what is actually happening in the system; insights become systemic causality models and feedback loops (Peter Senge style) executives can act on.",
+    "cards": [
+      { "title": "Phenomenology → executive clarity", "body": "Start with lived reality, not assumptions or generic frameworks." },
+      { "title": "Causality modeling", "body": "Map how the organisation produces results through repeatable dynamics." },
+      { "title": "Feedback loops you can shift", "body": "Find leverage points, re-balance, and design interventions that change the loop so performance holds." }
+    ],
+    "calloutTitle": "Why this is different from large consulting models",
+    "calloutBody": "Large firms scale by deploying teams and templates then measuring activity. Aligning Strategy scales impact by diagnosing the few causal constraints and running a structured cross-functional intervention — without creating dependency or hiding behind headcount.",
+    "implementationCards": [
+      { "title": "Interactive cross-functional implementation", "body": "Change is built with the people who run the system, across functions — so ownership and momentum are real, not delegated to a deck." },
+      { "title": "Insider–outsider partnership model", "body": "Close enough to move the work, independent enough to tell the truth." }
+    ]
+  },
+  "ctaButton": "Book a confidential diagnostic call"
+}
