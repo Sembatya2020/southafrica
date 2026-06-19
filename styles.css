@@ -3497,7 +3497,9 @@ body.legal-page { background: var(--surface); }
 .founder-intro .as-lead {
   margin-bottom: 0;
   align-self: center;
+  padding-top: clamp(0.7rem, 1.6vw, 1.3rem);
 }
+@media (max-width: 760px){ .founder-intro .as-lead { padding-top: 0; } }
 
 .founder-portrait { position: sticky; top: calc(var(--nav-h) + 1rem); }
 .founder-portrait-frame {
