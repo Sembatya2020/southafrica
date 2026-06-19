@@ -720,9 +720,9 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 .hero-buttons .btn-primary,
 .hero-buttons .btn-outline {
   width: auto;
-  min-width: 260px;
-  padding: 0.56rem 0.76rem;
-  font-size: 0.64rem;
+  min-width: 220px;
+  padding: 0.48rem 0.68rem;
+  font-size: 0.58rem;
   letter-spacing: 0.035em;
   font-weight: 700;
   text-align: center;
@@ -789,11 +789,12 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
 .hero-bio {
   position: absolute;
-  left: 50%;
-  transform: translateX(-58%);
+  right: 0.8rem;
+  left: auto;
+  transform: none;
   bottom: 0.48rem;
   z-index: 1;
-  width: min(560px, 92vw);
+  width: min(520px, 88vw);
   max-width: none;
   padding: 0.44rem 0.7rem;
   border: 1px solid rgba(29, 198, 126, 0.38);
@@ -982,10 +983,10 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 
 .hero-scroll {
   position: absolute;
-  bottom: 2.4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
+  bottom: 1.05rem;
+  left: clamp(1.1rem, 12vw, 12rem);
+  transform: none;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1005,8 +1006,8 @@ p { font-size: clamp(0.95rem, 1.4vw, 1.05rem); }
 }
 
 @keyframes bobble {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(7px); }
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
 }
 
 /* ─── INTRO QUOTE ────────────────────────────────────────────── */
