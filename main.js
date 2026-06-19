@@ -65,8 +65,11 @@
     if (!Array.isArray(values)) return;
     const els = qa(selector, root);
     values.forEach((value, index) => {
-      if (els[index] && typeof value === 'string') {
-        els[index].textContent = value;
+      if (els[index]) {
+        const text = extractText(value);
+        if (typeof text === 'string') {
+          els[index].textContent = text;
+        }
       }
     });
   }
@@ -79,12 +82,25 @@
     items.forEach(item => {
       const li = document.createElement('li');
       if (allowHtml) {
-        li.innerHTML = item;
+        li.innerHTML = typeof item === 'string' ? item : (extractText(item) || '');
       } else {
-        li.textContent = item;
+        li.textContent = extractText(item) || '';
       }
       list.appendChild(li);
     });
+  }
+
+  function extractText(value) {
+    if (typeof value === 'string') return value;
+    if (typeof value === 'number') return String(value);
+    if (!value || typeof value !== 'object') return '';
+
+    const candidates = ['label', 'item', 'value', 'title', 'body', 'sub', 'line', 'text'];
+    for (let i = 0; i < candidates.length; i++) {
+      const key = candidates[i];
+      if (typeof value[key] === 'string') return value[key];
+    }
+    return '';
   }
 
   function getTitleBody(item) {
@@ -93,7 +109,7 @@
       return { title: item[0] || '', body: item[1] || '' };
     }
     return {
-      title: item.title || '',
+      title: item.title || item.label || item.item || '',
       body: item.body || item.sub || ''
     };
   }
@@ -117,6 +133,49 @@
     } catch (error) {
       return null;
     }
+  }
+
+  function formatUpdatedAt(value) {
+    if (!value) return '';
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return '';
+    return date.toLocaleString([], {
+      year: 'numeric',
+      month: 'short',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  }
+
+  async function fetchLastModified(path) {
+    try {
+      let response = await fetch(path, { method: 'HEAD', cache: 'no-store' });
+      if (!response.ok) {
+        response = await fetch(path, { cache: 'no-store' });
+      }
+      if (!response.ok) return '';
+      return response.headers.get('last-modified') || response.headers.get('date') || '';
+    } catch (error) {
+      return '';
+    }
+  }
+
+  async function applyContentUpdatedStamp(pageKey) {
+    const footerBottom = q('.footer-bottom');
+    if (!footerBottom || !pageKey) return;
+
+    const lastModified = await fetchLastModified('./content/' + pageKey + '.json');
+    const formatted = formatUpdatedAt(lastModified);
+    if (!formatted) return;
+
+    let stamp = q('.footer-updated', footerBottom);
+    if (!stamp) {
+      stamp = document.createElement('span');
+      stamp.className = 'footer-updated';
+      footerBottom.appendChild(stamp);
+    }
+    stamp.textContent = 'Last content update: ' + formatted;
   }
 
   function applyGlobalContent(content) {
@@ -536,6 +595,8 @@
     if (pageKey && pageAppliers[pageKey]) {
       pageAppliers[pageKey](pageContent);
     }
+
+    applyContentUpdatedStamp(pageKey);
   }
 
   /* ─── INIT ───────────────────────────────────────────────────── */

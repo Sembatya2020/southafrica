@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-publish_mode: editorial_workflow
+publish_mode: simple
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -19,9 +19,10 @@ collections:
       - label: "Global (Navigation, Footer, Cookie)"
         name: "global"
         file: "public/content/global.json"
+        description: "Safe content-only editing. Changes are published directly after you click Publish."
         fields:
-          - { label: "Site Name", name: "siteName", widget: "string" }
-          - { label: "Cookie Text", name: "cookieText", widget: "text" }
+          - { label: "Site Name", name: "siteName", widget: "string", hint: "Brand name shown in header and footer." }
+          - { label: "Cookie Text", name: "cookieText", widget: "text", hint: "Short and clear. Keep under 180 characters if possible." }
           - label: "Navigation Labels"
             name: "navLinks"
             widget: "list"
@@ -51,6 +52,7 @@ collections:
       - label: "Home"
         name: "home"
         file: "public/content/home.json"
+        description: "Edit homepage wording only. Layout and design stay protected."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -60,7 +62,7 @@ collections:
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Headline Line 1", name: "lineMain", widget: "string" }
-              - { label: "Headline Line 2", name: "lineAccent", widget: "string" }
+              - { label: "Headline Line 2", name: "lineAccent", widget: "string", hint: "Keep this sentence concise so hero headline remains clean on desktop." }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Explore Text", name: "explore", widget: "string" }
               - { label: "Left Button", name: "buttonLeft", widget: "string" }
@@ -121,6 +123,7 @@ collections:
       - label: "Approach Page"
         name: "approach"
         file: "public/content/approach.json"
+        description: "All wording on the Approach page is editable here."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -176,6 +179,7 @@ collections:
       - label: "Value Page"
         name: "value"
         file: "public/content/value.json"
+        description: "All wording on the Value page is editable here."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -201,6 +205,7 @@ collections:
       - label: "Founder Page"
         name: "founder"
         file: "public/content/founder.json"
+        description: "All wording on the Founder page is editable here."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -253,6 +258,7 @@ collections:
       - label: "Diagnostic Page"
         name: "diagnostic"
         file: "public/content/diagnostic.json"
+        description: "All wording on the Diagnostic page is editable here."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -300,6 +306,7 @@ collections:
       - label: "Contact Page"
         name: "contact"
         file: "public/content/contact.json"
+        description: "All wording on the Contact page is editable here."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -340,6 +347,7 @@ collections:
       - label: "Terms Page"
         name: "terms"
         file: "public/content/terms.json"
+        description: "Legal text section. Edit carefully and review with legal counsel when needed."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -365,6 +373,7 @@ collections:
       - label: "Privacy Page"
         name: "privacy"
         file: "public/content/privacy.json"
+        description: "Privacy text section. Edit carefully and review with legal counsel when needed."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
@@ -390,6 +399,7 @@ collections:
       - label: "Legal Notice Page"
         name: "legal"
         file: "public/content/legal.json"
+        description: "Legal notice / imprint wording."
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
