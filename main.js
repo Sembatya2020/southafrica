@@ -127,7 +127,7 @@
 
   async function loadJson(path) {
     try {
-      const response = await fetch(path, { cache: 'no-store' });
+      const response = await fetch(path, { cache: 'default' });
       if (!response.ok) return null;
       return await response.json();
     } catch (error) {
@@ -150,9 +150,9 @@
 
   async function fetchLastModified(path) {
     try {
-      let response = await fetch(path, { method: 'HEAD', cache: 'no-store' });
+      let response = await fetch(path, { method: 'HEAD', cache: 'default' });
       if (!response.ok) {
-        response = await fetch(path, { cache: 'no-store' });
+        response = await fetch(path, { cache: 'default' });
       }
       if (!response.ok) return '';
       return response.headers.get('last-modified') || response.headers.get('date') || '';
