@@ -3,29 +3,29 @@
    Color Palette: CLIENT EXECUTIVE (Irish green + bronze)
      • Irish Green  #1B4D3E  (brand — dark sections / primary)
      • Charcoal     #2B2B2B  (replaces pure black — body text)
-     • Warm Cream   #F5F1E8  (page background — not stark white)
-     • Bronze/Gold  #B08D57  (accent — hovers, borders, highlights)
+     • Soft Grey    #F1F2F4  (page background — not stark white)
+    • Cool Grey    #6F757C  (accent — hovers, borders, highlights)
    Supports light + dark mode via [data-theme]
    ═══════════════════════════════════════════════════════════════ */
 
 :root,
 :root[data-theme="light"] {
-  /* Core palette — Irish green + bronze + warm cream */
+  /* Core palette — Irish green + cool grey + soft grey */
   --c-navy:        #2b2b2b;
   --c-purple:      #1b4d3e;
-  --c-gold:        #b08d57;
-  --c-gold-light:  #ece3d2;
+  --c-gold:        #6f757c;
+  --c-gold-light:  #d5d9de;
   --c-sage:        #3e7a63;
 
   /* Semantic (LIGHT MODE) */
   --purple-main:   #1b4d3e;
   --purple-dark:   #1b4d3e;
-  --gold:          #b08d57;
-  --gold-light:    #ece3d2;
-  --cream:         #f5f1e8;
-  --cream-mid:     #ede7d8;
-  --cream-dark:    #dad2bf;
-  --surface:       #ffffff;
+  --gold:          #6f757c;
+  --gold-light:    #d5d9de;
+  --cream:         #f2f3f5;
+  --cream-mid:     #e5e8ec;
+  --cream-dark:    #ced4da;
+  --surface:       #fafbfc;
   --white:         #ffffff;
   --text:          #2b2b2b;
   --text-mid:      #4a4844;
@@ -38,18 +38,18 @@
 
 :root[data-theme="dark"] {
   /* Semantic (DARK MODE) */
-  --purple-main:   #4e8f76;
-  --purple-dark:   #143b30;
-  --gold:          #c2a06c;
-  --gold-light:    #f0e9da;
-  --cream:         #14201b;
-  --cream-mid:     #1e2c26;
-  --cream-dark:    #2e3a33;
-  --surface:       #1a2620;
+  --purple-main:   #66707a;
+  --purple-dark:   #1d2024;
+  --gold:          #8a9199;
+  --gold-light:    #c8cdd3;
+  --cream:         #121418;
+  --cream-mid:     #1b2025;
+  --cream-dark:    #2a3138;
+  --surface:       #171b20;
   --white:         #ffffff;
-  --text:          #f5f1e8;
-  --text-mid:      #d8d2c5;
-  --text-light:    #9aa098;
+  --text:          #f2f4f6;
+  --text-mid:      #c4cad0;
+  --text-light:    #96a0a8;
 }
 
 /* Smooth theme transition — only applied to elements that don't already
