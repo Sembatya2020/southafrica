@@ -7,8 +7,8 @@
   <title>Aligning Strategy — Systemic causality consulting for high-stakes organisations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=12">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=14">
   <!-- Favicon placeholder (gold mark). Replace with /favicon.ico if you have one. -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e7872'/%3E%3Cpath d='M8 23 L16 8 L24 23' fill='none' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='11.5' y1='17.5' x2='20.5' y2='17.5' stroke='%23e2c58a' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
   <!-- Open Graph / social -->
@@ -80,10 +80,8 @@
   </div>
 </div>
 
-<!-- ─── HERO ───────────────────────────────────────────────────── -->
+<!-- ─── HERO  (split — serif headline left, full-bleed photo right) ── -->
 <section id="hero">
-  <div class="hero-bg" id="heroBg"></div>
-  <div class="hero-overlay"></div>
   <div class="hero-shell">
     <div class="hero-content">
       <span class="eyebrow">Boutique consulting for complex, high-stakes organisations</span>
@@ -91,20 +89,16 @@
         <span class="hero-line hero-line-main">Diagnose and correct systemic causality</span>
         <em class="hero-line hero-line-accent">before symptoms destroy enterprise value.</em>
       </h1>
-      <span class="hero-divider" aria-hidden="true"></span>
       <p>We identify the few root dynamics that generate costly symptoms, then shift the feedback loops that keep an organisation stuck. The result is durable profitability, renewed momentum, and leadership alignment under real-world complexity.</p>
       <div class="hero-buttons">
         <a href="kontakt.html" class="btn-primary">Book a confidential diagnostic call</a>
         <a href="beratung.html" class="btn-outline">See what changes (and what doesn't)</a>
       </div>
     </div>
-
-    <div class="hero-profile">
-      <div class="hero-portrait-wrap">
-        <img class="hero-portrait" src="images/godfrey.png" alt="Godfrey O'Flaherty, Founder &amp; Principal Consultant" loading="eager" decoding="async">
-      </div>
-    </div>
   </div>
+
+  <div class="hero-figure" id="heroBg" role="img" aria-label="Godfrey O'Flaherty, Founder &amp; Principal Consultant"></div>
+
   <a href="#welcome" class="hero-scroll" aria-label="Scroll down">
     <span>Explore</span>
     <span class="hero-scroll-line"></span>
@@ -141,47 +135,51 @@
   </div>
 </section>
 
-<!-- ─── HOW WE WORK (teasers) ──────────────────────────────────── -->
+<!-- ─── HOW WE WORK (alternating feature rows) ─────────────────── -->
 <section id="services">
   <div class="section-header fade-up">
-    <span class="eyebrow" style="color:var(--gold-light)">The work</span>
+    <span class="eyebrow">The work</span>
     <h2>From symptoms to causality — and back to performance</h2>
     <p>One causality can generate hundreds of symptoms. Treat symptoms and you multiply effort and resentment; correct causality and symptoms fall away.</p>
   </div>
-  <div class="services-grid">
 
-    <a href="supervision.html" class="service-card fade-up">
-      <div class="service-card-content">
-        <div class="service-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </div>
-        <h3>The Approach</h3>
-        <p>A phenomenological diagnostic that turns complexity into actionable causality models and feedback loops executives can act on.</p>
-        <span class="service-card-link">Explore the approach →</span>
-      </div>
-    </a>
+  <div class="feature-rows">
 
-    <a href="beratung.html" class="service-card fade-up">
-      <div class="service-card-content">
-        <div class="service-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
-        </div>
-        <h3>The Value</h3>
-        <p>Durable margin restoration, business-model renewal, and private-equity value creation that holds — performance becomes repeatable.</p>
-        <span class="service-card-link">See what changes →</span>
+    <article class="feature-row fade-up">
+      <a class="feature-media" href="supervision.html" aria-label="Explore the approach">
+        <img src="images/WhatsApp Image 2026-05-07 at 23.13.27 (1).jpeg" alt="A wide mountain landscape — seeing the whole system" loading="lazy" decoding="async">
+      </a>
+      <div class="feature-text">
+        <span class="feature-index">01 — The Approach</span>
+        <h3>See the system before you touch it</h3>
+        <p>A phenomenological diagnostic that turns complexity into actionable causality models and feedback loops executives can act on — not another deck full of templates.</p>
+        <a href="supervision.html" class="feature-link">Explore the approach →</a>
       </div>
-    </a>
+    </article>
 
-    <a href="ueber-mich.html" class="service-card fade-up">
-      <div class="service-card-content">
-        <div class="service-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
-        </div>
-        <h3>The Founder</h3>
-        <p>Godfrey O'Flaherty — nearly 30 years in complex turnarounds, applied in high-stakes, time-sensitive environments.</p>
-        <span class="service-card-link">Meet the founder →</span>
+    <article class="feature-row feature-row--reverse fade-up">
+      <a class="feature-media" href="beratung.html" aria-label="See what changes">
+        <img src="images/WhatsApp Image 2026-05-07 at 23.16.27.jpeg" alt="A flowing river — momentum and repeatable performance" loading="lazy" decoding="async">
+      </a>
+      <div class="feature-text">
+        <span class="feature-index">02 — The Value</span>
+        <h3>Performance that becomes repeatable</h3>
+        <p>Durable margin restoration, business-model renewal, and private-equity value creation that holds — once causality shifts, the gains compound instead of eroding.</p>
+        <a href="beratung.html" class="feature-link">See what changes →</a>
       </div>
-    </a>
+    </article>
+
+    <article class="feature-row fade-up">
+      <a class="feature-media" href="ueber-mich.html" aria-label="Meet the founder">
+        <img src="images/founder.jpeg" alt="Godfrey O'Flaherty, Founder &amp; Principal Consultant" loading="lazy" decoding="async">
+      </a>
+      <div class="feature-text">
+        <span class="feature-index">03 — The Founder</span>
+        <h3>Three decades inside complex turnarounds</h3>
+        <p>Godfrey O'Flaherty — nearly 30 years correcting systemic causality in high-stakes, time-sensitive environments, working senior and hands-on alongside leadership.</p>
+        <a href="ueber-mich.html" class="feature-link">Meet the founder →</a>
+      </div>
+    </article>
 
   </div>
 </section>
@@ -197,15 +195,19 @@
   </div>
 </section>
 
-<!-- ─── PROOF TEASER ───────────────────────────────────────────── -->
-<section class="section-plain section-alt" aria-label="Proof">
-  <div class="welcome-inner fade-up">
-    <span class="eyebrow">Proof</span>
-    <h2>Trusted in high-complexity, time-sensitive environments.</h2>
-    <p>Applied across industries with real stakes — large workforces, large balance sheets, major deadlines, severe competitive pressure. De Beers, Barclays&nbsp;/&nbsp;ABSA, major South African construction firms, Soccer City &amp; Nelson Mandela Bay Stadium, and the Aveng Group, among others.</p>
-    <p style="margin-top:1.6rem">
-      <a href="ueber-mich.html" class="btn-outline-dark">See selected engagements</a>
-    </p>
+<!-- ─── PROOF / SHOWCASE BAND (image left · text right) ─────────── -->
+<section id="reach" class="showcase" aria-label="Where we work">
+  <a class="showcase-media" href="ueber-mich.html" aria-label="See selected engagements">
+    <img src="images/WhatsApp Image 2026-05-07 at 23.13.34.jpeg" alt="An open road leading toward distant mountains" loading="lazy" decoding="async">
+  </a>
+
+  <div class="showcase-panel">
+    <div class="showcase-inner fade-up">
+      <h2>Trusted across high-complexity, high-stakes environments</h2>
+      <p>Applied across industries with real stakes — large workforces, large balance sheets, major deadlines, and severe competitive pressure.</p>
+      <p>De Beers, Barclays&nbsp;/&nbsp;ABSA, major South African construction firms, Soccer City &amp; Nelson Mandela Bay Stadium, and the Aveng Group, among others.</p>
+      <a href="ueber-mich.html" class="showcase-btn">See selected engagements</a>
+    </div>
   </div>
 </section>
 
